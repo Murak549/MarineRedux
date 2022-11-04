@@ -1,0 +1,30 @@
+spriteTypes={
+	spriteType={
+		name="GFX_focus_hmc_assassinate_hwang"
+		texturefile="gfx/interface/goals/focus_hmc_assasinate_hwang.dds"
+	}
+	spriteType={
+		name="GFX_park_chul_gon"
+		texturefile="gfx/ideas/portrait_park_chul_gon.dds"
+	}
+	spriteType={
+		name="GFX_son_su_jal"
+		texturefile="gfx/leaders/HMC/portrait_large_son.dds"
+	}
+	spriteType={
+		name="GFX_gyeon_ssang_sub"
+		texturefile="gfx/leaders/HMC/portrait_large_ssang.dds"
+	}
+	spriteType={
+		name="GFX_gwak_mal_pung_large"
+		texturefile="gfx/leaders/HMC/portrait_large_gwak.dds"
+	}
+	spriteType={
+		name="GFX_kwae_heung_tae"
+		texturefile="gfx/leaders/HMC/portrait_large_heung.dds"
+	}
+	spriteType={
+		name="GFX_syngman"
+		texturefile="gfx/leaders/HMC/portrait_large_syngman.dds"
+	}
+}
