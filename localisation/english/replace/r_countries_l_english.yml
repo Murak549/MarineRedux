@@ -5,7 +5,7 @@
  HMC_fascism:0 "해병대"
 
  HMC_neutrality_ADJ:0 "해병대"
- HMC_democratic_ADJ:0 "해병민국"
- HMC_communism_ADJ:0 "해병 협력체"
+ HMC_democratic_ADJ:0 "탈오도 해병대" #짜피 인게임에서 치트 안쓰곤 못나옴
+ HMC_communism_ADJ:0 ""
  HMC_fascism_ADJ:0 "해병대"
  HMC_fascism_DEF:0 "해병대"
