@@ -1,0 +1,2 @@
+HMC = "countries/MarineCorps.txt"
+KOR = "countries/Korean Liberation Front.txt"

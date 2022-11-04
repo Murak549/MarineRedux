@@ -1,0 +1,16 @@
+KOR_DIV_0_0 = {	name = "보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. 보병사단"
+}
+KOR_DIV_1_0 = {	name = "민병대"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. 민병대"
+}

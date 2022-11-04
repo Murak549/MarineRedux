@@ -1,0 +1,484 @@
+focus_tree = {
+	id = marine-revolt-focus-tree
+	continuous_focus_position = { x = -40 y = 2480 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = HMC
+		}
+	}
+	#establishment of a secret government
+	focus = {
+		id = HMC_establishment_of_a_secret_government
+		icon = GFX_HMC_establishment_of_a_secret_government-312905
+		x = 10
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#rally of supporters
+	focus = {
+		id = HMC_rally_of_supporters
+		icon = GFX_HMC_rally_of_supporters-312909
+		x = 10
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_establishment_of_a_secret_government  }
+	}
+
+	#Cooperation with the Left?
+	focus = {
+		id = HMC_cooperationwiththeleft
+		icon = GFX_HMC_cooperationwiththeleft-312911
+		x = 9
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_rally_of_supporters  }
+		mutually_exclusive = { focus = HMC_face_general_lee_bumseok  }
+	}
+
+	#face General Lee Bum-seok
+	focus = {
+		id = HMC_face_general_lee_bumseok
+		icon = GFX_HMC_face_general_lee_bumseok-312948
+		x = 11
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_rally_of_supporters  }
+		mutually_exclusive = { focus = HMC_cooperationwiththeleft  }
+	}
+
+	#Weapons to the citizens
+	focus = {
+		id = HMC_weapons_to_the_citizens
+		icon = GFX_HMC_weapons_to_the_citizens-312990
+		x = 11
+		y = 9
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_preparations_for_the_uprising  }
+	}
+
+	#preparations for the uprising
+	focus = {
+		id = HMC_preparations_for_the_uprising
+		icon = GFX_HMC_preparations_for_the_uprising-312985
+		x = 11
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_securing_gyeonggido_province  } prerequisite = { focus = HMC_along_the_coast  }
+	}
+
+	#slight favor
+	focus = {
+		id = HMC_slight_favor
+		icon = GFX_HMC_slight_favor-312917
+		x = 6
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_cooperationwiththeleft  }
+	}
+
+	#creation of an avant-garde
+	focus = {
+		id = HMC_creation_of_an_avantgarde
+		icon = GFX_HMC_creation_of_an_avantgarde-312918
+		x = 9
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_cooperationwiththeleft  }
+	}
+
+	#general and a soldier
+	focus = {
+		id = HMC_general_and_a_soldier
+		icon = GFX_HMC_general_and_a_soldier-312954
+		x = 11
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_face_general_lee_bumseok  }
+	}
+
+	#Nationalism, the name that always works
+	focus = {
+		id = HMC_nationalismthenamethatalwaysworks
+		icon = GFX_HMC_nationalismthenamethatalwaysworks-312955
+		x = 14
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_face_general_lee_bumseok  }
+	}
+
+	#Prepare for Penetration Plan
+	focus = {
+		id = HMC_prepare_for_penetration_plan
+		icon = GFX_HMC_prepare_for_penetration_plan-312921
+		x = 9
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_slight_favor  } prerequisite = { focus = HMC_creation_of_an_avantgarde  }
+	}
+
+	#Preparing for Civil War
+	focus = {
+		id = HMC_preparing_for_civil_war
+		icon = GFX_goal_generic_major_war
+		x = 11
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_general_and_a_soldier  } prerequisite = { focus = HMC_nationalismthenamethatalwaysworks  }
+	}
+
+	#an adventure to the south
+	focus = {
+		id = HMC_an_adventure_to_the_south
+		icon = GFX_HMC_an_adventure_to_the_south-312956
+		x = 17
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_preparing_for_civil_war  }
+		mutually_exclusive = { focus = HMC_settle_down_in_the_middle  }
+	}
+
+	#settle down in the middle
+	focus = {
+		id = HMC_settle_down_in_the_middle
+		icon = GFX_HMC_settle_down_in_the_middle-312957
+		x = 11
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_preparing_for_civil_war  }
+		mutually_exclusive = { focus = HMC_an_adventure_to_the_south  }
+	}
+
+	#Securing Gyeonggi-do Province
+	focus = {
+		id = HMC_securing_gyeonggido_province
+		icon = GFX_HMC_securing_gyeonggido_province-312978
+		x = 11
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_settle_down_in_the_middle  }
+	}
+
+	#along the coast
+	focus = {
+		id = HMC_along_the_coast
+		icon = GFX_HMC_along_the_coast-312979
+		x = 13
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_settle_down_in_the_middle  }
+	}
+
+	#Prepare to attack Pohang
+	focus = {
+		id = HMC_prepare_to_attack_pohang
+		icon = GFX_HMC_prepare_to_attack_pohang-312983
+		x = 17
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_an_adventure_to_the_south  }
+	}
+
+	#Landing on Jeju Island
+	focus = {
+		id = HMC_landing_on_jeju_island
+		icon = GFX_HMC_landing_on_jeju_island-312980
+		x = 15
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_an_adventure_to_the_south  }
+	}
+
+	#a shot of gunfire
+	focus = {
+		id = HMC_a_shot_of_gunfire
+		icon = GFX_HMC_a_shot_of_gunfire-312991
+		x = 13
+		y = 9
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_preparations_for_the_uprising  }
+	}
+
+	#And it started
+	focus = {
+		id = HMC_and_it_started
+		icon = GFX_HMC_and_it_started-312958
+		x = 14
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_weapons_to_the_citizens  } prerequisite = { focus = HMC_a_shot_of_gunfire  focus = HMC_engraved_mark  } prerequisite = { focus = HMC_sound_of_a_second_hand_in_an_armory  }
+	}
+
+	#The day of operation is approaching
+	focus = {
+		id = HMC_the_day_of_operation_is_approaching
+		icon = GFX_focus_generic_combined_arms
+		x = 17
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_prepare_to_attack_pohang  } prerequisite = { focus = HMC_landing_on_jeju_island  }
+	}
+
+	#engraved mark
+	focus = {
+		id = HMC_engraved_mark
+		icon = GFX_HMC_engraved_mark-312996
+		x = 17
+		y = 9
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_the_day_of_operation_is_approaching  }
+	}
+
+	#sound of a second hand in an armory
+	focus = {
+		id = HMC_sound_of_a_second_hand_in_an_armory
+		icon = GFX_HMC_sound_of_a_second_hand_in_an_armory-312992
+		x = 15
+		y = 9
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_the_day_of_operation_is_approaching  }
+	}
+
+	#Organization of the Revolutionary Armed Forces of Goryeo
+	focus = {
+		id = HMC_organization_of_the_revolutionary_armed_forces_of_goryeo
+		icon = GFX_HMC_organization_of_the_revolutionary_armed_forces_of_goryeo-312938
+		x = 9
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_ask_russia_for_help  } prerequisite = { focus = HMC_temporary_cooperation  }
+	}
+
+	#general strike
+	focus = {
+		id = HMC_general_strike
+		icon = GFX_HMC_general_strike-312939
+		x = 7
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_organization_of_the_revolutionary_armed_forces_of_goryeo  }
+	}
+
+	#Urges Soviet Intervention
+	focus = {
+		id = HMC_urges_soviet_intervention
+		icon = GFX_HMC_urges_soviet_intervention-312942
+		x = 9
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_organization_of_the_revolutionary_armed_forces_of_goryeo  }
+	}
+
+	#temporary cooperation
+	focus = {
+		id = HMC_temporary_cooperation
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 9
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_friends_of_the_north  }
+	}
+
+	#revolution is coming
+	focus = {
+		id = HMC_revolution_is_coming
+		icon = GFX_HMC_revolution_is_coming-312903
+		x = 6
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_toward_the_citadel  } prerequisite = { focus = HMC_cooperate_with_resistance_organizations_in_manchuria  focus = HMC_general_strike  } prerequisite = { focus = HMC_urges_soviet_intervention  }
+	}
+
+	#Ask Russia for help
+	focus = {
+		id = HMC_ask_russia_for_help
+		icon = GFX_HMC_ask_russia_for_help-312935
+		x = 7
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_friends_of_the_north  }
+	}
+
+	#Major Facilities Sabotage
+	focus = {
+		id = HMC_major_facilities_sabotage
+		icon = GFX_HMC_major_facilities_sabotage-312929
+		x = 3
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_nationwide_guerrilla  } prerequisite = { focus = HMC_collaboration_with_the_national_revolutionary_army  }
+	}
+
+	#Friends of the North
+	focus = {
+		id = HMC_friends_of_the_north
+		icon = GFX_HMC_friends_of_the_north-312922
+		x = 9
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_prepare_for_penetration_plan  }
+		mutually_exclusive = { focus = HMC_between_our_peoples  }
+	}
+
+	#Between our peoples
+	focus = {
+		id = HMC_between_our_peoples
+		icon = GFX_HMC_between_our_peoples-312925
+		x = 3
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_prepare_for_penetration_plan  }
+		mutually_exclusive = { focus = HMC_friends_of_the_north  }
+	}
+
+	#nationwide guerrilla
+	focus = {
+		id = HMC_nationwide_guerrilla
+		icon = GFX_HMC_nationwide_guerrilla-312926
+		x = 3
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_between_our_peoples  }
+	}
+
+	#Collaboration with the National Revolutionary Army
+	focus = {
+		id = HMC_collaboration_with_the_national_revolutionary_army
+		icon = GFX_HMC_collaboration_with_the_national_revolutionary_army-312928
+		x = 5
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_between_our_peoples  }
+	}
+
+	#Cooperate with resistance organizations in Manchuria
+	focus = {
+		id = HMC_cooperate_with_resistance_organizations_in_manchuria
+		icon = GFX_HMC_cooperate_with_resistance_organizations_in_manchuria-312930
+		x = 3
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_major_facilities_sabotage  }
+	}
+
+	#toward the citadel
+	focus = {
+		id = HMC_toward_the_citadel
+		icon = GFX_HMC_toward_the_citadel-312931
+		x = 5
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = HMC_major_facilities_sabotage  }
+	}
+
+}

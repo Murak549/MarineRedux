@@ -1,0 +1,140 @@
+focus_tree = {
+	id = Korean_Liberation_Front_focus_tree
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	#Justice wins
+	focus = {
+		id = KOR_justice_wins
+		icon = GFX_KOR_justice_wins-311373
+		x = 3
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#stabilization of the situation
+	focus = {
+		id = KOR_stabilization_of_the_situation
+		icon = GFX_KOR_stabilization_of_the_situation-311375
+		x = 1
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_justice_wins  }
+	}
+
+	#consolidation of the Marine Corps forces
+	focus = {
+		id = KOR_consolidation_of_the_marine_corps_forces
+		icon = GFX_KOR_consolidation_of_the_marine_corps_forces-312059
+		x = 4
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_direct_action  }
+	}
+
+	#Direct Action
+	focus = {
+		id = KOR_direct_action
+		icon = GFX_KOR_direct_action-312049
+		x = 5
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_justice_wins  }
+	}
+
+	#dissolution of paramilitary organizations
+	focus = {
+		id = KOR_dissolution_of_paramilitary_organizations
+		icon = GFX_KOR_dissolution_of_paramilitary_organizations-312062
+		x = 6
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_direct_action  }
+	}
+
+	#formulation of a defense plan
+	focus = {
+		id = KOR_formulation_of_a_defense_plan
+		icon = GFX_KOR_formulation_of_a_defense_plan-312136
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_stabilization_of_the_situation  }
+	}
+
+	#cooperation with other forces
+	focus = {
+		id = KOR_cooperation_with_other_forces
+		icon = GFX_KOR_cooperation_with_other_forces-312138
+		x = 0
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_stabilization_of_the_situation  }
+	}
+
+	#unified speech
+	focus = {
+		id = KOR_unified_speech
+		icon = GFX_KOR_unified_speech-312165
+		x = 1
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_formulation_of_a_defense_plan  } prerequisite = { focus = KOR_cooperation_with_other_forces  }
+	}
+
+	#march to Pohang
+	focus = {
+		id = KOR_march_to_pohang
+		icon = GFX_KOR_march_to_pohang-312174
+		x = 5
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_consolidation_of_the_marine_corps_forces  } prerequisite = { focus = KOR_dissolution_of_paramilitary_organizations  }
+	}
+
+	#unification and justice
+	focus = {
+		id = KOR_unification_and_justice
+		icon = GFX_KOR_unification_and_justice-312193
+		x = 3
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KOR_unified_speech  } prerequisite = { focus = KOR_march_to_pohang  }
+	}
+
+}

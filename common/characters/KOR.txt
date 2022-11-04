@@ -1,0 +1,49 @@
+characters = {
+#Create country leader - Lee Beom seok
+lee_beom_seok = {
+	name = lee_beom_seok
+	portraits = {
+		civilian = {
+			#Custom image for Lee Beom seok
+			large = "/gfx/leaders/KOR/LlOgNkqR-312284.dds"
+		}
+	}
+	country_leader = {
+		expire = "2000.01.01"
+		ideology = fascism_ideology
+		traits = {  }
+	}
+}
+
+#Create country leader - military
+military = {
+	name = military
+	portraits = {
+		civilian = {
+			#Custom image for military
+			large = "/gfx/leaders/KOR/YxSKHXoD-312265.dds"
+		}
+	}
+	country_leader = {
+		expire = "2000.01.01"
+		ideology = despotism
+		traits = {  }
+	}
+}
+
+#Create country leader - Provisional Government of Korea
+provisional_government_of_korea = {
+	name = provisional_government_of_korea
+	portraits = {
+		civilian = {
+			#Custom image for Provisional Government of Korea
+			large = "/gfx/leaders/KOR/riBqvXOY-312261.dds"
+		}
+	}
+	country_leader = {
+		expire = "2000.01.01"
+		ideology = liberalism
+		traits = {  }
+	}
+}
+}
