@@ -1,6 +1,5 @@
 ﻿l_english:
  HMC_neutrality_party:0 "해병성채"
- HMC_democratic_party:0 "해병전우회"
+ HMC_democratic_party:0 "§c(기열)"
  HMC_fascism_party:0 "해병성채"
- HMC_communism_party:0 "해병공산당"
- HMC_neutrality_party_oppose_GeunChul:0 "황룡 중앙당"
+ HMC_communism_party:0 "§c(기열)"
