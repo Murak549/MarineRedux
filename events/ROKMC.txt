@@ -1,0 +1,566 @@
+add_namespace = ROKMC
+country_event = {
+	id = ROKMC.1
+	title = ROKMC.1.t
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	desc = ROKMC.1.d
+	option = {
+	name = hmc.1.op1
+
+	}
+}
+country_event = {
+	id = ROKMC.2
+	title = ROKMC.2.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.2.d
+	option = {
+	name = ROKMC.2.A
+		set_cosmetic_tag = HMC_AIRFORCE
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.3
+	title = ROKMC.3.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.3.d
+	option = {
+	name = ROKMC.3.A
+		set_party_name = {
+				ideology = neutrality
+				long_name = "대한제국 황실"
+				name = "대한제국 황실"
+			}
+		set_party_name = {
+				ideology = democratic
+				long_name = "자유민주당"
+				name = "자유민주당"
+			}
+		set_party_name = {
+				ideology = communism
+				long_name = "조선로동당"
+				name = "조선로동당"
+			}
+		set_party_name = {
+				ideology = fascism
+				long_name = "우리는파시스트당"
+				name = "파시년들"
+			}
+		HMC_Yi_Kang = {
+				add_country_leader_role = {
+						country_leader = {
+								expire = "1955.1.1"
+								ideology = despotism
+								traits = { imperial_connections }
+							}
+						promote_leader = yes
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.4
+	title = ROKMC.4.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.4.d
+	option = {
+	name = ROKMC.4.A
+		HMC = {
+				change_tag_from = ROOT
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.5
+	title = ROKMC.5.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.5.d
+	option = {
+	name = ROKMC.5.A
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.6
+	title = ROKMC.6.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.6.d
+	option = {
+	name = ROKMC.6.A
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.7
+	title = ROKMC.7.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.7.d
+	option = {
+	name = lar_spain.49.a
+		random_country = {
+				limit = {
+						original_tag = JAP
+						has_government = neutrality
+						NOT = {
+								tag = FROM
+							}
+					}
+				HMC = {
+						add_to_war = {
+								targeted_alliance = PREV
+								enemy = JAP
+								hostility_reason = asked_to_join
+							}
+						puppet = PREV
+					}
+				set_political_party = {
+						ideology = neutrality
+						popularity = 100
+					}
+			}
+		JAP = {
+				set_rule = {
+						can_join_factions = no
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.8
+	title = ROKMC.8.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.8.d
+	option = {
+	name = lar_spain.48.a
+		hidden_effect = {
+				start_civil_war = {
+						ideology = communism
+						size = 0.1
+						keep_unit_leaders_trigger = {
+								always = yes
+							}
+					}
+				random_country = {
+						limit = {
+								original_tag = JAP
+								has_government = communism
+								NOT = {
+										tag = ROOT
+									}
+							}
+						set_politics = {
+								ruling_party = neutrality
+							}
+						set_political_party = {
+								ideology = neutrality
+								popularity = 100
+							}
+						set_party_name = {
+								ideology = neutrality
+								long_name = SPR_neutrality_anarchism_party_long
+								name = SPR_neutrality_anarchism_party
+							}
+						set_cosmetic_tag = JAP_MARINE
+						set_country_flag = SPR_portuguese_anarchism_flag
+						retire_country_leader = yes
+					}
+				FROM = {
+						country_event = {
+								id = ROKMC.7
+							}
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.9
+	title = ROKMC.9.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.9.d
+	option = {
+	name = ROKMC.9.a
+		hidden_effect = {
+				282 = {
+						add_core_of = HMC
+					}
+				528 = {
+						add_core_of = HMC
+					}
+				529 = {
+						add_core_of = HMC
+					}
+				530 = {
+						add_core_of = HMC
+					}
+				531 = {
+						add_core_of = HMC
+					}
+				532 = {
+						add_core_of = HMC
+					}
+				533 = {
+						add_core_of = HMC
+					}
+				534 = {
+						add_core_of = HMC
+					}
+				535 = {
+						add_core_of = HMC
+					}
+				536 = {
+						add_core_of = HMC
+					}
+				537 = {
+						add_core_of = HMC
+					}
+				526 = {
+						add_core_of = HMC
+					}
+				555 = {
+						add_core_of = HMC
+					}
+				645 = {
+						add_core_of = HMC
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.10
+	title = ROKMC.10.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.10.d
+	option = {
+	name = lar_spain.49.a
+		random_country = {
+				limit = {
+						original_tag = CHI
+						has_government = neutrality
+						NOT = {
+								tag = FROM
+							}
+					}
+				HMC = {
+						add_to_war = {
+								targeted_alliance = PREV
+								enemy = CHI
+								hostility_reason = asked_to_join
+							}
+						puppet = PREV
+					}
+				set_political_party = {
+						ideology = neutrality
+						popularity = 100
+					}
+			}
+		CHI = {
+				set_rule = {
+						can_join_factions = no
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.11
+	title = ROKMC.11.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.11.d
+	option = {
+	name = lar_spain.48.a
+		hidden_effect = {
+				start_civil_war = {
+						ideology = communism
+						size = 0.5
+						capital = 743
+						keep_unit_leaders_trigger = {
+								always = yes
+							}
+						states = { 608  614  597  743  598  596  595  600  607 }
+					}
+				random_country = {
+						limit = {
+								original_tag = CHI
+								has_government = communism
+								NOT = {
+										tag = ROOT
+									}
+							}
+						set_politics = {
+								ruling_party = neutrality
+							}
+						set_political_party = {
+								ideology = fascism
+								popularity = 100
+							}
+						set_party_name = {
+								ideology = neutrality
+								long_name = SPR_neutrality_anarchism_party_long
+								name = SPR_neutrality_anarchism_party
+							}
+						set_cosmetic_tag = CHI_MARINE
+						set_country_flag = SPR_portuguese_anarchism_flag
+						retire_country_leader = yes
+					}
+				FROM = {
+						country_event = {
+								id = ROKMC.10
+							}
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.12
+	title = ROKMC.12.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.12.d
+	option = {
+	name = "중화민국이 더 오도짜세스럽다."
+		CHI = {
+				country_event = {
+						id = ROKMC.11
+						hours = 6
+						random_hours = 18
+					}
+			}
+
+	}
+	option = {
+	name = "아니. 우리는 못된똥 해병을 버리지 않는다."
+		PRC = {
+				country_event = {
+						id = ROKMC.13
+						hours = 6
+						random_hours = 18
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.14
+	title = ROKMC.14.t
+	picture = GFX_
+	is_triggered_only = yes
+	desc = ROKMC.14.d
+	option = {
+	name = "이런 씨발, 폭도들을 잡아들여라!"
+			remove_ideas = HMC_torture
+			remove_ideas = HMC_giyeol
+			swap_ideas = {
+				add_idea = HMC_welcome_heros
+				remove_idea = HMC_people_dont_agree_us
+			}
+			add_political_power = 10
+			custom_effect_tooltip = 5_HMC_tt
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "2017.3.9"
+				election_frequency = 60
+				elections_allowed = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "해병주체 국민회의"
+				name = "해병주체 국민회의"
+			}
+			retire_character = HMC_Hwang_geun_chul_f
+			HMC_gwak_mal_pung = {
+				add_country_leader_role = {
+						country_leader = {
+								expire = "1955.1.1"
+								ideology = despotism
+								# traits = { imperial_connections }
+							}
+						promote_leader = yes
+					}
+			}
+		hidden_effect = {
+				start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+						keep_unit_leaders_trigger = {
+								always = yes
+							}
+					}
+				set_popularities = {
+					neutrality = 83
+					fascism = 2
+					communism = 5
+					democratic = 10
+				}
+				retire_character = HMC_Hwang_geun_chul_c
+				retire_character = HMC_Hwang_geun_chul_n
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.15
+	title = ROKMC.15.t
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	desc = ROKMC.15.d
+	option = {
+	name = "드디어 좆같은 새끼들을 끌어내릴 날이 왔군"
+		set_capital = {
+				state = 835
+				remember_old_capital = no
+			}
+		set_cosmetic_tag = HMC_KOREA
+		set_politics = {
+				ruling_party = democratic
+			}
+		set_popularities = {
+				democratic = 65
+				neutrality = 15
+				fascism = 0
+				communism = 20
+			}
+		hidden_effect = {
+				start_civil_war = {
+						ideology = fascism
+						size = 0.5
+						keep_unit_leaders_trigger = {
+								always = yes
+							}
+						states = { 837  836  525  838  840  841  527  839 }
+					}
+				random_country = {
+						limit = {
+								original_tag = HMC
+								has_government = fascism
+								NOT = {
+										tag = ROOT
+									}
+							}
+					}
+			}
+
+	}
+
+	}
+country_event = {
+	id = ROKMC.16
+	title = ROKMC.16.t
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	desc = ROKMC.16.d
+	option = {
+	name = "그 점을 생각하지 못했군."
+
+	}
+	option = {
+	name = "그의 명복을 빌어라"
+
+	}
+
+}
+
+country_event = {
+	id = ROKMC.17
+	title = ROKMC.17.t
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	desc = ROKMC.17.d
+	option = {
+		name = ROKMC.17.a
+	}
+}
+
+country_event = {
+	id = ROKMC.18
+	title = ROKMC.18.t
+	is_triggered_only = yes
+	desc = ROKMC.18.d
+	option = {
+		name = ROKMC.18.a
+	}
+}
+
+country_event = { #Marine military trial
+	id = ROKMC.19
+	title = ROKMC.19.t
+	is_triggered_only = yes
+	desc = ROKMC.19.d
+	option = {
+		name = ROKMC.19.a
+	}
+}
+
+country_event = { #Center of Marine Corps
+	id = ROKMC.20
+	title = ROKMC.20.t
+	picture = GFX_marine_event_1
+	is_triggered_only = yes
+	desc = ROKMC.20.d
+	option = {
+		name = ROKMC.20.a
+	}
+}
+
+country_event = { #Marine military trial
+	id = ROKMC.21
+	title = ROKMC.21.t
+	is_triggered_only = yes
+	desc = ROKMC.21.d
+	option = {
+		name = ROKMC.21.a
+	}
+}
+
+country_event = { #HwangRyong Research
+	id = ROKMC.22
+	title = ROKMC.22.t
+	is_triggered_only = yes
+	desc = ROKMC.22.d
+	option = {
+		name = ROKMC.22.a
+	}
+}
+
+country_event = { #Assasinate HwangRyong
+	id = ROKMC.23
+	title = ROKMC.23.t
+	is_triggered_only = yes
+	desc = ROKMC.23.d
+	option = {
+		name = ROKMC.23.a
+		add_timed_idea = {
+			idea = HMC_result_of_assasinate
+			days = 160
+		} 
+	}
+}

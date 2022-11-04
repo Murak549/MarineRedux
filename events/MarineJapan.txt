@@ -1,0 +1,20 @@
+add_namespace = JAPMC
+
+country_event = {
+    id = JAPMC.1
+    title = JAPMC.1.t
+    desc = JAPMC.1.d
+    is_triggered_only = yes
+    option ={
+        name = JAPMC.1.a
+    }
+}
+country_event = {
+    id = JAPMC.2
+    title = JAPMC.2.t
+    desc = JAPMC.2.d
+    is_triggered_only = yes
+    option ={
+        name = JAPMC.2.a
+    }
+}
