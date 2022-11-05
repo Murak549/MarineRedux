@@ -22,7 +22,7 @@
 			focus = JAP_strengthen_civilian_government
 			focus = JAP_the_unthinkable_option
 		}
-		cost = 10
+		cost = 5
 		x = 3
 		y = 0
 		completion_reward = {
@@ -60,7 +60,7 @@
 		id = JAP_approach_the_rikusentai
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = JAP_the_march_of_strange_way }
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_march_of_strange_way
@@ -75,6 +75,9 @@
 		cost = 10
 		x = 0
 		y = 1
+		bypass = {
+			has_cosmetic_tag = JAP_MARINE
+		}
 		relative_position_id = JAP_approach_the_rikusentai
 		completion_reward = {
 			set_cosmetic_tag = JAP_MARINE
@@ -120,7 +123,16 @@
 					750 751 752
 				}
 			}
-			custom_effect_tooltip = cast_the_die_TT
+			custom_effect_tooltip = the_day_of_order_TT
+			CHI = {
+				set_state_owner = 609
+				set_state_owner = 524
+			}
+			MAN = {
+				set_state_owner = 745
+			}
+			release = GUM
+			release = FSM
 			
 			hidden_effect = {
 				division_template = { name = "Hidden Marine Divison" division_names_group = JAP_INF_01 is_locked = yes regiments = { marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 } } }
@@ -260,6 +272,32 @@
 		prerequisite = { focus = JAP_marine_research }
 		cost = 10
 		relative_position_id = JAP_the_day_of_order
+	}
+	focus = {
+		id = JAP_ABCD
+		x = 0
+		y = 2
+		icon = GFX_unknown
+		cost = 5
+		prerequisite = { focus = JAP_hidden_marine_division }
+		relative_position_id = JAP_hidden_marine_division
+	}
+	focus = {
+		id = JAP_we_need_Hwang
+		x = 1
+		y = 1
+		prerequisite = { focus = JAP_ABCD }
+		relative_position_id = JAP_ABCD
+		mutually_exclusive = { focus = JAP_our_leader_natamura }
+
+	}
+	focus = {
+		id = JAP_our_leader_natamura
+		x = -1
+		y = 1
+		prerequisite = { focus = JAP_ABCD }
+		relative_position_id = JAP_ABCD
+		mutually_exclusive = { focus = JAP_we_need_Hwang }
 	}
 	focus = {
 		id = JAP_the_fate_of_the_imperial_family2
