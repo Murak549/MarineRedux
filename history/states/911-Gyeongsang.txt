@@ -26,13 +26,13 @@ state={
 
 		}
 		victory_points = {
-			4086 10 
+			4086 1 
 		}
 		victory_points = {
-			7121 5
+			7121 20
 		}
 		victory_points = {
-			4056 20 
+			4056 1 
 		}
 		add_core_of = KOR
 		add_core_of = HMC

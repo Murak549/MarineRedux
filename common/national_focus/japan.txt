@@ -53,7 +53,69 @@
 			focus = JAP_approach_the_rikusentai
 		}
 		completion_reward = {
+			set_province_name = {
+				id = 1182
+				name = "신포항해병직할오도짜세기합광역특별시"
+			}
 			add_research_slot = -1
+			hidden_effect = {
+				set_province_name = {
+					id = 7072
+					name = "오사카해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 9950
+					name = "짬뽕해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 1092
+					name = "핵폭탄해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 1025
+					name = "고쿠라해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 7197
+					name = "고치해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 10125
+					name = "나고야해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 10032
+					name = "가나자와해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 1177
+					name = "니가타해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 7169
+					name = "센다이해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 6994
+					name = "아오모리해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 10444
+					name = "해병맥주생산지오도짜세기합광역시"
+				}
+				set_province_name = {
+					id = 12421
+					name = "아사히카와해병직할오도짜세기합광역특별시"
+				}
+				set_province_name = {
+					id = 6994
+					name = "아오모리해병직할오도짜세기합광역특별시"
+				}
+				282 = {
+					set_state_name = "신포항"
+				}
+				
+			}
 		}
 	}
 	focus = {
@@ -80,6 +142,9 @@
 		}
 		relative_position_id = JAP_approach_the_rikusentai
 		completion_reward = {
+			add_ideas = HMC_conscripting_assembly
+			add_ideas = HMC_no_rule
+			# add_ideas = HMC_torture
 			set_cosmetic_tag = JAP_MARINE
 			hidden_effect = {
 				if = {
@@ -124,6 +189,8 @@
 				}
 			}
 			custom_effect_tooltip = the_day_of_order_TT
+			remove_ideas = JAP_duplicate_research_efforts
+			remove_ideas = JAP_militarism
 			CHI = {
 				set_state_owner = 609
 				set_state_owner = 524
@@ -274,7 +341,7 @@
 		relative_position_id = JAP_the_day_of_order
 	}
 	focus = {
-		id = JAP_ABCD
+		id = JAP_true_leader_problem
 		x = 0
 		y = 2
 		icon = GFX_unknown
@@ -286,17 +353,17 @@
 		id = JAP_we_need_Hwang
 		x = 1
 		y = 1
-		prerequisite = { focus = JAP_ABCD }
-		relative_position_id = JAP_ABCD
-		mutually_exclusive = { focus = JAP_our_leader_natamura }
+		prerequisite = { focus = JAP_true_leader_problem }
+		relative_position_id = JAP_true_leader_problem
+		mutually_exclusive = { focus = JAP_japanese_marine }
 
 	}
 	focus = {
-		id = JAP_our_leader_natamura
+		id = JAP_japanese_marine
 		x = -1
 		y = 1
-		prerequisite = { focus = JAP_ABCD }
-		relative_position_id = JAP_ABCD
+		prerequisite = { focus = JAP_true_leader_problem }
+		relative_position_id = JAP_true_leader_problem
 		mutually_exclusive = { focus = JAP_we_need_Hwang }
 	}
 	focus = {
