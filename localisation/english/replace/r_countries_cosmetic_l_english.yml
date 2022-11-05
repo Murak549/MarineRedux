@@ -8,9 +8,9 @@
  HMC_KOREA_fascism:0 "조선국"
  HMC_KOREA_neutrality:0 "조선국"
  HMC_KOREA_communism:0 "조선인민공화국"
+ JAP_MARINE:0 "일본 해군육전대 전우회"
+ JAP_MARINE_ADJ:0 "해군육전대"
+ JAP_MARINE_DEF:0 "해군육전대"
 #여기서부턴 제거할지 논의 해봐야할거
- JAP_MARINE_fascism:0 "일본 해군육전대 전우회"
- JAP_MARINE_fascism_ADJ:0 "해병대"
- JAP_MARINE_fascism_DEF:0 "해병대"
  CHI_MARINE:0 "중화민국 해군육전대 전우회"
  PRC_MARINE:0 "중화인민공화국 해군육전대 전우회"
