@@ -76,6 +76,180 @@
 		x = 0
 		y = 1
 		relative_position_id = JAP_approach_the_rikusentai
+		completion_reward = {
+			set_cosmetic_tag = JAP_MARINE
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_leader = { id = 700 ruling_only = yes }
+					}
+					remove_country_leader_trait = imperial_sanction
+				}
+			}
+			set_capital = { state = 532 }
+			hidden_effect = {
+				if = {
+					limit = {
+						MEN = { is_subject_of = ROOT }
+					}
+					set_autonomy = { target = MEN autonomy_state = autonomy_free }
+				}
+				if = {
+					limit = {
+						MAN = { is_subject_of = ROOT }
+					}
+					set_autonomy = { target = MAN autonomy_state = autonomy_free } 
+					MAN = {
+						set_autonomy = { target = MEN autonomy_state = autonomy_integrated_puppet }
+					}
+				}
+				if = {
+					limit = {
+						MAN = { has_idea = MAN_kwantung_veto }
+					}
+					MAN = { remove_ideas = MAN_kwantung_veto }
+				}
+			}
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = ROOT
+				size = 0.5	#This was too much for AI
+				capital = 282
+				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 525 }
+				keep_unit_leaders = {
+					750 751 752
+				}
+			}
+			custom_effect_tooltip = cast_the_die_TT
+			
+			hidden_effect = {
+				division_template = { name = "Hidden Marine Divison" division_names_group = JAP_INF_01 is_locked = yes regiments = { marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 } } }
+				532 = {
+					create_unit = { 
+						division = "name = \"1. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"2. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"3. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"4. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"5. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				531 = {
+					create_unit = { 
+						division = "name = \"6. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"7. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"8. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"9. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"10. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				534 = {
+					create_unit = { 
+						division = "name = \"11. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"12. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				535 = {
+					create_unit = { 
+						division = "name = \"13. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"14. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				537 = {
+					create_unit = { 
+						division = "name = \"15. Hidden Marine Divison\" division_template = \"Hidden Marine Divison\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+			}
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = JAP
+						has_government = fascism
+					}
+					hidden_effect = {
+						division_template = { name = "Japanese Loyalist Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+						529 = {
+							create_unit = { 
+								division = "name = \"1. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"2. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"3. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"4. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"5. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+						}
+						530 = {
+							create_unit = { 
+								division = "name = \"6. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"7. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+						}
+						533 = {
+							create_unit = { 
+								division = "name = \"8. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"9. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV #여기 까지
+							}
+						}
+					}
+				}
+			}
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = JAP_hidden_marine_division
@@ -89,7 +263,7 @@
 	}
 	focus = {
 		id = JAP_the_fate_of_the_imperial_family2
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_focus_jap_brainwash_tenno
 		x = -2
 		y = 1
 		prerequisite = { focus = JAP_hidden_marine_division }
