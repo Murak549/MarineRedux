@@ -1,5 +1,9 @@
 spriteTypes = { 
 	spriteType={
+		name="GFX_focus_jap_brainwash_tenno"
+		texturefile="gfx/interface/goals/focus_jap_brainwash_tenno.dds"
+	}
+	spriteType={
 		name="GFX_focus_hmc_open_high_school"
 		texturefile="gfx/interface/goals/focus_hmc_open_high_school.dds"
 	}
