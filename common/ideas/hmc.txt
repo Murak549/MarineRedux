@@ -9,7 +9,6 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				add_stability = 0.2
 				political_power_factor = 0.25
 			}
 		}
@@ -22,7 +21,6 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				add_stability = 0.15
 			}
 		}
 		HMC_constitution = {	
@@ -34,7 +32,6 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				add_stability = 0.1
 			}
 		}
 		HMC_nobody_want_war_2 = {
