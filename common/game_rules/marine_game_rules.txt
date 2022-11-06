@@ -1,0 +1,35 @@
+HMC_ai_behavior = {
+	name = "HMC_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = FASCIST_HISTORICAL
+		text = "RULE_HMC_FASCIST_HISTORICAL"
+		desc = "RULE_HMC_FASCIST_HISTORICAL_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNISM
+		text = "RULE_OPTION_HMC_DEMOCRATIC"
+		desc = "RULE_OPTION_HMC_DEMOCRATIC_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC_CONSERVETISM
+		text = "RULE_OPTION_HMC_DEMOCRATIC_CONSERVETISM"
+		desc = "RULE_OPTION_HMC_DEMOCRATIC_CONSERVETISM_AI_DESC"
+	}
+	option = {
+		name = NEUTRALITY
+		text = "RULE_OPTION_HMC_NEUTRALITY"
+		desc = "RULE_OPTION_HMC_NEUTRALITY_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
