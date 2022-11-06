@@ -1,0 +1,7 @@
+﻿ l_english:
+ custom_diff_strong_hmc:0 "해병대 강화"
+ HMC_AI_BEHAVIOR:0 "@HMC 해병대"
+ RULE_HMC_FASCIST_HISTORICAL:0 "황근출의 령도"
+ RULE_OPTION_HMC_DEMOCRATIC:0 "약간의 호의?"
+ RULE_OPTION_HMC_DEMOCRATIC_CONSERVETISM:0 "민족주의, 언제나 먹히는 그 이름"
+ RULE_OPTION_HMC_NEUTRALITY:0 "곽말풍 중령의 부활"
