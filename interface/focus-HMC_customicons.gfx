@@ -1,9 +1,16 @@
 spriteTypes = {	##Icon For: 
-	SpriteType = { 
-		name = "GFX_HMC_establishment_of_a_secret_government-312905"
-		texturefile = "gfx/interface/goals/GFX_HMC_establishment_of_a_secret_government-312905.dds"
+	SpriteType = {
+		name = "GFX_KOR_justice_wins"
+		texturefile = "gfx/interface/goals/GFX_KOR_justice_wins.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_KOR_unified_speech"
+		texturefile = "gfx/interface/goals/GFX_KOR_unified_speech.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_unification_and_justice"
+		texturefile = "gfx/interface/goals/GFX_KOR_unification_and_justice.dds"
+	}
 	##Icon Shine For: 
 	SpriteType = { 
 		name = "GFX_HMC_establishment_of_a_secret_government-312905_shine"

@@ -268,7 +268,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = HMC_weapons_to_the_citizens  } prerequisite = { focus = HMC_a_shot_of_gunfire  focus = HMC_engraved_mark  } prerequisite = { focus = HMC_sound_of_a_second_hand_in_an_armory  }
+		prerequisite = { focus = HMC_weapons_to_the_citizens focus = HMC_sound_of_a_second_hand_in_an_armory }
+		prerequisite = { focus = HMC_a_shot_of_gunfire  focus = HMC_engraved_mark  }
+		# prerequisite = { focus = HMC_sound_of_a_second_hand_in_an_armory  }
 	}
 
 	#The day of operation is approaching
@@ -372,7 +374,8 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = HMC_toward_the_citadel  } prerequisite = { focus = HMC_cooperate_with_resistance_organizations_in_manchuria  focus = HMC_general_strike  } prerequisite = { focus = HMC_urges_soviet_intervention  }
+		prerequisite = { focus = HMC_toward_the_citadel focus =  HMC_general_strike }
+		prerequisite = { focus = HMC_urges_soviet_intervention focus = HMC_cooperate_with_resistance_organizations_in_manchuria }
 	}
 
 	#Ask Russia for help

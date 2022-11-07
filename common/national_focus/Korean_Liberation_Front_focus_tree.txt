@@ -11,7 +11,7 @@ focus_tree = {
 	#Justice wins
 	focus = {
 		id = KOR_justice_wins
-		icon = GFX_KOR_justice_wins-311373
+		icon = GFX_KOR_justice_wins
 		x = 3
 		y = 0
 		cost = 3
@@ -23,7 +23,7 @@ focus_tree = {
 	#stabilization of the situation
 	focus = {
 		id = KOR_stabilization_of_the_situation
-		icon = GFX_KOR_stabilization_of_the_situation-311375
+		icon = GFX_KOR_stabilization_of_the_situation
 		x = 1
 		y = 1
 		cost = 3
@@ -36,7 +36,7 @@ focus_tree = {
 	#consolidation of the Marine Corps forces
 	focus = {
 		id = KOR_consolidation_of_the_marine_corps_forces
-		icon = GFX_KOR_consolidation_of_the_marine_corps_forces-312059
+		icon = GFX_KOR_consolidation_of_the_marine_corps_forces
 		x = 4
 		y = 2
 		cost = 3
