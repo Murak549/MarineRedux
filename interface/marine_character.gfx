@@ -27,4 +27,8 @@ spriteTypes={
 		name="GFX_syngman"
 		texturefile="gfx/leaders/HMC/portrait_large_syngman.dds"
 	}
+	spriteType={
+		name="GFX_portrait_hmc_commander_1"
+		texturefile="gfx/leaders/HMC/portrait_large_marine_commander_1.dds"
+	}
 }
