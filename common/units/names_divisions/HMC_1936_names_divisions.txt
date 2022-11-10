@@ -18,7 +18,7 @@
 
 
 HMC_MAR_01 = {
-	name = "Odo-Marine Divisions"
+	name = "Odo-Marine Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
 	division_types = { "marine" }
@@ -31,7 +31,7 @@ HMC_MAR_01 = {
 }
 
 HMC_INF_01 = {
-	name = "Suyuk Divisions"
+	name = "Suyuk Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
 	division_types = { "infantry" }
@@ -44,7 +44,7 @@ HMC_INF_01 = {
 }
 
 HMC_CAV_01 = {
-	name = "Malttalphil Divisions"
+	name = "Malttalphil Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
 	division_types = { "Cavalry" }
