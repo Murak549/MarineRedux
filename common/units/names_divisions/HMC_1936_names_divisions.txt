@@ -1,23 +1,5 @@
-# TEMPLATE
-
-
-
-# NEP_MTN_01 = { # DIVISIONS_NAME_GROUP, set in your units folder
-# 	name = "Mountain Divisions" # The name you want for your name list, can either be a string or in quotes.
-# 	for_countries = { NEP } # Sets what countries can use this name list, change NEP to your countries tag
-# 	can_use = { always = yes } # A country scope trigger that can lock or unlock a division name group given certain triggers
-# 	division_types = { "mountaineers" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
-# 	fallback_name = "%d Nepali Dibhijana" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
-# 	link_numbering_with = { NEP_INF_01 } # Alternative to fallback name, if you run out of numbers in this group you can use another list after it.
-# 	ordered = {
-# 		1 = { "%d Nepali Dibhijana" } # The first division.
-# 		2 = { "%d Nepali Dibhijana" } # Numbers must always start from 1 and go up
-# 		4 = { "%d Nepali Dibhijana" } # The numbers do not need to be sequential
-# 	}
-# }
-
-
-HMC_MAR_01 = {
+HMC_MAR_01 = 
+{
 	name = "Odo-Marine Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
@@ -30,7 +12,8 @@ HMC_MAR_01 = {
 	}
 }
 
-HMC_INF_01 = {
+HMC_INF_01 = 
+{
 	name = "Suyuk Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
@@ -43,11 +26,12 @@ HMC_INF_01 = {
 	}
 }
 
-HMC_CAV_01 = {
+HMC_CAV_01 = 
+{
 	name = "Malttalphil Sadan"
 	for_countries = { HMC }
 	can_use = { always = yes }
-	division_types = { "Cavalry" }
+	division_types = { "cavalry" }
 	fallback_name = "Je %d Malttalphil Sadan"
 	ordered = {
 		1 = { "Je %d Malttalphil Sadan 'Mejiro McQueen'" }
@@ -60,5 +44,35 @@ HMC_CAV_01 = {
 		8 = { "Je %d Malttalphil Sadan 'Symboli Rudolf'" }
 		9 = { "Je %d Malttalphil Sadan 'Grass Wonder'" }
 		10 = { "Je %d Malttalphil Sadan 'Daiwa Scarlet'" }
+	}
+}
+
+HMC_MOT_01 = 
+{
+	name = "Motorized Unit"
+
+	for_countries = { HMC }
+
+	can_use = { always = yes }
+
+	link_numbering_with = { HMC_CAV_01 }
+
+	division_types = { "motorized" }
+
+	fallback_name = "Je %d Auto-Malttalphil Sadan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "Je %d Auto-Malttalphil Sadan 'Mejiro McQueen'" }
+		2 = { "Je %d Auto-Malttalphil Sadan 'Gold Ship'" }
+		3 = { "Je %d Auto-Malttalphil Sadan 'Sakura Bakusin O'" }
+		4 = { "Je %d Auto-Malttalphil Sadan 'Narita Brian'" }
+		5 = { "Je %d Auto-Malttalphil Sadan 'Special Week'" }
+		6 = { "Je %d Auto-Malttalphil Sadan 'Silence suzuka'" }
+		7 = { "Je %d Auto-Malttalphil Sadan 'Oguri Cap'" }
+		8 = { "Je %d Auto-Malttalphil Sadan 'Symboli Rudolf'" }
+		9 = { "Je %d Auto-Malttalphil Sadan 'Grass Wonder'" }
+		10 = { "Je %d Auto-Malttalphil Sadan 'Daiwa Scarlet'" }
 	}
 }
