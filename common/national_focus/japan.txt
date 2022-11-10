@@ -155,6 +155,25 @@
 				}
 			}
 			set_capital = { state = 532 }
+				# add_country_leader_role = {
+				# 	character = JAP_commander_1
+				# 	desc="ABCD"
+				# 	country_leader = {
+				# 		expire = "1965.1.1"
+				# 		ideology = rexism
+				# 		promote_leader = yes
+				# 	}
+				# }
+			JAP_commander_1 = {
+				add_country_leader_role = {
+						country_leader = {
+								expire = "1955.1.1"
+								ideology = despotism
+								# traits = { imperial_connections }
+							}
+						promote_leader = yes
+					}
+			}
 			hidden_effect = {
 				if = {
 					limit = {
