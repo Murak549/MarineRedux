@@ -21,11 +21,44 @@ HMC_MAR_01 = {
 	name = "Odo-Marine Divisions"
 	for_countries = { HMC }
 	can_use = { always = yes }
-	division_types = { "MARINE" }
+	division_types = { "marine" }
 	fallback_name = "Je %d Haebyeong Sadan"
 	ordered = {
 		1 = { "Je %d Haebyeong Sadan 'CheongRyong'" }
-		1 = { "Je %d Haebyeong Sadan 'GongRyong'" }
-		1 = { "Je %d Haebyeong Sadan 'HeukRyong'" }
+		2 = { "Je %d Haebyeong Sadan 'GongRyong'" }
+		3 = { "Je %d Haebyeong Sadan 'HeukRyong'" }
+	}
+}
+
+HMC_INF_01 = {
+	name = "Suyuk Divisions"
+	for_countries = { HMC }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Je %d Suyuk Sadan"
+	ordered = {
+		1 = { "Je %d Suyuk Sadan 'Giyeol'" }
+		2 = { "Je %d Suyuk Sadan 'Jinpa'" }
+		3 = { "Je %d Suyuk Sadan 'Ak!'" }
+	}
+}
+
+HMC_CAV_01 = {
+	name = "Malttalphil Divisions"
+	for_countries = { HMC }
+	can_use = { always = yes }
+	division_types = { "Cavalry" }
+	fallback_name = "Je %d Malttalphil Sadan"
+	ordered = {
+		1 = { "Je %d Malttalphil Sadan 'Mejiro McQueen'" }
+		2 = { "Je %d Malttalphil Sadan 'Gold Ship'" }
+		3 = { "Je %d Malttalphil Sadan 'Sakura Bakusin O'" }
+		4 = { "Je %d Malttalphil Sadan 'Narita Brian'" }
+		5 = { "Je %d Malttalphil Sadan 'Special Week'" }
+		6 = { "Je %d Malttalphil Sadan 'Silence suzuka'" }
+		7 = { "Je %d Malttalphil Sadan 'Oguri Cap'" }
+		8 = { "Je %d Malttalphil Sadan 'Symboli Rudolf'" }
+		9 = { "Je %d Malttalphil Sadan 'Grass Wonder'" }
+		10 = { "Je %d Malttalphil Sadan 'Daiwa Scarlet'" }
 	}
 }
