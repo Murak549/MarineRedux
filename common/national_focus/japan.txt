@@ -358,6 +358,9 @@
 		prerequisite = { focus = JAP_the_day_of_order }
 		prerequisite = { focus = JAP_marine_research }
 		relative_position_id = JAP_the_day_of_order
+		completion_reward = {
+			load_focus_tree = JapanMarine
+		}
 	}
 	focus = {
 		id = JAP_the_unthinkable_option

@@ -1,0 +1,567 @@
+focus_tree = {
+	id = JapanMarine
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+			
+			
+		}
+	}
+	default = no
+	focus = {
+		id = JAP_elect_leader
+		icon = GFX_goal_unknown
+		cost = 1.00
+		mutually_exclusive = {
+			focus = JAP_ABCD
+		}
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = JAP_ABCD
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = JAP_elect_leader
+		}
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = JAP_command_of_pohang
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = JAP_elect_leader
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = JAP_inside_inside
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = JAP_elect_leader
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = JAP_hello_commander
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = JAP_inside_inside
+		}
+		prerequisite = {
+			focus = JAP_command_of_pohang
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = JAP_leader_from_pohang
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_hello_commander
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = JAP_east_pohang_province_govern
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_leader_from_pohang
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = JAP_milita
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_leader_from_pohang
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = JAP_leader_from_japan
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_hello_commander
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = JAP_natamura
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_leader_from_japan
+		}
+		mutually_exclusive = {
+			focus = JAP_odohito
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = JAP_inside
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = JAP_natamura
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = JAP_marine_university
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = JAP_inside
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = JAP_odo_educate
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = JAP_inside
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = JAP_outside
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_natamura
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = JAP_jigye_schluss
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_outside
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = JAP_puppet_odohito
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_jigye_schluss
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = JAP_ban_run
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_jigye_schluss
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = JAP_second_simonoseki
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_outside
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = JAP_war_industry
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_second_simonoseki
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = JAP_arm_the_people2
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_second_simonoseki
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = JAP_odohito
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_leader_from_japan
+		}
+		mutually_exclusive = {
+			focus = JAP_natamura
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = JAP_long_knives_night
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_odohito
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = JAP_get_manchuria
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_outside
+			focus = JAP_long_knives_night
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = JAP_arrest_pohang
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_long_knives_night
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = JAP_zhilseo_uprising
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_arrest_pohang
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = JAP_seize_pohang_marine_division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_long_knives_night
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = JAP_uprising_japanese_nation_spirit
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_seize_pohang_marine_division
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = JAP_daebonyoung
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_uprising_japanese_nation_spirit
+		}
+		prerequisite = {
+			focus = JAP_zhilseo_uprising
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = JAP_DAEYOUNGBON
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_odohito
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = JAP_zaibutsu_odohwa
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_DAEYOUNGBON
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = JAP_rural_for_marine
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_zaibutsu_odohwa
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = JAP_odo_building
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_zaibutsu_odohwa
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = JAP_arm_the_people
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_rural_for_marine
+		}
+		prerequisite = {
+			focus = JAP_odo_building
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = JAP_outside_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_odohito
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = JAP_friend_chosen
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_outside_policy
+		}
+		mutually_exclusive = {
+			focus = JAP_attack_chosen
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = JAP_attack_chosen
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_outside_policy
+		}
+		mutually_exclusive = {
+			focus = JAP_friend_chosen
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = JAP_attack_taiwan_republic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_attack_chosen
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = JAP_end_of_pohang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_attack_taiwan_republic
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = JAP_marine_comrade_koeiken
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_east_pohang_province_govern
+		}
+		prerequisite = {
+			focus = JAP_milita
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = JAP_showa_yusin
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_arm_the_people
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = JAP_arm_the_people1
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = JAP_inside
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = JAP_asia_marine_theory
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_get_manchuria
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = JAP_invite_pohang_settlers
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_arm_the_people1
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = JAP_expand_suyuk
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = JAP_marine_university
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = JAP_pokdong_remove
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_odo_educate
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = JAP_liberia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_outside_policy
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = JAP_attack_sia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_end_of_pohang
+			focus = JAP_friend_chosen
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = JAP_claim_sahalin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_end_of_pohang
+		}
+		x = 40
+		y = 9
+
+	}
+}
