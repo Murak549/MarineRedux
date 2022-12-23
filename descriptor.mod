@@ -1,4 +1,4 @@
-version="1.11"
+version="1.12.5"
 dependencies={
 	"Korean Language"
 }
@@ -18,5 +18,5 @@ tags={
 	"Translation"
 	"Utilities"
 }
-name="Hearts of Marine I"
-supported_version="1.11.*"
+name="The Marine"
+supported_version="1.12.*"
