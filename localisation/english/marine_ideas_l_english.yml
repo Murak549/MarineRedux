@@ -1,11 +1,11 @@
 ﻿l_english: 
- HMC_civilwar:0 "황근출파의 반란!"
- HMC_giyeol:0 "해병성채의 기열들"
- HMC_people_dont_agree_us:0 "우리를 인정하지 않는 시민들"
- HMC_nobody_want_war:0 "전쟁을 원치 않는 시민들"
- HMC_nobody_want_war_2:0 "전쟁을 원치 않는 시민들"
+ HMC_giyeol:0 "기열스러운 해병성채"
+ HMC_people_dont_agree_us:0 "기열 시민"
+#  HMC_nobody_want_war:0 "악기바리를 잃은 아쎄이"    삭제 예정
+#  HMC_nobody_want_war_2:0 "악기바리를 잃은 아쎄이"  삭제 예정
+ HMC_assei_gihap:0 "기합스런 아쎄이"
  HMC_no_rule:0 "무질서한 사회"
- HMC_people_dont_agree_us_2:0 "우리를 인정하지 않는 시민들"
+ HMC_people_dont_agree_us_2:0 "기열스런 시민들"
  HMC_recruiting_highly_educated:0 "고학력자 등용"
  HMC_recruiting_highly_educated_2:0 "고학력자 등용"
  HMC_fear_of_3:0 "고3에 대한 공포"
