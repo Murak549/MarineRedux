@@ -11,8 +11,7 @@ leader_traits = {
 	}
 	scared_airforce = {
 		random = no
-		political_power_factor = -0.25
-		political_power_cost = 0.25
+		political_power_factor = -0.50
 	}
 }
 
