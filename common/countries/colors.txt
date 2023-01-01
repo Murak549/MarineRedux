@@ -1,6 +1,6 @@
 #reload countrycolors
 HMC = {
-	color = rgb { 255 25 25 }
+	color = rgb { 255 18 18 }
 	color_ui = rgb { 255 0 0 }
 }
 
