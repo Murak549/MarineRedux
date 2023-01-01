@@ -1,0 +1,83 @@
+HMC_land_name_odo = {
+    HMC_victory_point_name_odo = {
+        icon = jap_conquer_china
+        available = {
+			has_idea = HMC_torture
+		}
+        remove_effect = {
+            hidden_effect = {
+                796 = {
+                    set_state_name = "북딱골라"
+                }
+            }
+            set_province_name = {
+				id = 4056
+				name = "마린시티해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 4086
+				name = "대구해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 10110
+				name = "광주해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 1177
+				name = "감귤해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 13262
+				name = "대전해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 7221
+				name = "인천해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 7125
+				name = "서울해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 1003
+				name = "해주해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 10065
+				name = "황근주르해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 7171
+				name = "평양해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 4052
+				name = "진남포해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 848
+				name = "원산해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 11835
+				name = "신의주해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 3981
+				name = "함흥해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 6822
+				name = "청진해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 6944
+				name = "나진해병직할오도짜세기합광역특별시"
+			}
+            set_province_name = {
+				id = 525
+				name = "오도짜세기합키이우딕슨서킨조특별시"
+			}
+        }
+    }
+}
