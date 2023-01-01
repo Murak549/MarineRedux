@@ -1,50 +1,49 @@
 ideas = {
     country = {
-		HMC_welcome_heros = {
-			picture = FRA_scw_intervention_republicans_focus
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			modifier = {
-				political_power_factor = 0.25
-			}
-		}
-		HMC_constitution_1 = {
-			picture = generic_constitutional_guarantees
+		HMC_continuing_airforce = {
+			picture = generic_air_payment
 			allowed = {
 				always = no
 			}
 			allowed_civil_war = {
 				always = yes
 			}
+			removal_cost = 0
 			modifier = {
+				army_speed_factor = -0.25
+				dig_in_speed_factor = -0.5
 			}
 		}
-		HMC_constitution = {	
-			picture = generic_constitutional_guarantees
+		HMC_airforce = {
+			picture = generic_air_research
 			allowed = {
 				always = no
 			}
 			allowed_civil_war = {
 				always = yes
 			}
+			removal_cost = 0
 			modifier = {
-			}
-		}
-		HMC_nobody_want_war_2 = {
-			picture = chi_war_of_resistance
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = 1
-			modifier = {
-				war_support_factor = -0.05
+				air_fuel_consumption_factor = 0.5
+				airforce_intel_decryption_bonus = -75
+				airforce_intel_factor = -0.5
+				airforce_intel_to_others = -65
+				air_maximum_speed_factor = -0.5
+				air_mission_efficiency = -0.5
+				air_mission_xp_gain_factor = -0.25
+				air_nav_efficiency = -0.5
+				air_night_penalty = 2
+				air_power_projection_factor = -0.5
+				air_range_factor = 0.75
+				air_strategic_bomber_bombing_factor = -0.8
+				air_superiority_detect_factor = -0.5
+				air_superiority_efficiency = -0.9
+				air_training_xp_gain_factor = -0.25
+				air_weather_penalty = 0.85
+				air_wing_xp_loss_when_killed_factor = 0.5
+				army_bonus_air_superiority_factor = -0.5
+				enemy_army_bonus_air_superiority_factor = 0.90
+				# ground_attack_factor = -0.7 얜 좀 애매해서
 			}
 		}
 		HMC_nobody_want_war = {
@@ -121,7 +120,6 @@ ideas = {
 				army_core_attack_factor = 0.25
 				army_defence_factor = -0.75
 				army_core_defence_factor = 0.25
-				
 			}
 		}
         HMC_conscripting_assembly = {
@@ -140,6 +138,7 @@ ideas = {
 			modifier = {
                 conscription = 0.25
 				special_forces_cap = 5
+				civilian_intel_to_others = -40
 			}
 		}
 		HMC_recruiting_highly_educated = {
