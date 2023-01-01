@@ -88,7 +88,7 @@
 					name = "가나자와해병직할오도짜세기합광역특별시"
 				}
 				set_province_name = {
-					id = 1177
+					id = 1117
 					name = "니가타해병직할오도짜세기합광역특별시"
 				}
 				set_province_name = {
@@ -113,6 +113,9 @@
 				}
 				282 = {
 					set_state_name = "신포항"
+				}
+				911 = {
+					set_state_name = "오도짜세포항"
 				}
 				
 			}
@@ -144,7 +147,6 @@
 		completion_reward = {
 			add_ideas = HMC_conscripting_assembly
 			add_ideas = HMC_no_rule
-			# add_ideas = HMC_torture
 			set_cosmetic_tag = JAP_MARINE
 			hidden_effect = {
 				if = {
@@ -155,21 +157,11 @@
 				}
 			}
 			set_capital = { state = 532 }
-				# add_country_leader_role = {
-				# 	character = JAP_commander_1
-				# 	desc="ABCD"
-				# 	country_leader = {
-				# 		expire = "1965.1.1"
-				# 		ideology = rexism
-				# 		promote_leader = yes
-				# 	}
-				# }
 			JAP_commander_1 = {
 				add_country_leader_role = {
 						country_leader = {
 								expire = "1955.1.1"
 								ideology = despotism
-								# traits = { imperial_connections }
 							}
 						promote_leader = yes
 					}
@@ -204,11 +196,13 @@
 				capital = 282
 				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 525 }
 				keep_unit_leaders = {
-					750 751 752
+					# 750 751 752
 				}
 			}
-			custom_effect_tooltip = the_day_of_order_TT
+			# custom_effect_tooltip = the_day_of_order_TT
 			remove_ideas = JAP_duplicate_research_efforts
+			remove_ideas = JAP_zaibatsus
+			remove_ideas = state_shinto
 			remove_ideas = JAP_militarism
 			CHI = {
 				set_state_owner = 609
@@ -292,61 +286,58 @@
 						owner = ROOT
 					}
 				}
-			}
-			hidden_effect = {
 				random_other_country = {
 					limit = {
 						original_tag = JAP
 						has_government = fascism
 					}
 					hidden_effect = {
-						division_template = { name = "Japanese Loyalist Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+						division_template = { name = "Empire of Japan Kangun" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
 						529 = {
 							create_unit = { 
-								division = "name = \"1. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"1. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"2. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"2. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"3. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"3. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"4. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"4. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"5. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"5. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 						}
-						530 = {
+						531 = {
 							create_unit = { 
-								division = "name = \"6. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"6. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"7. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"7. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 						}
 						533 = {
 							create_unit = { 
-								division = "name = \"8. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								division = "name = \"8. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
 								owner = PREV
 							}
 							create_unit = { 
-								division = "name = \"9. Japanese Loyalist Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
-								owner = PREV #여기 까지
+								division = "name = \"9. Japanese Battotai\" division_template = \"Empire of Japan Kangun\" start_experience_factor = 1" 
+								owner = PREV 
 							}
 						}
 					}
 				}
 			}
-			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -357,6 +348,9 @@
 		cost = 5
 		prerequisite = { focus = JAP_the_day_of_order }
 		prerequisite = { focus = JAP_marine_research }
+		available = {
+			has_civil_war = no
+		}
 		relative_position_id = JAP_the_day_of_order
 		completion_reward = {
 			load_focus_tree = JapanMarine
