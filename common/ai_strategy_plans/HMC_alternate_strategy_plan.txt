@@ -1,33 +1,33 @@
-HMC_alternate_plan_communism = {
-	name = "Marine Communism Plan" #약간의 hoi
-	desc = "God Save our Country"
+# HMC_alternate_plan_communism = {
+# 	name = "Marine Communism Plan" #약간의 hoi
+# 	desc = "God Save our Country"
 
-	allowed = {
-		original_tag = HMC
-	}
-	enable = {
-		OR = {
-			has_game_rule = {
-				rule = HMC_ai_behavior
-				option = COMMUNISM
-			}
-		}
-	}
-	abort = {
+# 	allowed = {
+# 		original_tag = HMC
+# 	}
+# 	enable = {
+# 		OR = {
+# 			has_game_rule = {
+# 				rule = HMC_ai_behavior
+# 				option = COMMUNISM
+# 			}
+# 		}
+# 	}
+# 	abort = {
 
-	}
-	ai_national_focuses = {
-        HMC_organizing_strike
-        HMC_establishment_of_a_secret_government
-        HMC_rally_of_supporters
-        HMC_cooperationwiththeleft
-        HMC_slight_favor
-	}
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
+# 	}
+# 	ai_national_focuses = {
+#         HMC_organizing_strike
+#         HMC_establishment_of_a_secret_government
+#         HMC_rally_of_supporters
+#         HMC_cooperationwiththeleft
+#         HMC_slight_favor
+# 	}
+# 	weight = {
+# 		factor = 1.0
+# 		modifier = {
+# 			factor = 1.0
+# 		}
+# 	}
 
-}
+# }

@@ -646,9 +646,9 @@ bookmarks = {
 				HMC_conscripting_assembly
 			}
 			focuses = {
-				HMC_the_path_of_Marine
-				HMC_resurrection_of_Gwak
-				HMC_organizing_strike
+				# HMC_the_path_of_Marine
+				# HMC_resurrection_of_Gwak
+				# HMC_organizing_strike
 			}
 		}	
 		effect = {
