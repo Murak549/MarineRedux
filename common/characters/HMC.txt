@@ -2,10 +2,8 @@ characters={
     HMC_syngman={
         name=HMC_syngman
         portraits={
-            portraits={
-                civilian={
-                    large=GFX_portrait_hmc_syngman_large
-                }
+            civilian={
+                large=GFX_portrait_hmc_syngman_large
             }
         }
         country_leader={
@@ -16,10 +14,8 @@ characters={
     HMC_kwae_heung_tae={
         name=HMC_kwae_heung_tae
         portraits={
-            portraits={
-                army={
-                    large=GFX_kwae_heung_tae
-                }
+            army={
+                large=GFX_kwae_heung_tae
             }
         }
         corps_commander={
@@ -32,7 +28,6 @@ characters={
             logistics_skill = 1
         }
     }
-
     HMC_gyeon_ssang_sub={
         name=HMC_gyeon_ssang_sub
         portraits={
@@ -105,7 +100,18 @@ characters={
             civilian={
                 large=GFX_portrait_hmc_hwang_large
             }
+            army = {
+                large=GFX_portrait_hmc_hwang_large
+            }
         }
+        field_marshal={
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+		}
         country_leader={
             ideology=liberalism
             traits={ dislikes_germany }
