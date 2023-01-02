@@ -1,0 +1,14 @@
+characters={ 
+    CMC_mao_zedong={
+        name=CMC_mao_zedong
+        portraits={
+            civilian={
+                large=GFX_portrait_cmc_maozedong
+            }
+        }
+        country_leader={
+            ideology=rexism
+            expire="1950.8.16"
+        }
+    }
+}

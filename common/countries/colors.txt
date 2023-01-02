@@ -4,6 +4,11 @@ HMC = {
 	color_ui = rgb { 255 0 0 }
 }
 
+CMC = {
+	color = rgb { 235 27 12 }
+	color_ui = rgb { 235 27 12 }
+}
+
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
