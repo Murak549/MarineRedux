@@ -33,6 +33,6 @@ spriteTypes={
 	}
 	spriteType={
 		name="GFX_portrait_cmc_maozedong"
-		texturefile="gfx/leaders/HMC/portrait_cmc_mao_zedong.dds"
+		texturefile="gfx/leaders/CMC/portrait_cmc_mao_zedong.dds"
 	}
 }
