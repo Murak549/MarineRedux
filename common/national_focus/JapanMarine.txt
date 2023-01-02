@@ -4,12 +4,13 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = JAP
-			
-			
+			tag = JAP			
 		}
 	}
 	default = no
+
+	continuous_focus_position = { x = 20 y = 2200 }
+
 	focus = {
 		id = JAP_elect_leader
 		icon = GFX_goal_unknown
@@ -30,7 +31,39 @@ focus_tree = {
 		}
 		x = 6
 		y = 0
-
+		completion_reward = {
+			load_focus_tree = japan_wtt_focus
+			unlock_national_focus = JAP_strengthen_civilian_government
+			unlock_national_focus = JAP_ally_with_the_zaibatsus
+			unlock_national_focus = JAP_research_spending
+			unlock_national_focus = JAP_purge_the_militarists
+			unlock_national_focus = JAP_the_showa_constitution
+			unlock_national_focus = JAP_pre_emptive_coup
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+				long_name = "새정치민주연합"
+				name = "새정치민주연합"
+			}
+			set_country_leader_name = {
+				ideology = democratic
+				name = "해병대 내각"
+			}
+			set_country_leader_portrait = {
+				ideology = democratic
+				portrait = GFX_portrait_hmc_commander_1
+			}
+			set_country_leader_name = {
+				ideology = fascism
+				name = "해병 막부"
+			}
+			set_country_leader_name = {
+				ideology = communism
+				name = "리쟈이밍"
+			}
+		}
 	}
 	focus = {
 		id = JAP_command_of_pohang
@@ -332,7 +365,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_DAEYOUNGBON
+		id = JAP_DAEYOUNGBO
 		icon = GFX_goal_unknown
 		cost = 8.00
 		prerequisite = {
@@ -347,7 +380,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 8.00
 		prerequisite = {
-			focus = JAP_DAEYOUNGBON
+			focus = JAP_DAEYOUNGBO
 		}
 		x = 32
 		y = 6
@@ -509,17 +542,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_expand_suyuk
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = JAP_marine_university
-		}
-		x = 7
-		y = 7
-
-	}
-	focus = {
 		id = JAP_pokdong_remove
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -562,6 +584,28 @@ focus_tree = {
 		}
 		x = 40
 		y = 9
+
+	}
+	focus = {
+		id = JAP_copy_HwangRyong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_marine_university
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = JAP_expand_suyuk
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_copy_HwangRyong
+		}
+		x = 7
+		y = 8
 
 	}
 }

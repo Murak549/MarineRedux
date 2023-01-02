@@ -6,80 +6,37 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.1.d
 	option = {
-	name = hmc.1.op1
-
+		name = ROKMC.1.a
+	}
+	option = {
+		name = ROKMC.1.b
+		load_focus_tree = generic_focus
+		# ai_will_do = {
+		# 	factor = 0
+		# 	modifier = { 비역사적일때만 가능하도록
+		# 		NOT = {
+		# 			focus
+		# 		}
+		# 	}
+		# }
 	}
 }
 country_event = {
 	id = ROKMC.2
 	title = ROKMC.2.t
-	picture = GFX_
-	is_triggered_only = yes
 	desc = ROKMC.2.d
-	option = {
-	name = ROKMC.2.A
-		set_cosmetic_tag = HMC_AIRFORCE
-
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = HMC
+		date > 1936.1.1
 	}
-
+	fire_only_once = yes
+	 
+	option = { #
+		name = ROKMC.2.a
+		set_global_flag = AIRFORCE_ATTACK
 	}
-country_event = {
-	id = ROKMC.3
-	title = ROKMC.3.t
-	picture = GFX_
-	is_triggered_only = yes
-	desc = ROKMC.3.d
-	option = {
-	name = ROKMC.3.A
-		set_party_name = {
-				ideology = neutrality
-				long_name = "대한제국 황실"
-				name = "대한제국 황실"
-			}
-		set_party_name = {
-				ideology = democratic
-				long_name = "자유민주당"
-				name = "자유민주당"
-			}
-		set_party_name = {
-				ideology = communism
-				long_name = "조선로동당"
-				name = "조선로동당"
-			}
-		set_party_name = {
-				ideology = fascism
-				long_name = "우리는파시스트당"
-				name = "파시년들"
-			}
-		HMC_Yi_Kang = {
-				add_country_leader_role = {
-						country_leader = {
-								expire = "1955.1.1"
-								ideology = despotism
-								traits = { imperial_connections }
-							}
-						promote_leader = yes
-					}
-			}
-
-	}
-
-	}
-country_event = {
-	id = ROKMC.4
-	title = ROKMC.4.t
-	picture = GFX_
-	is_triggered_only = yes
-	desc = ROKMC.4.d
-	option = {
-	name = ROKMC.4.A
-		HMC = {
-				change_tag_from = ROOT
-			}
-
-	}
-
-	}
+}
 country_event = {
 	id = ROKMC.5
 	title = ROKMC.5.t
@@ -369,65 +326,6 @@ country_event = {
 
 	}
 country_event = {
-	id = ROKMC.14
-	title = ROKMC.14.t
-	picture = GFX_
-	is_triggered_only = yes
-	desc = ROKMC.14.d
-	option = {
-	name = "이런 씨발, 폭도들을 잡아들여라!"
-			remove_ideas = HMC_torture
-			remove_ideas = HMC_giyeol
-			swap_ideas = {
-				add_idea = HMC_welcome_heros
-				remove_idea = HMC_people_dont_agree_us
-			}
-			add_political_power = 10
-			custom_effect_tooltip = 5_HMC_tt
-			set_politics = {
-				ruling_party = neutrality
-				last_election = "2017.3.9"
-				election_frequency = 60
-				elections_allowed = yes
-			}
-			set_party_name = {
-				ideology = neutrality
-				long_name = "해병주체 국민회의"
-				name = "해병주체 국민회의"
-			}
-			retire_character = HMC_Hwang_geun_chul_f
-			HMC_gwak_mal_pung = {
-				add_country_leader_role = {
-						country_leader = {
-								expire = "1955.1.1"
-								ideology = despotism
-								# traits = { imperial_connections }
-							}
-						promote_leader = yes
-					}
-			}
-		hidden_effect = {
-				start_civil_war = {
-						ideology = neutrality
-						size = 0.5
-						keep_unit_leaders_trigger = {
-								always = yes
-							}
-					}
-				set_popularities = {
-					neutrality = 83
-					fascism = 2
-					communism = 5
-					democratic = 10
-				}
-				retire_character = HMC_Hwang_geun_chul_c
-				retire_character = HMC_Hwang_geun_chul_n
-			}
-
-	}
-
-	}
-country_event = {
 	id = ROKMC.15
 	title = ROKMC.15.t
 	picture = GFX_report_event_generic_battle
@@ -470,8 +368,7 @@ country_event = {
 			}
 
 	}
-
-	}
+}
 country_event = {
 	id = ROKMC.16
 	title = ROKMC.16.t

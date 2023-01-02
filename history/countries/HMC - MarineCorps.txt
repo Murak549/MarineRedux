@@ -6,7 +6,6 @@ recruit_character = HMC_Hwang_geun_chul
 recruit_character = HMC_Hwang_geun_chul_f
 recruit_character = HMC_Hwang_geun_chul_n
 recruit_character = HMC_Hwang_geun_chul_c
-recruit_character = HMC_Yi_Kang
 recruit_character = HMC_park_chul_gon
 recruit_character = HMC_son_su_jal
 recruit_character = HMC_gyeon_ssang_sub
@@ -65,11 +64,8 @@ set_technology = {
 set_stability = 0.24
 set_war_support = 1
 add_ideas = {
-	HMC_conscripting_assembly
-	HMC_no_rule
-	HMC_giyeol
 	HMC_people_dont_agree_us
-	HMC_torture
+	HMC_continuing_airforce
 }
 
 if = {

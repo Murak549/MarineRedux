@@ -2,7 +2,6 @@
  JapanMarine:0 "해병대 정부 중점계통도" 
  JAP_the_march_of_strange_way:1 "새로운 방향으로 전진"
  JAP_the_march_of_strange_way_desc:0 "지도자가 뜻하는 방향이 때론 옳지 않을때도 있습니다.\n서쪽의 반도국가가 그렇듯이 우리도 해병들의 막부체제의 이로운점을 실행해보는것을 고려해봐야 합니다."
- # JAP_the_ultimate_unthinkable_option:0 "누구도 상상못한 선택지"
  err_focus:0 "해병대 비상 대책 위원회"
  JAP_approach_the_rikusentai:0 "해군 육전대 잠입"
  JAP_learn_at_west:0 "서쪽에서의 교훈"
@@ -15,8 +14,9 @@
  JAP_true_leader_problem:0 "진정한 지도자 문제"
  JAP_japanese_marine:0 "일본인 해병대원으로"
  JAP_we_need_Hwang:0 "우리는 황근출이 필요하다!"
+ JAP_attack_marine:0 "보급로 확보"
 
 
- the_day_of_order_TT:0 "§H식민지§!를 전부 §H반환§!합니다."
+#  the_day_of_order_TT:0 "§H식민지§!를 전부 §H반환§!합니다." 리워크 일본의 중점에 2차 직예군벌 따먹어야 하기 때문에 어쩔 수 없이 이건 수정 예정
 
  
