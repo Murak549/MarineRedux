@@ -1,8 +1,6 @@
-capital = 911
+capital = 600
 
 set_research_slots = 3
-
-#oob = "HMC_1936"
 
 starting_train_buffer = 3
 
@@ -57,23 +55,23 @@ add_ideas = {
 	HMC_continuing_airforce
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-	set_oob = "JAP_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-	set_oob = "HMC_1936_nsb"
-}
+# if = {
+# 	limit = {
+# 		NOT = { has_dlc = "No Step Back" }
+# 	}
+# 	set_technology = {
+# 		gwtank = 1
+# 		basic_light_tank = 1
+# 	}
+# 	set_oob = "JAP_1936"
+# }
+# if = {
+# 	limit = {
+# 		has_dlc = "No Step Back"
+# 	}
+# 	set_technology = {
+# 		gwtank_chassis = 1
+# 		basic_light_tank_chassis = 1
+# 	}
+# 	set_oob = "HMC_1936_nsb"
+# }
