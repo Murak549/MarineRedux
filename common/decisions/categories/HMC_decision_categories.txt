@@ -1,0 +1,5 @@
+HMC_land_name_odo = {
+    allowed = {
+        original_tag = HMC
+    }
+}
