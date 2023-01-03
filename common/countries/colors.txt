@@ -1,4 +1,9 @@
 #reload countrycolors
+SIC = {
+	color = rgb { 115 78 24 }
+	color_ui = rgb { 115 78 24 }
+}
+
 HMC = {
 	color = rgb { 255 18 18 }
 	color_ui = rgb { 255 0 0 }
