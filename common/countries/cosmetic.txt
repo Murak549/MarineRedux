@@ -8,6 +8,11 @@ JAP_MARINE = {
 	color_ui = rgb { 255 0 0 }
 }
 
+JAP_HMC = {
+	color = rgb { 255 25 25 }
+	color_ui = rgb { 255 0 0 }
+}
+
 CHI_MARINE = {
 	color = rgb { 255 25 25 }
 	color_ui = rgb { 255 0 0 }
