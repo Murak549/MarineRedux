@@ -4,6 +4,11 @@ SIC = {
 	color_ui = rgb { 115 78 24 }
 }
 
+SAC = {
+	color = rgb { 0 11 92 }
+	color_ui = rgb { 0 11 92 }
+}
+
 SND = {
 	color = rgb { 156 83 16 }
 	color_ui = rgb { 156 83 16 }

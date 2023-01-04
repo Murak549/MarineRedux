@@ -181,7 +181,7 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 
 
 
-// CAMERA_MIN_HEIGHT = 5.0,					defines.lua   (reload defines)
+// CAMERA_MIN_HEIGHT = 50.0,					defines.lua   (reload defines)
 // CAMERA_MAX_HEIGHT = 3000.0,					defines.lua   (reload defines)
 
 // --------------------------------------------------------------
@@ -192,10 +192,10 @@ static const float GB_CAM_MIN = 0.0f;
 static const float GB_CAM_MAX = 1.0f;
 static const float GB_CAM_MAX_FILLING_CLAMP = 1.0f; // 0 to 1 value for clamping the fill when camera is at max distance
 static const float GB_THRESHOLD = 0.01f; // interpolation time
-static const float GB_THRESHOLD2 = 0.1f; // interpolation time
+static const float GB_THRESHOLD2 = 0.15f; // interpolation time
 //static const float3 GB_OUTLINE_COLOR = float3( 0.0f, 0.0f, 0.0f );
 static const float GB_OUTLINE_CUTOFF_SEA = 0.990f; // Magic number to balance cutoff on edges without neighbor (over Sea)
-static const float GB_OPACITY_NEAR = 0.5f; // Transparency when camera is near
+static const float GB_OPACITY_NEAR = 1.0f; // Transparency when camera is near
 static const float GB_OPACITY_FAR = 1.0f;  // Transparency when camera is far
 static const float BORDER_NIGHT_DESATURATION_MAX = 0.2f; // how much border colors can get desaturated at night. 1.0f is full grey
 static const float BORDER_FOW_REMOVAL_FACTOR = 1.0f; // How much of the FOW that is removed from the borders. 1.0f is no FOW
