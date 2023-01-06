@@ -1,5 +1,5 @@
 ﻿l_english: 
- HMC_giyeol:0 "기열스러운 해병성채"
+ HMC_giyeol:0 "기열찐빠"
  HMC_people_dont_agree_us:0 "기열 시민"
 #  HMC_nobody_want_war:0 "악기바리를 잃은 아쎄이"    삭제 예정
 #  HMC_nobody_want_war_2:0 "악기바리를 잃은 아쎄이"  삭제 예정
@@ -12,3 +12,12 @@
  HMC_marine_barrack:0 "해병성채"
  HMC_airforce:0 "공군에게 겁먹음"
  HMC_continuing_airforce:0 "계속되는 공군의 습격"
+
+
+ #상해방공자치정부
+ SAC_1936_empire_budget:0 "1936 제국 예산"
+ SAC_1937_empire_budget:0 "1937 제국 예산"
+ SAC_1938_empire_budget:0 "1938 제국 예산"
+ SAC_1939_empire_budget:0 "1939 제국 예산"
+ SAC_CHINA_FRONTLINE:0 "중국의 최전선"
+ SAC_ANTI_COMMUNISM:0 "방공정부"

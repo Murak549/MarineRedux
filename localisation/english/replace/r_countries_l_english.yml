@@ -20,8 +20,14 @@
  CMC_democratic:0 "국민당 해병위원회"
 
  SIC:0 "사천군벌"
+ SIC_neutrality:0 "사천군벌"
+ SIC_DEF:0  "사천군벌"
 
  SND:0 "산동군벌"
+ SND_ADJ:0 "산동군벌"
+ SND_DEF:0  "산동군벌"
 
  SAC:0 "상해방공자치정부"
+ SAC_ADJ:0 "상해방공자치정부"
+ SAC_DEF:0  "상해방공자치정부"
 

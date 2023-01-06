@@ -1,0 +1,39 @@
+state={
+	id=922
+	name="STATE_922"
+	provinces={
+		1139 4114 4144 4606 7074
+	}
+	history={
+		owner = CMC
+		add_core_of = CMC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		1938.10.25 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+
+			}
+			JAP = {
+				set_province_controller = 1139 
+				set_province_controller = 4114
+				set_province_controller = 4144
+				set_province_controller = 4606
+				set_province_controller = 7074
+			}
+
+		}
+
+	}
+	manpower=8572450
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

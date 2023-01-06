@@ -1,5 +1,17 @@
 ﻿l_english:
+
+ #해병대 정당
  HMC_neutrality_party:0 "해병성채"
  HMC_democratic_party:0 "§t(기열)§!"
  HMC_fascism_party:0 "해병성채"
  HMC_communism_party:0 "§t(기열)§!"
+
+ #중화(인)민(공화)국 해상육전대 전우회
+ CMC_communism_party:0 "천안문 성채"
+ CMC_fascism_party:0 "천안문 성채"
+ CMC_neutrality_party:0 "천안문 성채"
+ CMC_democratic_party:0 "§t(기열)§!"
+
+ #상해방공자치정부 정당
+ SAC_communism_party:0 "중국 공산당 상하이방"
+ SAC_fascism_party:0 "상해방공자치정부" 

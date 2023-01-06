@@ -1,0 +1,127 @@
+add_namespace = Shanghai
+country_event = {
+	id = Shanghai.1
+	title = Shanghai.1.t
+	desc = Shanghai.1.d
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = SAC
+		date > 1937.1.1
+	}
+	fire_only_once = yes
+	 
+	option = { #
+		name = Shanghai.1.a
+		swap_ideas = {
+            remove_idea = SAC_1936_empire_budget
+            add_idea = SAC_1937_empire_budget
+        }
+	}
+}
+country_event = {
+	id = Shanghai.2
+	title = Shanghai.2.t
+	desc = Shanghai.2.d
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = SAC
+		date > 1938.1.1
+	}
+	fire_only_once = yes
+	 
+	option = { #
+		name = Shanghai.2.a
+		swap_ideas = {
+            remove_idea = SAC_1937_empire_budget
+            add_idea = SAC_1938_empire_budget
+        }
+	}
+}
+country_event = {
+	id = Shanghai.3
+	title = Shanghai.3.t
+	desc = Shanghai.3.d
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = SAC
+		date > 1939.1.1
+	}
+	fire_only_once = yes
+	 
+	option = { #
+		name = Shanghai.3.a
+		swap_ideas = {
+            remove_idea = SAC_1938_empire_budget
+            add_idea = SAC_1939_empire_budget
+        }
+	}
+}
+country_event = {
+	id = Shanghai.4
+	title = Shanghai.4.t
+	desc = Shanghai.4.d
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = SAC
+		date > 1940.1.1
+	}
+	fire_only_once = yes
+	 
+	option = { #Okay
+		name = Shanghai.4.a
+        ai_will_do = {
+            factor = 10
+        }
+		JAP = {
+            annex_country = {
+                target = SAC
+                transfer_troops = yes
+            }
+        }
+	}
+    option = { #Fuck You Bitch
+        name = Shanghai.4.b
+        JAP = {
+            end_puppet = SAC
+            # create_wargoal = {
+            #     type = puppet_wargoal_focus 게이 특) 명분 가지고 선전포고 안함
+            #     target = SAC
+            # }
+            declare_war_on = {
+                target = SAC
+                type = annex_everything
+            }
+        }
+        hidden_effect = {
+            remove_ideas = {
+                SAC_1936_empire_budget
+                SAC_1937_empire_budget
+                SAC_1938_empire_budget
+                SAC_1939_empire_budget
+            }
+        }
+    }
+}
+
+news_event = { #Shanghai agreed at annex
+	id = Shanghai.1001
+	title = Shanghai.1001.t
+	desc = Shanghai.1001.d
+	# picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	 
+	option = { #Okay
+		name = Shanghai.1001.a
+	}
+}
+news_event = { #Shanghai agreed at annex
+	id = Shanghai.1002
+	title = Shanghai.1002.t
+	desc = Shanghai.1002.d
+	# picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	 
+	option = { #Okay
+		name = Shanghai.1002.a
+	}
+}

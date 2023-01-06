@@ -369,12 +369,12 @@ if = {
 		has_dlc = "Together for Victory"
 		not = { has_dlc = "Waking the Tiger" }
 	}
+	# set_autonomy = {
+	# 	target = MEN
+	# 	autonomous_state = autonomy_integrated_puppet
+	# } TODO
 	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = MAN
+		target = SAC
 		autonomous_state = autonomy_integrated_puppet
 	}
 }
@@ -390,7 +390,7 @@ if = {
 		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
-		target = MAN
+		target = SAC
 		autonomous_state = autonomy_puppet
 	}
 }
@@ -403,7 +403,7 @@ if = {
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 	set_autonomy = {
-		target = MAN
+		target = SAC
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }

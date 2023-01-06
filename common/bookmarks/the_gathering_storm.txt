@@ -364,6 +364,20 @@ bookmarks = {
 				MAN_claim_the_mandate_of_heaven
 			}
 		}
+		"SAC"={
+			minor = yes
+			history = "SAC_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				SAC_1936_empire_budget
+				SAC_CHINA_FRONTLINE
+			}
+			focuses = {
+				# MAN_obedience
+				# MAN_independence_war
+				# MAN_claim_the_mandate_of_heaven
+			}
+		}
 		
 		"GXC"={
 			minor = yes
@@ -392,8 +406,8 @@ bookmarks = {
 				CHI_provoke_border_clashes
 				CHI_join_the_chinese_soviet
 			}
-		}		
-		"SHX"={
+		}			
+		"SIC"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -406,7 +420,7 @@ bookmarks = {
 				CHI_provoke_border_clashes
 				CHI_join_the_chinese_soviet
 			}
-		}		
+		}			
 		"XSM"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
@@ -422,6 +436,20 @@ bookmarks = {
 			}
 		}		
 		"SIK"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"SND"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
