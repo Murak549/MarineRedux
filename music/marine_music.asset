@@ -1,0 +1,50 @@
+music = {
+	name = "maintheme"
+	file = "marine/passport.ogg"
+	volume = 1
+}
+music = {
+	name = "nk_international"
+	file = "international/northkorea.ogg"
+	volume = 0.5
+}
+music = {
+	name = "chi_international"
+	file = "international/china.ogg"
+	volume = 0.35
+}
+music = {
+	name = "jap_international"
+	file = "international/japan.ogg"
+	volume = 0.5
+}
+music = {
+	name = "forevermarine"
+	file = "marine/forevermarine.ogg"
+	volume = 1
+}
+music = {
+	name = "landing"
+	file = "marine/landing.ogg"
+	volume = 1
+}
+music = {
+	name = "mtdosol"
+	file = "marine/mtdosol.ogg"
+	volume = 1
+}
+music = {
+	name = "marchofmarine"
+	file = "marine/marchofmarine.ogg"
+	volume = 1
+}
+music = {
+	name = "likealion"
+	file = "marine/likealion.ogg"
+	volume = 1
+}
+music = {
+	name = "bravomarine"
+	file = "marine/bravomarine.ogg"
+	volume = 1
+}

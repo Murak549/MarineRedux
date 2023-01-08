@@ -1,0 +1,35 @@
+music_station = "international_station"
+music = {
+	song = "nk_international"
+	chance = {
+		factor = 0
+		modifier = {
+			has_government = communism
+			factor = 0.5
+		}
+	}
+}
+music = {
+	song = "jap_international"
+	chance = {
+		factor = 0
+		modifier = {
+			has_government = communism
+			tag = JAP
+			factor = 0.5
+		}
+	}
+
+}
+music = {
+	song = "chi_international"
+	chance = {
+		factor = 0
+		modifier = {
+			has_government = communism
+			tag = CHI
+			factor = 0.5
+		}
+	}
+
+}

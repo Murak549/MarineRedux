@@ -1,0 +1,51 @@
+music_station = "marinecorp_station"
+music = {
+	song = "forevermarine"
+	chance = {
+		factor = 1
+		modifier = {
+			tag = HMC
+			factor = 20
+		}
+	}
+}
+music = {
+	song = "landing"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 20
+			tag = HMC
+		}
+	}
+}
+music = {
+	song = "mtdosol"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 20
+			tag = HMC
+		}
+	}
+}
+music = {
+	song = "marchofmarine"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 20
+			tag = HMC
+		}
+	}
+}
+music = {
+	song = "bravomarine"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 20
+			tag = HMC
+		}
+	}
+}
