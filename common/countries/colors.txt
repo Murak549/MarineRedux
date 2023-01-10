@@ -1,4 +1,8 @@
 #reload countrycolors
+BCQ = {
+	color = rgb { 209 177 83 }
+	color_ui = rgb { 209 177 83 }
+}
 SIC = {
 	color = rgb { 115 78 24 }
 	color_ui = rgb { 115 78 24 }
@@ -287,8 +291,8 @@ MON = {
 	color_ui = rgb { 209 247 133 }
 }
 MEN = {
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
+	color = rgb { 176 22 9 }
+	color_ui = rgb { 176 22 9 }
 }
 TAN = {
 	color = rgb { 152 130 191 }

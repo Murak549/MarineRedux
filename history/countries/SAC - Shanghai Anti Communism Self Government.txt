@@ -22,13 +22,6 @@ if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	recruit_character = MAN_songgotu_zhanshan
 }
-if = {
-	limit = { has_dlc = "No Step Back" }
-	recruit_character = SOV_grigory_semyonov
-	SOV_grigory_semyonov = { 
-		set_character_flag = SOV_exiled_army_leader
-	}
-}
 
 set_convoys = 5
 

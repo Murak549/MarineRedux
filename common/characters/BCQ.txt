@@ -1,0 +1,14 @@
+characters={ 
+    BCQ_zhang_zuo_lin={
+        name=BCQ_zhang_zuo_lin
+        portraits={
+            civilian={
+                large=GFX_portrait_bcq_zhang_zuolin
+            }
+        }
+        country_leader={
+            ideology=rexism
+            expire="1950.8.16"
+        }
+    }
+}

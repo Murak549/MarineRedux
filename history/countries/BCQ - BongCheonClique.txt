@@ -1,0 +1,83 @@
+capital = 328
+
+oob = "MAN_1936"
+
+recruit_character = BCQ_zhang_zuo_lin
+
+add_country_leader_role = {
+	character = BCQ_zhang_zuo_lin
+	country_leader = {
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+			generalissimo
+			generalissimoinroc
+			pioneer_of_north_east_development
+		}
+	}
+	promote_leader = yes				
+}
+add_country_leader_role = {
+	character = BCQ_zhang_zuo_lin
+	country_leader = {
+		expire = "1965.1.1"
+		ideology = anti_revisionism
+		traits = {
+			generalissimo
+			generalissimoinroc
+			pioneer_of_north_east_development
+		}
+	}
+	promote_leader = yes				
+}
+add_country_leader_role = {
+	character = BCQ_zhang_zuo_lin
+	country_leader = {
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			generalissimo
+			generalissimoinroc
+			pioneer_of_north_east_development
+		}
+	}
+	promote_leader = yes				
+}
+
+# add_country_leader_trait = generalissimo
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	
+}
+
+
+set_convoys = 5
+
+328 = { #Kirin
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+715 = { #Liaoning
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+714 = { #Heilungkiang
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+717 = { #Hungkiang
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+761 = { #Hulunbuir
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 20
+	neutrality = 80
+}

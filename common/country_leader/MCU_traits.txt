@@ -13,6 +13,19 @@ leader_traits = {
 		random = no
 		political_power_factor = -0.50
 	}
+	###### FOR BONGCHEONCLIQUE ######
+	generalissimo = {
+		random = no
+	}
+	generalissimoinroc = {
+		random = no
+	}
+	pioneer_of_north_east_development = {
+		stability_weekly = 0.005
+		stability_factor = 0.15
+		political_power_factor = 0.05
+		random = no
+	}
 }
 
 # leader_traits = {

@@ -35,4 +35,8 @@ spriteTypes={
 		name="GFX_portrait_cmc_maozedong"
 		texturefile="gfx/leaders/CMC/portrait_cmc_mao_zedong.dds"
 	}
+	spriteType={
+		name="GFX_portrait_bcq_zhang_zuolin"
+		texturefile="gfx/leaders/BCQ/portrait_bcq_zhang_zuo_lin.dds"
+	}
 }
