@@ -33,3 +33,18 @@ HMC_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
+HMC_ATTACKING_AIRFORCE = {
+	name = "HMC_ATTACKING"
+	group = "RULE_HMC_ATTACKING_AIRFORCE"
+	default = {
+		name = HMC_ATTACK_FAIL
+		text = "RULE_OPTION_ATTACK_AIRFORCE_FAIL"
+		desc = "RULE_OPTION_ATTACK_AIRFORCE_FAIL_DESC"
+	}
+	option = {
+		name = HMC_ATTACK_SUCCESS
+		text = "RULE_OPTION_ATTACK_AIRFORCE"
+		desc = "RULE_OPTION_ATTACK_AIRFORCE_DESC"
+		allow_achievements = no
+	}
+}

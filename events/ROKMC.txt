@@ -11,14 +11,6 @@ country_event = {
 	option = {
 		name = ROKMC.1.b
 		load_focus_tree = generic_focus
-		# ai_will_do = {
-		# 	factor = 0
-		# 	modifier = { 비역사적일때만 가능하도록
-		# 		NOT = {
-		# 			focus
-		# 		}
-		# 	}
-		# }
 	}
 }
 country_event = {
@@ -28,13 +20,61 @@ country_event = {
 	picture = GFX_report_event_ger_civil_war
 	trigger = {
 		original_tag = HMC
-		date > 1936.1.1
 	}
-	fire_only_once = yes
-	 
+	is_triggered_only = yes
 	option = { #
 		name = ROKMC.2.a
 		set_global_flag = AIRFORCE_ATTACK
+	}
+}
+country_event = {
+	id = ROKMC.3
+	title = ROKMC.3.t
+	desc = ROKMC.3.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	option = { #
+		name = ROKMC.3.a
+		custom_effect_tooltip = ROKMC3TT
+		remove_ideas = HMC_airforce
+		remove_ideas = HMC_continuing_airforce
+		hidden_effect = {
+			HMC = {
+				set_cosmetic_tag = HMC_AIRFORCE
+				set_country_leader_name = {
+					ideology = neutrality
+					name = HMC_AIRHWANG
+				}
+				set_country_leader_name = {
+					ideology = communism
+					name = HMC_AIRHWANG
+				}
+				set_country_leader_name = {
+					ideology = fascism
+					name = HMC_AIRHWANG
+				}
+				set_country_leader_name = {
+					ideology = democratic
+					name = HMC_AIRHWANG 
+				}
+				set_country_leader_portrait = {
+					ideology = neutrality
+					portrait = gfx/leaders/HMC/airhwang.dds
+				}
+				set_country_leader_portrait = {
+					ideology = communism
+					portrait = gfx/leaders/HMC/airhwang.dds
+				}
+				set_country_leader_portrait = {
+					ideology = fascism
+					portrait = gfx/leaders/HMC/airhwang.dds
+				}
+				set_country_leader_portrait = {
+					ideology = democratic
+					portrait = gfx/leaders/HMC/airhwang.dds
+				}
+			}
+		}
 	}
 }
 country_event = {

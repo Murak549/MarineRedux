@@ -1,6 +1,0 @@
-HMC_marine_barrack = {
-	icon = GFX_idea_unknown #아직 미정
-	enable = { always = yes }
-	fascism_drift = 0.05
-	weekly_manpower = 1000
-}
