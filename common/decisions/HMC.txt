@@ -4,6 +4,7 @@ HMC_land_name_odo = {
         available = {
 			has_idea = HMC_torture
 		}
+		fire_only_once = yes
         remove_effect = {
             hidden_effect = {
                 796 = {
@@ -80,4 +81,94 @@ HMC_land_name_odo = {
 			}
         }
     }
+}
+HMC_supression = {
+
+	HMC_civil_supre = {
+
+		available = {
+			has_idea = HMC_conscripting_assembly
+		}
+
+		days_remove = 14
+		days_re_enable = 14
+
+		cost = 15
+
+		complete_effect = {
+			random_owned_state = {
+				create_unit = { 
+					division = "name = \"Sinip Assei\" division_template = \"Volunteer Marine\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+			random_owned_state = {
+				create_unit = { 
+					division = "name = \"Sinip Assei\" division_template = \"Suyuk Sadan\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+	}
+	
+	HMC_correctional_labor = {
+
+		available = {
+			has_idea = HMC_conscripting_assembly
+		}
+
+		days_remove = 14
+		days_re_enable = 14
+
+		cost = 15
+
+		complete_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	HMC_odo_seoul = {
+
+		available = {
+			has_idea = HMC_conscripting_assembly
+		}
+
+		days_remove = 120
+		# days_re_enable = 14
+
+		fire_only_once = yes
+
+		cost = 250
+
+		complete_effect = {
+			add_manpower = -45000
+			525 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_demilitarized_zone = no
+			}
+			swap_ideas = {
+				remove_idea = HMC_giyeol
+				add_idea = HMC_giyeol_spread_every_region
+			}
+			hidden_effect = {
+				set_country_flag = HMC_SEOUL_IS_ODO
+			}
+		}
+	}
 }

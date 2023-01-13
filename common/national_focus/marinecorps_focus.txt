@@ -9,6 +9,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 	}
     focus = {
         id  = HMC_attack_airforce
+		icon = GFX_focus_usa_escort_fighters
 		x = 16
 		y = 0
         cost = 1
@@ -62,7 +63,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		}
 	}
 	focus = {
-		id = HMC_remove_seeds
+		id = HMC_break_over_shock
 		icon = GFX_focus_generic_air_defense
 		cost = 5
 		x = 15
@@ -71,15 +72,14 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 			factor = 10
 		}
 		available = {
-			
+			has_idea = HMC_airforce
+			has_idea = HMC_continuing_airforce
 		}
 		prerequisite = { focus = HMC_night_of_marine }
 		completion_reward = {
-			every_core_state = {
-				remove_building = {
-					type = air_base
-					level = 10
-				}
+			swap_ideas = {
+				remove_idea = HMC_airforce
+				add_idea = HMC_airforce_1
 			}
 		}
 	}
@@ -192,40 +192,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 					set_demilitarized_zone = yes
 				}
 			}
-		}
-	}
-	focus = {
-		id = HMC_stout_fortress
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 5
-		x = 16
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		prerequisite = { focus = HMC_resume_conscripting focus = HMC_remove_seeds }
-		completion_reward = {
-			# add_ideas = HMC_conscripting_assembly
-		}
-	}
-	focus = {
-		id = HMC_aa
-		# icon = GFX_focus_hmc_rule_wallcity
-		cost = 5
-		x = 16
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		prerequisite = { focus = HMC_stout_fortress }
-		completion_reward = {
-			# add_ideas = HMC_conscripting_assembly
+			custom_effect_tooltip = HMC_they_dont_wanna_conscripted_TT
 		}
 	}
 	default = no

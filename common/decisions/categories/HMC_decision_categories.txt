@@ -3,3 +3,9 @@ HMC_land_name_odo = {
         original_tag = HMC
     }
 }
+HMC_supression = {
+    allowed = {
+        original_tag = HMC
+        
+    }
+}

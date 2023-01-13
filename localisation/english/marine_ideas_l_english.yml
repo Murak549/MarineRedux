@@ -11,7 +11,9 @@
  HMC_torture_desc:0 "악기바리.\n\n해병대 아쎄이들의 악기를 기르는 전통\n실무배치 받고 나서 선임들 앞에서 과자나 냉동식품을 그냥 입에 넣고 제대로 십을새도없이 악으로 몇봉지씩 삼켜야한다."
  HMC_marine_barrack:0 "해병성채"
  HMC_airforce:0 "공군에게 겁먹음"
+ HMC_airforce_1:0 "공군에게 겁먹음"
  HMC_continuing_airforce:0 "계속되는 공군의 습격"
+ HMC_giyeol_spread_every_region:0 "흩어진 기열"
 
 
  #상해방공자치정부

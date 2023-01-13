@@ -10,3 +10,5 @@
  RULE_OPTION_ATTACK_AIRFORCE:0 "공군 습격 성공"
  RULE_OPTION_ATTACK_AIRFORCE_FAIL_DESC:0 "공군 습격에 실패합니다."
  RULE_OPTION_ATTACK_AIRFORCE_DESC:0 "공군 습격에 성공하여 해병대와 공군의 운명이 뒤바뀝니다. (비역사 추천)"
+ RULE_HMC_ATTACKING_AIRFORCE:0 "해병대의 운명"
+ HMC_ATTACKING:0 "습격의 결과"

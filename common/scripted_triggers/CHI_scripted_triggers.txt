@@ -16,6 +16,7 @@
 
 is_independent_china_or_warlord = { #Does not include sinkiang
 	OR = {
+		TAG = BCQ
 		tag = SND
 		tag = SIC
 		tag = CHI
@@ -66,6 +67,7 @@ has_hyper_inflation = {
 
 is_literally_china = {
 	OR = {
+		original_tag = BCQ
 		original_tag = SIC
 		original_tag = SND
 		original_tag = CHI
@@ -80,6 +82,7 @@ is_literally_china = {
 
 is_chinese_warlord = {
 	OR = {		
+		original_tag = BCQ
 		original_tag = SIC
 		original_tag = SND
 		original_tag = GXC
