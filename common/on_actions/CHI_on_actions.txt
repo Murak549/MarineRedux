@@ -55,6 +55,45 @@ on_actions = {
 					annex_country = KOR
 				}
 			}
+			if = {
+				limit = {
+					AND = {
+						original_tag = BCQ
+						has_war_with = JAP
+					}
+				}
+				JAP = {
+					country_event = { id = mwar.10 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							original_tag = KOR
+							has_war_with = JAP
+						}
+						AND = {
+							original_tag = HMC
+							has_war_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = mwar.11 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						original_tag = MEN
+						has_war_with = JAP
+					}
+				}
+				JAP = {
+					country_event = { id = mwar.12 hours = 6 }
+				}
+			}
         }
     }
 }	
