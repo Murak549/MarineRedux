@@ -1093,6 +1093,27 @@
 					has_war_with = ROOT
 				}
 			}
+			SND = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			SIC = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+			BCQ = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1113,6 +1134,9 @@
 						tag = SHX
 						tag = XSM
 						tag = SIK
+						tag = SND
+						tag = SIC
+						tag = BCQ
 					}
 				}
 				country_event = { id = wtt_china.1 }

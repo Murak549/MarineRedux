@@ -3,6 +3,16 @@ capital = 328
 oob = "MAN_1936"
 
 recruit_character = BCQ_zhang_zuo_lin
+recruit_character = BCQ_zhang_zuo_lin
+recruit_character = BCQ_guo_song_ling
+recruit_character = BCQ_zhang_xue_liang
+recruit_character = BCQ_jiang_dengxuan 
+recruit_character = CHI_zhang_xueliang
+
+add_ideas = {
+	BCQ_border_bank
+	BCQ_simyang_arsenal
+}
 
 add_country_leader_role = {
 	character = BCQ_zhang_zuo_lin

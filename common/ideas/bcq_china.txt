@@ -1,0 +1,35 @@
+ideas = {
+    country = {
+        BCQ_border_bank = {
+            picture = generic_agrarian_reform
+            allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.3
+			}
+        }
+
+        BCQ_simyang_arsenal = {
+            picture = ast_volunteer_defence_corps
+            allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+                #DEBUG
+                # army_bonus_air_superiority_factor = 10
+                # research_speed_factor = 0.5
+                # nuclear_production_factor = 5
+                # air_range_factor = 20
+                # air_attack_factor = 10
+                # air_defence_factor = 10
+                # air_defence_factor = 10
+                # army_core_attack_factor = 10
+                # army_attack_speed_factor = 30
+                # army_attack_factor = 10
+			}
+        }
+    }
+}

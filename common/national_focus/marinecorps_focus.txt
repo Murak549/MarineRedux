@@ -7,12 +7,13 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 			tag = HMC
 		}
 	}
+	continuous_focus_position = { x = 0 y = 1050 }
     focus = {
         id  = HMC_attack_airforce
 		icon = GFX_focus_usa_escort_fighters
-		x = 16
+		x = 24
 		y = 0
-        cost = 1
+        cost = 1.5
         available = {
             NOT = {
                 has_idea = HMC_airforce
@@ -38,7 +39,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		id = HMC_night_of_marine
 		icon = GFX_focus_hmc_rule_wallcity
 		cost = 3.58
-		x = 16
+		x = 24
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -66,7 +67,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		id = HMC_break_over_shock
 		icon = GFX_focus_generic_air_defense
 		cost = 5
-		x = 15
+		x = 25
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -87,7 +88,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		id = HMC_resume_conscripting
 		icon = GFX_focus_generic_little_entente
 		cost = 5
-		x = 17
+		x = 23
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -194,6 +195,85 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 			}
 			custom_effect_tooltip = HMC_they_dont_wanna_conscripted_TT
 		}
+	}
+	focus = {
+		id = HMC_rule_geunchul
+		x = -10
+		y = 2 
+		cost = 10
+		relative_position_id = HMC_night_of_marine
+		mutually_exclusive = { focus = HMC_coup_detat }
+		prerequisite = { focus = HMC_resume_conscripting focus = HMC_break_over_shock }
+	}
+	focus = {
+		id = HMC_coup_detat
+		x = 10
+		y = 2
+		cost = 10
+		relative_position_id = HMC_night_of_marine
+		mutually_exclusive = { focus = HMC_rule_geunchul }
+		prerequisite = { focus = HMC_resume_conscripting focus = HMC_break_over_shock }
+		completion_reward = {
+			create_country_leader = {
+				name = HMC_leader_selection_commander	
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = GFX_portrait_hmc_commander_1
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = HMC_leader_selection_commander	
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = GFX_portrait_hmc_commander_1
+				expire = "1965.1.1"
+				ideology = neutrality
+				traits = {
+				}
+			}
+			hidden_effect = {
+				dismantle_faction = yes
+			}
+		}
+	}
+	focus = {
+		id = HMC_depose_Hwang_Geun_Chul
+		x = 0
+		y = 1
+		prerequisite = { focus = HMC_coup_detat }
+		cost = 5
+		relative_position_id = HMC_coup_detat
+	}
+	focus = {
+		id = HMC_meet_hwangryong
+		x = 0
+		y = 2
+		prerequisite = { focus = HMC_depose_Hwang_Geun_Chul }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		mutually_exclusive = { focus = HMC_conversation_with_gwak_mal_pung }
+		mutually_exclusive = { focus = HMC_look_to_the_west }
+	}
+	focus = {
+		id = HMC_conversation_with_gwak_mal_pung
+		x = 4
+		y = 2
+		prerequisite = { focus = HMC_depose_Hwang_Geun_Chul }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		mutually_exclusive = { focus = HMC_meet_hwangryong }
+		mutually_exclusive = { focus = HMC_look_to_the_west }
+	}
+	focus = {
+		id = HMC_look_to_the_west
+		x = -4
+		y = 2
+		prerequisite = { focus = HMC_depose_Hwang_Geun_Chul }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		mutually_exclusive = { focus = HMC_conversation_with_gwak_mal_pung }
+		mutually_exclusive = { focus = HMC_meet_hwangryong }
 	}
 	default = no
 }

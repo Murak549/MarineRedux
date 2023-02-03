@@ -1446,6 +1446,8 @@
 		# 	}
 		# }
 
+		will_lead_to_war_with = BCQ
+		will_lead_to_war_with = HMC
 		will_lead_to_war_with = CHI
 
 		cancel_if_invalid = yes
@@ -1474,7 +1476,17 @@
                 type = puppet_wargoal_focus #게이 특) 명분 가지고 선전포고 안함
                 target = SND
             }
+			create_wargoal = {
+                type = puppet_wargoal_focus #게이 특) 명분 가지고 선전포고 안함
+                target = BCQ
+            }
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything #게이 특) 명분 가지고 선전포고 안함
+					target = HMC
+				}
+			}
 		}
 	}
 

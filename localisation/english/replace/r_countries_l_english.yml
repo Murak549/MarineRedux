@@ -34,6 +34,8 @@
  MEN:0 "몽골해병대전우회"
  MEN_fascism:0 "몽골해병대전우회"
 
- BCQ_fascism:0 "봉천군벌"
+ BCQ_neutrality:0 "봉천군벌"
  BCQ:0 "봉천군벌"
+ BCQ_ADJ:0 "봉천군벌"
+ BCQ_DEF:0 "봉천군벌"
 

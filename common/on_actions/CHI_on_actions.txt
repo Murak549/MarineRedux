@@ -1,0 +1,60 @@
+on_actions = {
+    on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CMC
+					has_war_with = SND
+				}
+				white_peace = SND
+				news_event = { id = mwar.1001 }
+				CMC = {
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.1
+						army_ratio = 0.5
+						navy_ratio = 0
+						air_ratio = 1
+						keep_all_characters = yes
+						set_country_leader_name = {
+							ideology = neutrality
+							name = "우페이푸"
+						}
+						set_politics = {
+							ruling_party = neutrality
+							long_name = "국민당"
+							name = "국민당"
+						}
+						set_popularities = {
+							democratic = 20
+							neutrality = 45
+							fascism = 0
+							communism = 35
+						}
+						set_country_leader_portrait = {
+							ideology = neutrality
+							portrait = gfx\leaders\ZLC\Portrait_ZLC_Chao_kun.png
+						}
+						set_cosmetic_tag = CMC_JIG
+						# PREV = {  # Original country
+						# 	TAG_airforce_leader = { # Character
+						# 		set_nationality = PREV.PREV
+						# 		# Transfers to breakaway
+						# 	}
+						# }
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_war_with = HMC
+				}
+				white_peace = KOR
+				BCQ = {
+					annex_country = KOR
+				}
+			}
+        }
+    }
+}	

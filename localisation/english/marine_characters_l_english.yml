@@ -6,6 +6,7 @@
  HMC_gwak_mal_pung:0 "곽말풍"
  HMC_commander:0 "해병대 작전사령부"
  HMC_kwae_heung_tae:0 "쾌흥태"
+ HMC_leader_selection_commander:0 "해병대 임시사령부"
  
  
  #중화해병대
@@ -17,6 +18,9 @@
 
  #BongCheonClique
  BCQ_zhang_zuo_lin:0 "장쭤린"
+ BCQ_guo_song_ling:0 "궈쏭린"
+ BCQ_zhang_xue_liang:0 "장쉐량"
+ BCQ_jiang_dengxuan:0 "장덩쉬안"
 
 
  #중점

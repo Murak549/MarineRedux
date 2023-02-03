@@ -15,6 +15,9 @@ focus_tree = {
 		x = 3
 		y = 0
 			search_filters = { FOCUS_FILTER_POLITICAL }
+			completion_reward = {
+     		   add_political_power = 112
+			}
 
 	}
 	focus = {
@@ -39,6 +42,31 @@ focus_tree = {
 		x = 0
 		y = 2
 			search_filters = { FOCUS_FILTER_POLITICAL }
+			completion_reward = {
+     		   add_political_power = 112
+				set_party_name = {
+					ideology = neutrality
+					long_name = KOR_free_independent_party	
+					name = KOR_free_independent_party
+				}
+				hidden_effect = {
+					add_popularity = {
+						ideology = fascism
+						popularity = -0.3
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = -0.3
+					}
+					HMC_syngman = {
+						set_nationality = {
+							target_country = KOR
+							character = HMC_syngman
+						}
+					}
+
+				}
+			}
 
 	}
 	focus = {
@@ -66,6 +94,12 @@ focus_tree = {
 		x = 1
 		y = 3
 			search_filters = { FOCUS_FILTER_POLITICAL }
+			completion_reward = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.07
+				}
+			}
 
 	}
 	focus = {
@@ -117,6 +151,12 @@ focus_tree = {
 		x = 5
 		y = 3
 			search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything #게이 특) 명분 가지고 선전포고 안함
+				target = HMC
+			}
+		}
 
 	}
 	focus = {
@@ -132,6 +172,9 @@ focus_tree = {
 		x = 3
 		y = 4
 			search_filters = { FOCUS_FILTER_POLITICAL }
+			completion_reward = {
+				load_focus_tree = generic_focus
+			}
 
 	}
 }

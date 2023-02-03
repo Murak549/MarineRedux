@@ -1,0 +1,94 @@
+###########################
+#     Marine War EVENT    # 
+###########################
+
+add_namespace = mwar
+
+country_event = { #산동군벌이 사과를 요구함
+    id = mwar.1 # for cmc
+	title = mwar.1.t
+	desc = mwar.1.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	 
+	option = { #미안하다!!
+		name = mwar.1.a
+        hidden_effect = {
+            SND = {
+                country_event = { id = mwar.3 }
+            }
+        }
+	}
+
+	option = { #해병대로 모두가 하나되게 하기 위한 일환이다!
+		name = mwar.1.b
+        ai_chance = {
+            base = 10.5
+            modifier = { has_war = yes factor = -1 }
+        }
+        hidden_effect = {
+            SND = {
+                country_event = { days = 5 id = mwar.4 }
+            }
+        }
+	}
+}
+
+country_event = { #해병대의 습격
+    id = mwar.2 # for snd
+	title = mwar.2.t
+	desc = mwar.2.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes 
+    option = {
+        name = mwar.2.a
+            hidden_effect = {
+            CMC = {
+                country_event = { id = mwar.1 }
+            }
+        }
+    }
+}
+
+country_event = { #해병대가 보상함
+    id = mwar.3 # for cmc
+	title = mwar.3.t
+	desc = mwar.3.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	 
+	option = { #야 기분좋다!
+		name = mwar.3.a
+	}
+}
+
+country_event = { #해병대가 거부함
+    id = mwar.4 # for cmc
+	title = mwar.4.t
+	desc = mwar.4.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	 
+	option = { #그렇다면 전쟁이다!
+		name = mwar.4.a
+        news_event = { id = mwar.1001 }
+        create_wargoal = {
+            type = annex_everything #게이 특) 명분 가지고 선전포고 안함
+            target = CMC
+        }
+	}
+}
+
+
+
+news_event = { #WAR - MARINE SANDONG WAR
+	id = mwar.1001
+	title = mwar.1001.t
+	desc = mwar.1001.d
+    is_triggered_only = yes 
+	# picture = GFX_report_event_ger_civil_war
+	 
+	option = { #Okay
+		name = mwar.1001.a
+	}
+}

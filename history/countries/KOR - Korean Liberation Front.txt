@@ -7,12 +7,12 @@ set_convoys = 5
 
 
 add_ideas = {
-	extensive_conscription
-	low_economic_mobilisation
+	# extensive_conscription
+	war_economy
 }
 
 
-
+set_cosmetic_tag = KOR_gando
 
 #For start date 1939.1.1
 1939.1.1 = {

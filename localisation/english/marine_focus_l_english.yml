@@ -1,6 +1,16 @@
 ﻿l_english: 
  HMC_night_of_marine:0 "해병대의 밤"
  AIRFORCE_ATTACK:0 "해병대가 공군습격에 실패함"
- HMC_break_over_shock:0 "충격을 이겨내고"
+ HMC_break_over_shock:0 "충격을 이겨내다"
  HMC_resume_conscripting:0 "자원입대 명령"
  HMC_attack_airforce:0 "공군 습격"
+ HMC_rule_geunchul:0 "황근출의 령도"
+ HMC_coup_detat:0 "하극상을 실시한다!"
+ HMC_meet_hwangryong:0 "황룡과의 만남"
+ HMC_conversation_with_gwak_mal_pung:0 "곽말풍과의 회담"
+ HMC_look_to_the_west:0 "서양을 바라보다"
+ HMC_depose_Hwang_Geun_Chul:0 "황근출 축출"
+#  HMC_depose_Hwang_Geun_Chul_desc:0 "모든 초기 에티오피아 주를 §Y[ROOT.GetFlag][ROOT.GetNameDef]§!가 지배하거나 §Y[ROOT.GetAdjective]의 동맹§!이 지배함."
+
+
+ 

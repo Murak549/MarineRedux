@@ -10,7 +10,7 @@ recruit_character = HMC_park_chul_gon
 recruit_character = HMC_son_su_jal
 recruit_character = HMC_gyeon_ssang_sub
 recruit_character = HMC_kwae_heung_tae
-recruit_character = HMC_syngman
+recruit_character = HMC_syngman 
 recruit_character = HMC_gwak_mal_pung
 
 oob = "HMC_1936"
@@ -88,3 +88,5 @@ if = {
 	}
 	set_oob = "HMC_1936_nsb"
 }
+
+create_faction = "전우회"

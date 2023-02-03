@@ -621,6 +621,31 @@ foreign_politics = {
 		available = {
 			FROM = { 
 				surrender_progress < 0.2 # if they are losing, lets not allow it
+				NOT = {
+					controls_state = 525
+					controls_state = 527
+				}
+				NOT = {
+					any_of = {
+						array = CHI.core_states
+						var:v = {
+							NOT = {
+								state = 524
+							}
+							controller = {
+								OR = {
+									tag = JAP
+									AND = {
+										is_subject_of = JAP
+										OR = {
+											tag = MAN
+											tag = SAC
+										}
+									}
+								}
+							}
+						}
+					}
 			}
 			custom_trigger_tooltip = {
 				tooltip = JAP_sue_for_peace_TT
@@ -641,8 +666,8 @@ foreign_politics = {
 									AND = {
 										is_subject_of = JAP
 										OR = {
-											tag = MEN
 											tag = MAN
+											tag = SAC
 										}
 									}
 								}
@@ -879,7 +904,7 @@ foreign_politics = {
 			SOV = { country_event = { id = wtt_japan.118 } }
 		}
 	}
-}
+}}
 
 #Category allowed for JAP
 #Not visible if puppet

@@ -11,4 +11,117 @@ characters={
             expire="1950.8.16"
         }
     }
+    BCQ_guo_song_ling={
+        name = BCQ_guo_song_ling
+        advisor={
+			slot = political_advisor
+			idea_token = kijuro_shidehara
+			allowed = {
+				original_tag = BCQ
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+    }
+    BCQ_zhang_xue_liang={
+        name = BCQ_zhang_xue_liang
+        advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = BCQ
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+    }
+    BCQ_jiang_dengxuan={
+        name = BCQ_jiang_dengxuan
+        advisor={
+			slot = high_command
+			idea_token = yasuji_okamura
+			ledger = army
+			allowed = {
+				original_tag = BCQ
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.500
+				modifier = {
+					factor = 1.500
+					not = {
+						BCQ = {
+							has_war_with = USA
+						}
+					}
+				}
+			}
+		}
+    }
+    # BCQ_sun_lie_cheon={
+    #     name = BCQ_sun_lie_cheon
+    #     advisor={
+	# 		slot = high_command
+	# 		ledger = army
+	# 		allowed = {
+	# 			original_tag = BCCQ
+	# 		}
+	# 		traits = {
+	# 			army_logistics_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 3.000
+	# 		}
+	# 	}
+		
+	# 	corps_commander={
+	# 		traits={ career_officer infantry_officer commando }
+	# 		skill=3
+	# 		attack_skill=3
+	# 		defense_skill=1
+	# 		planning_skill=3
+	# 		logistics_skill=3
+	# 		legacy_id=0
+	# 	}
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
+    # BCQ_guo_song_ling={
+    #     name = BCQ_guo_song_ling
+    # }
 }

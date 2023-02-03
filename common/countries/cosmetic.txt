@@ -2,6 +2,10 @@ HMC_military_republic ={
 	color = rgb { 242 160 61 }
 	color_ui = rgb { 242 160 61 }
 }
+CMC_JIG = {
+	color = rgb { 156 83 16 }
+	color_ui = rgb { 156 83 16 }
+}
 
 JAP_MARINE = {
 	color = rgb { 255 25 25 }

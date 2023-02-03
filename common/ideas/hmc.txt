@@ -1,5 +1,18 @@
 ideas = {
     country = {
+		SUPER_SPEED = {
+			#picture = generic_air_research
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				army_speed_factor = 319.123
+			}
+		}
 		HMC_continuing_airforce = {
 			picture = generic_air_payment
 			allowed = {
@@ -192,28 +205,6 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
-		HMC_fear_of_3 = {
-			picture = FRA_matignon_agreements
-			allowed = {
-				always = no
-			}
-			modifier = {
-				army_core_attack_factor = -0.75
-				army_attack_speed_factor = -0.25
-				army_defence_factor = -0.25
-			}
-		}
-		HMC_meat_factory = {
-			picture = generic_war_preparation
-			allowed = {
-				always = no
-			}
-			modifier = {
-				army_attack_factor = 0.2
-				army_attack_speed_factor = 0.2
-				land_reinforce_rate = 0.05
-			}
-		}
 		HMC_zero_giyeol = {
 			picture = generic_navy_bonus
 			allowed = {
@@ -222,15 +213,6 @@ ideas = {
 			modifier = {
 				special_forces_training_time_factor = -0.2
 				training_time_factor = -0.2
-			}
-		}
-		HMC_result_of_assasinate = {
-			picture = generic_constitutional_guarantees
-			allowed = {
-				always = no
-			}
-			modifier = {
-				monthly_population = 0.75
 			}
 		}
 		HMC_giyeol_spread_every_region = {
@@ -243,6 +225,27 @@ ideas = {
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.3
 			}
+		}
+    }
+	naval_manufacturer = {
+        designer = yes
+
+        pohang_naval_arsenal = {
+			allowed = {
+				original_tag = HMC
+			}
+
+			available = {
+				# has_completed_focus = JAP_supremacy_of_the_battlefleet
+			}
+
+			cost = 75
+						
+			research_bonus = {
+				naval_equipment = 0.35
+			}
+			
+			traits = { tal_marine_designer } # built Yamato
 		}
     }
 }

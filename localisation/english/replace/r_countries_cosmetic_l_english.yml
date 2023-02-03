@@ -10,6 +10,9 @@
  JAP_ODOMARINE:0 "해병대"
  JAP_ODOMARINE_ADJ:0 "해병대"
  JAP_ODOMARINE_DEF:0 "해병대"
+ CMC_JIG:0 "중화민국 북양정부"
+ CMC_JIG_ADJ:0 "중화민국 북양정부"
+ CMC_JIG_DEF:0 "중화민국 북양정부"
 #여기서부턴 제거할지 논의 해봐야할거
  CHI_MARINE:0 "중화민국 해군육전대 전우회" 
  PRC_MARINE:0 "중화인민공화국 해군육전대 전우회"

@@ -1,0 +1,14 @@
+ideas = {
+    country = {
+        JAP_conquer_china = {
+            picture = generic_agrarian_reform
+            allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 5.5
+			}
+        }
+    }
+}

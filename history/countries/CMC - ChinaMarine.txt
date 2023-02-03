@@ -46,30 +46,65 @@ set_technology = {
 	base_strike = 1
 }
 
-set_stability = 0.24
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+}
+
+set_stability = 0.24 #높게 쳐준거다
 set_war_support = 1
 add_ideas = {
 	HMC_conscripting_assembly
 	HMC_continuing_airforce
 }
 
-# if = {
-# 	limit = {
-# 		NOT = { has_dlc = "No Step Back" }
-# 	}
-# 	set_technology = {
-# 		gwtank = 1
-# 		basic_light_tank = 1
-# 	}
-# 	set_oob = "JAP_1936"
-# }
-# if = {
-# 	limit = {
-# 		has_dlc = "No Step Back"
-# 	}
-# 	set_technology = {
-# 		gwtank_chassis = 1
-# 		basic_light_tank_chassis = 1
-# 	}
-# 	set_oob = "HMC_1936_nsb"
-# }
+#초반 군벌 정리용
+create_faction = "대아해방연합"
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+	set_oob = "CHI_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	set_oob = "CMC_1936_nsb"
+}

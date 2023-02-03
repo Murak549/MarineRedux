@@ -25,6 +25,7 @@ country_event = {
 	option = { #
 		name = ROKMC.2.a
 		set_global_flag = AIRFORCE_ATTACK
+		ai_chance = { factor = 100 }
 	}
 }
 country_event = {
@@ -431,7 +432,7 @@ country_event = {
 	title = ROKMC.17.t
 	picture = GFX_report_event_generic_battle
 	is_triggered_only = yes
-	desc = ROKMC.17.d
+	desc = ROKMC.17.d 
 	option = {
 		name = ROKMC.17.a
 	}
@@ -445,59 +446,23 @@ country_event = {
 	option = {
 		name = ROKMC.18.a
 	}
+	option = {
+		name = ROKMC.18.b
+		# BCQ_zhang_zuo_lin = {
+		# 	set_nationality = {
+		# 		target_country = USA
+		# 		character = BCQ_zhang_zuo_lin
+		# 	}
+		# }
+	}
 }
 
-country_event = { #Marine military trial
+country_event = { #
 	id = ROKMC.19
 	title = ROKMC.19.t
 	is_triggered_only = yes
 	desc = ROKMC.19.d
 	option = {
 		name = ROKMC.19.a
-	}
-}
-
-country_event = { #Center of Marine Corps
-	id = ROKMC.20
-	title = ROKMC.20.t
-	picture = GFX_marine_event_1
-	is_triggered_only = yes
-	desc = ROKMC.20.d
-	option = {
-		name = ROKMC.20.a
-	}
-}
-
-country_event = { #Marine military trial
-	id = ROKMC.21
-	title = ROKMC.21.t
-	is_triggered_only = yes
-	desc = ROKMC.21.d
-	option = {
-		name = ROKMC.21.a
-	}
-}
-
-country_event = { #HwangRyong Research
-	id = ROKMC.22
-	title = ROKMC.22.t
-	is_triggered_only = yes
-	desc = ROKMC.22.d
-	option = {
-		name = ROKMC.22.a
-	}
-}
-
-country_event = { #Assasinate HwangRyong
-	id = ROKMC.23
-	title = ROKMC.23.t
-	is_triggered_only = yes
-	desc = ROKMC.23.d
-	option = {
-		name = ROKMC.23.a
-		add_timed_idea = {
-			idea = HMC_result_of_assasinate
-			days = 160
-		} 
 	}
 }
