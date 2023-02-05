@@ -1,29 +1,75 @@
 characters = {
-	#Create country leader - Lee Beom seok
-	KOR_lee_beom_seok = {
-		name = KOR_lee_beom_seok
-		portraits = {
-			civilian = {
+    KOR_lee_beom_seok = {
+        name=KOR_lee_beom_seok
+		portraits={
+			civilian={
+				large=GFX_portrait_JAP_isoroku_yamamoto
 			}
 		}
-		country_leader = {
-			ideology = fascism_ideology
-			traits = {  }
-			expire = "2000.01.01"
-		}
-	}
 
-	#Create country leader - Provisional Government of Korea
+        country_leader={
+			ideology=fascism_ideology
+			traits={  }
+			expire="1989.1.1.1"
+		}
+    }
+    
 	KOR_provisional_government_of_korea = {
-		name = KOR_provisional_government_of_korea
-		portraits = {
-			civilian = {
+        name=KOR_provisional_government_of_korea
+		portraits={
+			civilian={
+				large=GFX_portrait_JAP_isoroku_yamamoto
 			}
 		}
-		country_leader = {
-			ideology = liberalism
-			traits = {  }
-			expire = "2000.01.01"
+
+        country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1989.1.1.1"
 		}
-	}
+    }
+
+	KOR_lee_gang = {
+        name=KOR_lee_gang
+		portraits={
+			civilian={
+				large=GFX_portrait_JAP_isoroku_yamamoto
+			}
+		}
+
+        country_leader={
+			ideology=neutrality_ideology
+			traits={  }
+			expire="1989.1.1.1"
+		}
+    }
 }
+# characters = {
+# 	#Create country leader - Lee Beom seok
+# 	KOR_lee_beom_seok = {
+# 		name = KOR_lee_beom_seok
+# 		portraits = {
+# 			civilian = {
+# 			}
+# 		}
+# 		country_leader = {
+# 			ideology = fascism_ideology
+# 			traits = {  }
+# 			expire = "2000.01.01"
+# 		}
+# 	}
+
+# 	#Create country leader - Provisional Government of Korea
+# 	KOR_provisional_government_of_korea = {
+# 		name = KOR_provisional_government_of_korea
+# 		portraits = {
+# 			civilian = {
+# 			}
+# 		}
+# 		country_leader = {
+# 			ideology = liberalism
+# 			traits = {  }
+# 			expire = "2000.01.01"
+# 		}
+# 	}
+# }

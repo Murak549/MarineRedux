@@ -5,11 +5,11 @@ set_stability = 0.5
 set_war_support = 0.5
 set_convoys = 0
 
-recruit_character = KOR_lee_beom_seok
-recruit_character = KOR_provisional_government_of_korea
+recruit_character = KOR_lee_beom_seok #이범석
+recruit_character = KOR_provisional_government_of_korea #임시정부
+recruit_character = KOR_lee_gang #이강
 
 add_ideas = {
-	# extensive_conscription
 	war_economy
 }
 
@@ -38,10 +38,11 @@ set_popularities = {
 
 #Politics for 1939.1.1
 1939.1.1 = {
+	set_cosmetic_tag = KOR_state
 	set_popularities = {
-		democratic = 25
-		fascism = 25
+		democratic = 75
+		fascism = 0
 		communism = 25
-		neutrality = 25
+		neutrality = 0
 	}
 }

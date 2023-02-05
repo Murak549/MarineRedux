@@ -45,17 +45,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_HMC_rally_of_supporters-312909"
-		texturefile = "gfx/interface/goals/GFX_HMC_rally_of_supporters-312909.dds"
+		name = "GFX_HMC_rally_of_supporters"
+		texturefile = "gfx/interface/goals/GFX_HMC_rally_of_supporters.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_HMC_rally_of_supporters-312909_shine"
-		texturefile = "gfx/interface/goals/GFX_HMC_rally_of_supporters-312909.dds"
+		name = "GFX_HMC_rally_of_supporters_shine"
+		texturefile = "gfx/interface/goals/GFX_HMC_rally_of_supporters.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_HMC_rally_of_supporters-312909.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_HMC_rally_of_supporters.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -67,7 +67,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_HMC_rally_of_supporters-312909.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_HMC_rally_of_supporters.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
