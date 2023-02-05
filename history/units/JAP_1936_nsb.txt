@@ -384,7 +384,7 @@ units = {
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_chassis_0 = { owner = JAP version_name = "Type 94 Tankette" } }
 	}
-
+}
 	#2 Homengun - 2nd Field Army
 
 
