@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = KOR_justice_wins
-		icon = GFX_KOR_justice_wins-311373
+		icon = GFX_KOR_justice_wins
 		cost = 3.00
 		x = 3
 		y = 0
@@ -22,7 +22,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_stabilization_of_the_situation
-		icon = GFX_KOR_stabilization_of_the_situation-311375
+		icon = GFX_KOR_stabilization_of_the_situation
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_justice_wins
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_cooperation_with_other_forces
-		icon = GFX_KOR_cooperation_with_other_forces-312138
+		icon = GFX_KOR_cooperation_with_other_forces
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_stabilization_of_the_situation
@@ -45,7 +45,7 @@ focus_tree = {
 			completion_reward = {
      		   add_political_power = 112
 				set_party_name = {
-					ideology = neutrality
+					ideology = democratic
 					long_name = KOR_free_independent_party	
 					name = KOR_free_independent_party
 				}
@@ -71,7 +71,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_formulation_of_a_defense_plan
-		icon = GFX_KOR_formulation_of_a_defense_plan-312136
+		icon = GFX_KOR_formulation_of_a_defense_plan
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_stabilization_of_the_situation
@@ -83,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_unified_speech
-		icon = GFX_KOR_unified_speech-312165
+		icon = GFX_KOR_unified_speech
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_formulation_of_a_defense_plan
@@ -104,7 +104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_direct_action
-		icon = GFX_KOR_direct_action-312049
+		icon = GFX_KOR_direct_action
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_justice_wins
@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_consolidation_of_the_marine_corps_forces
-		icon = GFX_KOR_consolidation_of_the_marine_corps_forces-312059
+		icon = GFX_KOR_consolidation_of_the_marine_corps_forces
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_direct_action
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_dissolution_of_paramilitary_organizations
-		icon = GFX_KOR_dissolution_of_paramilitary_organizations-312062
+		icon = GFX_KOR_dissolution_of_paramilitary_organizations
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_direct_action
@@ -140,7 +140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_march_to_pohang
-		icon = GFX_KOR_march_to_pohang-312174
+		icon = GFX_KOR_march_to_pohang
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_consolidation_of_the_marine_corps_forces
@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_unification_and_justice
-		icon = GFX_KOR_unification_and_justice-312193
+		icon = GFX_KOR_unification_and_justice
 		cost = 3.00
 		prerequisite = {
 			focus = KOR_unified_speech

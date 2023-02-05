@@ -28,7 +28,6 @@ add_ideas = {
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
-	recruit_character = MAN_songgotu_zhanshan
 }
 
 set_convoys = 5

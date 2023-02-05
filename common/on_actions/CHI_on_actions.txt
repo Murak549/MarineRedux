@@ -1,7 +1,7 @@
 on_actions = {
     on_capitulation = {
 		effect = {
-			if = {
+			if = { #북양정부의 부활
 				limit = {
 					original_tag = CMC
 					has_war_with = SND
@@ -45,7 +45,7 @@ on_actions = {
 					}
 				}
 			}
-			if = {
+			if = { #버그 수정해야함
 				limit = {
 					original_tag = KOR
 					has_war_with = HMC
@@ -55,7 +55,7 @@ on_actions = {
 					annex_country = KOR
 				}
 			}
-			if = {
+			if = { #만주국 만들기
 				limit = {
 					AND = {
 						original_tag = BCQ
@@ -65,8 +65,11 @@ on_actions = {
 				JAP = {
 					country_event = { id = mwar.10 hours = 6 }
 				}
+				MAN = {
+					load_oob = MAN_1936_nsb
+				}
 			}
-			if = {
+			if = { #조선 총독부 만들기
 				limit = {
 					OR = {
 						AND = {
@@ -83,11 +86,20 @@ on_actions = {
 					country_event = { id = mwar.11 hours = 6 }
 				}
 			}
-			if = {
+			if = { #몽강 만들기
 				limit = {
-					AND = {
-						original_tag = MEN
-						has_war_with = JAP
+					OR = {
+						AND = {
+							original_tag = MEN
+							has_war_with = JAP
+						}
+						AND = {
+							original_tag = CMC
+							MEN = {
+								is_puppet_of = CMC
+							}
+							has_war_with = JAP
+						}
 					}
 				}
 				JAP = {
@@ -96,4 +108,9 @@ on_actions = {
 			}
         }
     }
+	on_declare_war = { #해병대와 일본이 선전포고 했을시의 평화협상 및 국공합작
+		effect = {
+			
+		}
+	}
 }	

@@ -1,10 +1,12 @@
-﻿oob = "KOR_1936"
-capital = 525
+﻿capital = 525 #Seoul
+oob = "KOR_1936"
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
-set_convoys = 5
+set_convoys = 0
 
+recruit_character = KOR_lee_beom_seok
+recruit_character = KOR_provisional_government_of_korea
 
 add_ideas = {
 	# extensive_conscription
@@ -22,16 +24,16 @@ set_cosmetic_tag = KOR_gando
 
 #Politics for 1936.1.1
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.7.9"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 35
+	democratic = 25
 	fascism = 10
 	communism = 25
-	neutrality = 30
+	neutrality = 45
 }
 
 #Politics for 1939.1.1
@@ -43,9 +45,3 @@ set_popularities = {
 		neutrality = 25
 	}
 }
-
-recruit_character = provisional_government_of_korea
-recruit_character = military
-recruit_character = lee_beom_seok
-
-
