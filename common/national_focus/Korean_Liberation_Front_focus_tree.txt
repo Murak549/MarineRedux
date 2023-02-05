@@ -46,7 +46,7 @@ focus_tree = {
      		   add_political_power = 112
 				set_party_name = {
 					ideology = democratic
-					long_name = KOR_free_independent_party	
+					long_name = KOR_free_independent_party	 
 					name = KOR_free_independent_party
 				}
 				hidden_effect = {
