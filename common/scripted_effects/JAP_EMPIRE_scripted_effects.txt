@@ -35,6 +35,26 @@ KOR_CHOSEN = {
 		transfer_state_to = KOR
 		remove_core_of = HMC
 	}
+	925 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	926 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	927 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	928 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	929 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
 	JAP = {
 		set_autonomy = {
 			target = KOR
@@ -100,6 +120,18 @@ MAN_CHU = {
 	924 = {
 		transfer_state_to = MAN
 	}
+	930 = {
+		transfer_state_to = MAN
+	}
+	931 = {
+		transfer_state_to = MAN
+	}
+	932 = {
+		transfer_state_to = MAN
+	}
+	933 = {
+		transfer_state_to = MAN
+	}
 	MAN = {
 		every_owned_state = {
 			add_core_of = MAN
@@ -121,78 +153,5 @@ MEN_GAN = {
 			target = MEN
 			autonomous_state = autonomy_wtt_imperial_protectorate
 		}
-	}
-}
-KOR_revleft = {
-	if = {
-		limit = {
-			has_completed_focus = HMC_prepare_for_penetration_plan
-			has_completed_focus = HMC_between_our_peoples
-		}
-		declare_war_on = {
-            target = HMC
-            type = annex_everything
-        }
-		527 = {
-			transfer_state_to = KOR
-		}
-		912 = {
-			transfer_state_to = KOR
-		}
-		load_oob = KOR_north_attack
-	}
-	if = {
-		limit = {
-			has_completed_focus = HMC_prepare_for_penetration_plan
-			has_completed_focus = HMC_ask_russia_for_help
-		}
-		SOV = {
-			set_autonomy = {
-				target = KOR
-				autonomous_state = autonomy_satellite
-			}
-		}
-		declare_war_on = {
-            target = HMC
-            type = annex_everything
-        }
-		527 = {
-			transfer_state_to = KOR
-		}
-		912 = {
-			transfer_state_to = KOR
-		}
-		load_oob = KOR_north_attack
-	}
-}
-KOR_revright = {
-	if = {
-		limit = {
-			has_completed_focus = HMC_an_adventure_to_the_south
-		}
-		declare_war_on = {
-            target = HMC
-            type = annex_everything
-        }
-		910 = {
-			transfer_state_to = KOR
-		}
-		load_oob = KOR_south_attack
-	}
-	if = {
-		limit = {
-			AND = {
-				has_completed_focus = HMC_settle_down_in_the_middle
-				has_completed_focus = HMC_securing_gyeonggido_province
-			}
-		}
-		declare_war_on = {
-            target = HMC
-            type = annex_everything
-        }
-		525 = {
-			transfer_state_to = KOR
-		}
-		load_oob = KOR_middle_attack
 	}
 }

@@ -1,0 +1,73 @@
+KOR_revleft = {
+	if = {
+		limit = {
+			has_completed_focus = HMC_prepare_for_penetration_plan
+			has_completed_focus = HMC_between_our_peoples
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		527 = {
+			transfer_state_to = KOR
+		}
+		912 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_north_attack
+	}
+	if = {
+		limit = {
+			has_completed_focus = HMC_prepare_for_penetration_plan
+			has_completed_focus = HMC_ask_russia_for_help
+		}
+		SOV = {
+			set_autonomy = {
+				target = KOR
+				autonomous_state = autonomy_satellite
+			}
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		527 = {
+			transfer_state_to = KOR
+		}
+		912 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_north_attack
+	}
+}
+KOR_revright = {
+	if = {
+		limit = {
+			has_completed_focus = HMC_an_adventure_to_the_south
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		910 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_south_attack
+	}
+	if = {
+		limit = {
+			AND = {
+				has_completed_focus = HMC_settle_down_in_the_middle
+				has_completed_focus = HMC_securing_gyeonggido_province
+			}
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		525 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_middle_attack
+	}
+}
