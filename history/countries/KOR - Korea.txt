@@ -16,13 +16,6 @@ add_ideas = {
 
 set_cosmetic_tag = KOR_gando
 
-#For start date 1939.1.1
-1939.1.1 = {
-	add_political_power = 1000
-	oob = "KOR_1939"
-}
-
-#Politics for 1936.1.1
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.7.9"
@@ -31,18 +24,14 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 25
-	fascism = 10
+	fascism = 5
 	communism = 25
 	neutrality = 45
 }
-
-#Politics for 1939.1.1
+#For start date 1939.1.1
 1939.1.1 = {
-	set_cosmetic_tag = KOR_state
-	set_popularities = {
-		democratic = 75
-		fascism = 0
-		communism = 25
-		neutrality = 0
-	}
+	add_political_power = 1000
+	oob = "KOR_1939"
 }
+
+#Politics for 1936.1.1

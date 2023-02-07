@@ -10,18 +10,16 @@ state={
 			industrial_complex = 1
 
 		}
-		victory_points = {
-			13262 1 
-		}
 		add_core_of = KOR
 		add_core_of = HMC
 
 	}
 
 	provinces={
-		1100 13260 13261 7175 7204 11992 13262
+		1100 13260 13261 
 	}
-	manpower=3784105
+	manpower=1145964
 	buildings_max_level_factor=1.000
 	state_category=large_city
+	local_supplies=0.000
 }

@@ -79,4 +79,8 @@ spriteTypes = {
 		name="GFX_focus_the_center_of_marine"
 		texturefile="gfx/interface/goals/focus_hmc_the_marine.dds"
 	}
+	spriteType={
+		name="GFX_focus_hmc_assassinate_hwang"
+		texturefile="gfx/interface/goals/focus_hmc_assasinate_hwang.dds"
+	}
 }

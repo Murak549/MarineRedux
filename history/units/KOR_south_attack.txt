@@ -1,0 +1,99 @@
+division_template = {
+	name = "시민군" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = KOR_INF_01
+									# 1 engineering regiment, 1 recon regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 5 y = 0 }
+		infantry = { x = 5 y = 1 }
+		infantry = { x = 5 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+    division = {
+            division_name = {
+                name = "광주 시민군"
+                is_name_ordered = no
+            }
+            location = 10110
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+        }
+    division = {
+            division_name = {
+                name = "광주 시민군"
+                is_name_ordered = no
+            }
+            location = 10110
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+        }
+    division = {
+            division_name = {
+                name = "광주 시민군"
+                is_name_ordered = no
+            }
+            location = 10110
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+        }
+    division = { 
+            division_name = {
+                is_name_ordered = no
+                name = "여수 시민군"
+            }
+            location = 12085
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+    }
+    division = { 
+            division_name = {
+                is_name_ordered = no
+                name = "시민지원군"
+            }
+            location = 4126
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+    }
+    division = { 
+            division_name = {
+                is_name_ordered = no
+                name = "목포시민군"
+            }
+            location = 11948
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+    }
+    division = { 
+            division_name = {
+                is_name_ordered = no
+                name = "전주시민군"
+            }
+            location = 13264
+            division_template = "시민군"
+            force_equipment_variants = { infantry_equipment_0 = { owner = "KOR" } }
+            start_experience_factor = 0.2
+    }
+}

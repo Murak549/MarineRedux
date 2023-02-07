@@ -1,9 +1,5 @@
 spriteTypes={
 	spriteType={
-		name="GFX_focus_hmc_assassinate_hwang"
-		texturefile="gfx/interface/goals/focus_hmc_assasinate_hwang.dds"
-	}
-	spriteType={
 		name="GFX_park_chul_gon"
 		texturefile="gfx/ideas/portrait_park_chul_gon.dds"
 	}
@@ -38,5 +34,17 @@ spriteTypes={
 	spriteType={
 		name="GFX_portrait_bcq_zhang_zuolin"
 		texturefile="gfx/leaders/BCQ/portrait_bcq_zhang_zuo_lin.dds"
+	}
+	spriteType={
+		name="GFX_portrait_kor_lee_beom_seok"
+		texturefile="gfx/leaders/KOR/KOR_lee_beom_seok.dds"
+	}
+	spriteType={
+		name="GFX_portrait_kor_gov"
+		texturefile="gfx/leaders/KOR/KOR_provisional_government_of_korea.dds"
+	}
+	spriteType={
+		name="GFX_portrait_yi_kang"
+		texturefile="gfx/leaders/KOR/portrait_KOR_yi_kang.png"
 	}
 }

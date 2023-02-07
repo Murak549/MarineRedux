@@ -23,5 +23,8 @@
  BCQ_jiang_dengxuan:0 "장덩쉬안"
 
 
- #중점
+ #중점으로만 나오는새끼
  HMC_AIRHWANG:0 "공군출"
+
+ #한궈
+ KOR_lee_gang:0 "이강" #이갱스터맨~

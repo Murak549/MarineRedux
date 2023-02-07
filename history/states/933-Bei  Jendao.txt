@@ -1,0 +1,21 @@
+state={
+	id=933
+	name="STATE_933"
+	history={
+		owner = BCQ
+		add_core_of = CHI
+		add_core_of = BCQ
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+	provinces={
+		810 3791 3815 3843 5427 6811 9766 9798 11906 
+	}
+	manpower=10
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

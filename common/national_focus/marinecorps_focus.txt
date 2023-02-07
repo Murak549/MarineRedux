@@ -274,6 +274,9 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		cost = 5
 		mutually_exclusive = { focus = HMC_conversation_with_gwak_mal_pung }
 		mutually_exclusive = { focus = HMC_meet_hwangryong }
+		completion_reward = {
+			country_event = { id = ROKMC.18 }
+		}
 	}
 	default = no
 }

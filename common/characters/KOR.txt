@@ -3,7 +3,7 @@ characters = {
         name=KOR_lee_beom_seok
 		portraits={
 			civilian={
-				large=GFX_portrait_JAP_isoroku_yamamoto
+				large=GFX_portrait_kor_lee_beom_seok
 			}
 		}
 
@@ -18,7 +18,7 @@ characters = {
         name=KOR_provisional_government_of_korea
 		portraits={
 			civilian={
-				large=GFX_portrait_JAP_isoroku_yamamoto
+				large=GFX_portrait_kor_gov
 			}
 		}
 
@@ -33,12 +33,12 @@ characters = {
         name=KOR_lee_gang
 		portraits={
 			civilian={
-				large=GFX_portrait_JAP_isoroku_yamamoto
+				large=GFX_portrait_yi_kang
 			}
 		}
 
         country_leader={
-			ideology=neutrality_ideology
+			ideology=centrism
 			traits={  }
 			expire="1989.1.1.1"
 		}

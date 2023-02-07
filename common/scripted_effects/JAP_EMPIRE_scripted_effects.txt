@@ -1,0 +1,198 @@
+KOR_CHOSEN = {
+	912 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	527 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	914 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	913 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	525 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	911 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	910 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	909 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	915 = {
+		transfer_state_to = KOR
+		remove_core_of = HMC
+	}
+	JAP = {
+		set_autonomy = {
+			target = KOR
+			autonomous_state = autonomy_wtt_imperial_protectorate
+		}
+		set_autonomy = {
+			target = HMC
+			autonomous_state = autonomy_wtt_imperial_protectorate
+		}
+	}
+	KOR = {
+		load_oob = generic_focus
+		set_politics = {
+			ruling_party = fascism
+			long_name = "조선총독부"
+			name = "조선총독부"
+		}
+		set_popularities = {
+			democratic = 10
+			neutrality = 35
+			fascism = 50
+			communism = 5
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "조선총독부"
+			name = "조선총독부"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "조선총독부"
+			name = "조선총독부"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "조선총독부"
+			name = "조선총독부"
+		}
+	}
+}
+MAN_CHU = {
+	716 = {
+		transfer_state_to = MAN
+	}
+	328 = {
+		transfer_state_to = MAN
+	}
+	717 = {
+		transfer_state_to = MAN
+	}
+	610 = {
+		transfer_state_to = MAN
+	}
+	715 = {
+		transfer_state_to = MAN
+	}
+	761 = {
+		transfer_state_to = MAN
+	}
+	714 = {
+		transfer_state_to = MAN
+	}
+	924 = {
+		transfer_state_to = MAN
+	}
+	MAN = {
+		every_owned_state = {
+			add_core_of = MAN
+		}
+	}
+	JAP = {
+		set_autonomy = {
+			target = MAN
+			autonomous_state = autonomy_wtt_imperial_protectorate
+		}
+	}
+}
+MEN_GAN = {
+	MEN = {
+		set_cosmetic_tag = MEN_JAP
+	}
+	JAP = {
+		set_autonomy = {
+			target = MEN
+			autonomous_state = autonomy_wtt_imperial_protectorate
+		}
+	}
+}
+KOR_revleft = {
+	if = {
+		limit = {
+			has_completed_focus = HMC_prepare_for_penetration_plan
+			has_completed_focus = HMC_between_our_peoples
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		527 = {
+			transfer_state_to = KOR
+		}
+		912 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_north_attack
+	}
+	if = {
+		limit = {
+			has_completed_focus = HMC_prepare_for_penetration_plan
+			has_completed_focus = HMC_ask_russia_for_help
+		}
+		SOV = {
+			set_autonomy = {
+				target = KOR
+				autonomous_state = autonomy_satellite
+			}
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		527 = {
+			transfer_state_to = KOR
+		}
+		912 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_north_attack
+	}
+}
+KOR_revright = {
+	if = {
+		limit = {
+			has_completed_focus = HMC_an_adventure_to_the_south
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		910 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_south_attack
+	}
+	if = {
+		limit = {
+			AND = {
+				has_completed_focus = HMC_settle_down_in_the_middle
+				has_completed_focus = HMC_securing_gyeonggido_province
+			}
+		}
+		declare_war_on = {
+            target = HMC
+            type = annex_everything
+        }
+		525 = {
+			transfer_state_to = KOR
+		}
+		load_oob = KOR_middle_attack
+	}
+}
