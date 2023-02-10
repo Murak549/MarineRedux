@@ -9,3 +9,12 @@ HMC_supression = {
         
     }
 }
+HMC_EMPIRE = {
+    allowed = {
+        OR = {
+            original_tag = HMC
+            original_tag = KOR
+        }
+        
+    }
+}

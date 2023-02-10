@@ -256,6 +256,104 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		mutually_exclusive = { focus = HMC_look_to_the_west }
 	}
 	focus = {
+		id = HMC_talks_for_the_future
+		x = 0
+		y = 3
+		prerequisite = { focus = HMC_meet_hwangryong }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		completion_reward = {
+			country_event = ROKMC.5
+		}
+	}
+	focus = {
+		id = HMC_leader_hwang
+		x = 0
+		y = 4
+		prerequisite = { focus = HMC_talks_for_the_future }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = HMC_notadmit_him_TT
+			if = {
+				limit = { has_global_flag = HWANG_NO_CIVILWAR }
+				country_event = { id = ROKMC.6 days = 240 }
+			}
+			if = {
+				limit = { has_global_flag = HWANG_ROAD_TO_CIVILWAR }
+				country_event = { id = ROKMC.7 days = 240 }
+			}
+		}
+	}
+	focus = {
+		id = HMC_sex_with_stalin
+		x = 0
+		y = 4
+		prerequisite = { focus = HMC_talks_for_the_future }
+		relative_position_id = HMC_coup_detat
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = HMC_notadmit_him_TT
+			if = {
+				limit = { has_global_flag = HWANG_NO_CIVILWAR }
+				country_event = { id = ROKMC.6 days = 240 }
+			}
+			if = {
+				limit = { has_global_flag = HWANG_ROAD_TO_CIVILWAR }
+				country_event = { id = ROKMC.7 days = 240 }
+			}
+			else = {
+				HMC = {
+					set_cosmetic_tag = EUR_UNIFIED
+				}
+				annex_country = {
+					target = USA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = FRA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ENG
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SPR
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = LUX
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = BEL
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HOL
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = POR
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ITA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = GER
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SOV
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = HMC_conversation_with_gwak_mal_pung
 		x = 4
 		y = 2
@@ -265,6 +363,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		mutually_exclusive = { focus = HMC_meet_hwangryong }
 		mutually_exclusive = { focus = HMC_look_to_the_west }
 	}
+
 	focus = {
 		id = HMC_look_to_the_west
 		x = -4

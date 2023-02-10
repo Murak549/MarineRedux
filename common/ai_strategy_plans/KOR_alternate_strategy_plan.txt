@@ -1,0 +1,154 @@
+KOR_alternate_plan_democratic = {
+	name = "Democratic Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = DEMOCRATIC
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		HMC_establishment_of_a_secret_government
+        HMC_rally_of_supporters
+        HMC_face_general_lee_bumseok
+        HMC_general_and_a_soldier
+        HMC_nationalismthenamethatalwaysworks
+        HMC_preparing_for_civil_war
+        HMC_settle_down_in_the_middle
+        HMC_along_the_coast
+        HMC_securing_gyeonggido_province
+        HMC_preparations_for_the_uprising
+        HMC_a_shot_of_gunfire
+        HMC_weapons_to_the_citizens
+        HMC_and_it_started
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+KOR_alternate_plan_communist = {
+	name = "Communist Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = COMMUNIST
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		HMC_establishment_of_a_secret_government
+        HMC_rally_of_supporters
+        HMC_cooperationwiththeleft
+        HMC_creation_of_an_avantgarde
+        HMC_slight_favor
+        HMC_prepare_for_penetration_plan
+        HMC_friends_of_the_north
+        HMC_temporary_cooperation
+        HMC_ask_russia_for_help
+        HMC_organization_of_the_revolutionary_armed_forces_of_goryeo
+        HMC_general_strike
+        HMC_urges_soviet_intervention
+        HMC_revolution_is_coming
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+KOR_alternate_plan_fascist = {
+	name = "Fascist Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = FASCIST
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		HMC_establishment_of_a_secret_government
+        HMC_rally_of_supporters
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+KOR_alternate_plan_neutrality = {
+	name = "Neutrality Korea Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = NEUTRALITY
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		HMC_establishment_of_a_secret_government
+        HMC_rally_of_supporters
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

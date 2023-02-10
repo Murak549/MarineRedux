@@ -85,11 +85,14 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.5.d
 	option = {
-	name = ROKMC.5.A
-
+		name = ROKMC.5.a #오도짜세 황룡
+		set_global_flag = HWANG_NO_CIVILWAR
 	}
-
+	option = {
+		name = ROKMC.5.b #개씹기열 황룡
+		set_global_flag = HWANG_ROAD_TO_CIVILWAR
 	}
+}
 country_event = {
 	id = ROKMC.6
 	title = ROKMC.6.t
@@ -97,11 +100,9 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.6.d
 	option = {
-	name = ROKMC.6.A
-
+		name = ROKMC.6.a
 	}
-
-	}
+}
 country_event = {
 	id = ROKMC.7
 	title = ROKMC.7.t

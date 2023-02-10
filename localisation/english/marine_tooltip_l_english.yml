@@ -1,3 +1,4 @@
 ﻿l_english:
  HMC_they_dont_wanna_conscripted_TT:0"§R시민들이 일어서기 시작하며, 그것은 점점 강해질겁니다.§T"
- JAP_marine_is_dead:0 "§R[HMC.GetName]이 주도하던 질서가 사그리 가라앉을 것 입니다.§T
+ JAP_marine_is_dead:0 "§R[HMC.GetName]이 주도하던 질서가 사그리 가라앉을 것 입니다.§T"
+ HMC_notadmit_him_TT:0 "§R모두가 인정하지 않는 지도자가 해병성채에 발을 들였습니다!\n이는 곧 내전으로 이어질 것입니다.§T"

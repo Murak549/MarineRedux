@@ -1,15 +1,5 @@
 ﻿division_template = {
-	name = "Gyeongbi-Yeodan"				
-	division_names_group = KOR_GAR_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Bobyeong-Sadan"				
+	name = "보병사단"				
 	division_names_group = KOR_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,28 +12,9 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
 }
 division_template = {
-	name = "Gigap-Sadan"		
-	division_names_group = KOR_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Gibyeong-Sadan"
+	name = "기병사단"
 	division_names_group = KOR_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -62,8 +33,10 @@ units = {
 			name_order = 4
 		}
 		location = 3929
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -71,8 +44,10 @@ units = {
 			name_order = 1
 		}
 		location = 944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -80,8 +55,10 @@ units = {
 			name_order = 1
 		}
 		location = 9897
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -89,8 +66,10 @@ units = {
 			name_order = 1
 		}
 		location = 3944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -98,8 +77,10 @@ units = {
 			name_order = 4
 		}
 		location = 3929
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -107,8 +88,10 @@ units = {
 			name_order = 1
 		}
 		location = 944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -116,8 +99,10 @@ units = {
 			name_order = 1
 		}
 		location = 9897
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -125,8 +110,10 @@ units = {
 			name_order = 1
 		}
 		location = 3944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -134,8 +121,10 @@ units = {
 			name_order = 4
 		}
 		location = 3929
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -143,8 +132,10 @@ units = {
 			name_order = 1
 		}
 		location = 944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -152,8 +143,10 @@ units = {
 			name_order = 1
 		}
 		location = 9897
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 	division= {			
 		division_name = {
@@ -161,8 +154,10 @@ units = {
 			name_order = 1
 		}
 		location = 3944
-		division_template = "Bobyeong-Sadan"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
+        start_equipment_factor = 1
+        start_manpower_factor = 1.0
 	}
 }
 
@@ -174,11 +169,11 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "KOR"
 		}
 		requested_factories = 2
-		progress = 0.1
+		progress = 0.7
 		efficiency = 50
 	}
 
@@ -199,16 +194,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_0
-			creator = "KOR" 
-			version_name = "FT-17K"
-		}
-		requested_factories = 1
-		progress = 0.4
 		efficiency = 50
 	}
 }

@@ -1,0 +1,49 @@
+KOR_historical_plan = {
+	name = "Korea historical plan"
+	desc = "Historical behavior for Korea"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	
+
+	ai_national_focuses = {
+		HMC_establishment_of_a_secret_government
+        HMC_rally_of_supporters
+        HMC_face_general_lee_bumseok
+        HMC_general_and_a_soldier
+        HMC_nationalismthenamethatalwaysworks
+        HMC_preparing_for_civil_war
+        HMC_settle_down_in_the_middle
+        HMC_along_the_coast
+        HMC_securing_gyeonggido_province
+        HMC_preparations_for_the_uprising
+        HMC_a_shot_of_gunfire
+        HMC_weapons_to_the_citizens
+        HMC_and_it_started
+	}
+	
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+	
+	ideas = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "CHI"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"
+		value = -500
+	}
+}

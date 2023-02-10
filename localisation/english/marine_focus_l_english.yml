@@ -11,6 +11,8 @@
  HMC_look_to_the_west:0 "서양을 바라보다"
  HMC_depose_Hwang_Geun_Chul:0 "황근출 축출"
 #  HMC_depose_Hwang_Geun_Chul_desc:0 "모든 초기 에티오피아 주를 §Y[ROOT.GetFlag][ROOT.GetNameDef]§!가 지배하거나 §Y[ROOT.GetAdjective]의 동맹§!이 지배함."
-
+ HMC_talks_for_the_future:0 "미래를 향한 회담"
+ HMC_leader_hwang:0 "황룡 집권"
+ HMC_dismantle_bujori:0 "부조리 해체"
 
  

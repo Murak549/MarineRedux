@@ -14,6 +14,9 @@ KOR_revleft = {
 		912 = {
 			transfer_state_to = KOR
 		}
+		929 = {
+			transfer_state_to = KOR
+		}
 		load_oob = KOR_north_attack
 	}
 	if = {
@@ -37,6 +40,9 @@ KOR_revleft = {
 		912 = {
 			transfer_state_to = KOR
 		}
+		929 = {
+			transfer_state_to = KOR
+		}
 		load_oob = KOR_north_attack
 	}
 }
@@ -50,6 +56,12 @@ KOR_revright = {
             type = annex_everything
         }
 		910 = {
+			transfer_state_to = KOR
+		}
+		925 = {
+			transfer_state_to = KOR
+		}
+		927 = {
 			transfer_state_to = KOR
 		}
 		load_oob = KOR_south_attack
@@ -66,6 +78,9 @@ KOR_revright = {
             type = annex_everything
         }
 		525 = {
+			transfer_state_to = KOR
+		}
+		909 = {
 			transfer_state_to = KOR
 		}
 		load_oob = KOR_middle_attack

@@ -66,6 +66,7 @@ KOR_CHOSEN = {
 		}
 	}
 	KOR = {
+		set_cosmetic_tag = KOR_JAP
 		load_oob = generic_focus
 		set_politics = {
 			ruling_party = fascism

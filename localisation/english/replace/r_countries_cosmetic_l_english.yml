@@ -18,6 +18,13 @@
  KOR_JAP_ADJ:0 "총독부"
  KOR_JAP_DEF:0 "총독부"
  MEN_JAP:0 "몽강연합자치정부"
+ FER_KOR:0 "제국관외주"
+ FER_KOR_ADJ:0 "외만주"
+ FER_KOR_DEF:0 "외만주"
+
+ MAN_KOR:0 "대한령 만주"
+ MAN_KOR_ADJ:0 "만주"
+ MAN_KOR_DEF:0 "만주"
 
 
 

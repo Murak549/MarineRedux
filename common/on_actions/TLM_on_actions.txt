@@ -1,0 +1,236 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = HMC_LAST_EMPIRE
+						option = RULE_OPTION_DEFAULT_LASTEMPIRE_KOR
+					}
+				}
+                MON = {
+                    leave_faction = yes
+                    set_politics = {
+                        ruling_party = neutrality
+                        elections_allowed = no
+                        last_election = "1935.12.17"
+                        election_frequency = 240
+                        long_name = MON_democratic
+                        name = MON_communism
+                    }
+                    transfer_state = 329
+                }
+                MEN = {
+                    set_cosmetic_tag = MEN_JAP
+                    transfer_state = 621
+                    give_military_access = CMC
+                    if = {
+                        limit = {
+                            has_start_date < 1936.01.03
+                        }
+
+                        declare_war_on = {
+                            target = MON
+                            type = annex_everything
+                        }
+                    }
+                }
+                HMC = {
+                    give_guarantee = CMC
+                    give_guarantee = MEN
+                    delete_unit_template_and_units = { division_template = "Suyuk Sadan" }
+					delete_unit_template_and_units = { division_template = "Malttalphil Sadan" }
+					delete_unit_template_and_units = { division_template = "Auto-Malttalphil Sadan" }
+					delete_unit_template_and_units = { division_template = "Odojjase-Haebyeong Sadan" }
+					load_oob = "HMC_fallen"
+                }
+                KOR = {
+                    create_faction = "공영권"
+                    set_cosmetic_tag = KOR_STATE
+                    if = {
+                        limit = {
+                            has_start_date < 1936.01.03
+                        }
+
+                        declare_war_on = {
+                            target = HMC
+                            type = annex_everything
+                        }
+                    }
+                    delete_unit_template_and_units = { division_template = "보병사단" }
+					delete_unit_template_and_units = { division_template = "기병사단" }
+                    transfer_state = 745
+                    transfer_state = 924
+                    transfer_state = 391
+                    transfer_state = 390
+                    transfer_state = 716
+                    transfer_state = 328
+                    transfer_state = 717
+                    transfer_state = 933
+                    transfer_state = 932
+                    transfer_state = 930
+                    transfer_state = 931
+                    transfer_state = 527
+                    transfer_state = 928
+                    transfer_state = 929
+                    transfer_state = 912
+                    transfer_state = 913
+                    transfer_state = 914
+                    transfer_state = 525
+                    transfer_state = 927
+                    transfer_state = 909
+                    transfer_state = 910
+                    transfer_state = 925
+                    transfer_state = 915
+                    transfer_state = 911
+                    if = {
+                        limit = {
+                            has_dlc = "Together for Victory"
+                            not = { has_dlc = "Waking the Tiger" }
+                        }
+                        set_autonomy = {
+                            target = MAN
+                            autonomous_state = autonomy_integrated_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            not = {
+                                has_dlc = "Waking the Tiger"
+                                has_dlc = "Together for Victory"
+                            }
+                        }
+                        set_autonomy = {
+                            target = MAN
+                            autonomous_state = autonomy_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            has_dlc = "Waking the Tiger"
+                        }
+                        set_autonomy = {
+                            target = MAN
+                            autonomous_state = autonomy_wtt_imperial_protectorate
+                        }
+                    }
+                    if = {
+                        limit = {
+                            has_dlc = "Together for Victory"
+                            not = { has_dlc = "Waking the Tiger" }
+                        }
+                        set_autonomy = {
+                            target = FER
+                            autonomous_state = autonomy_integrated_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            not = {
+                                has_dlc = "Waking the Tiger"
+                                has_dlc = "Together for Victory"
+                            }
+                        }
+                        set_autonomy = {
+                            target = FER
+                            autonomous_state = autonomy_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            has_dlc = "Waking the Tiger"
+                        }
+                        set_autonomy = {
+                            target = FER
+                            autonomous_state = autonomy_wtt_imperial_protectorate
+                        }
+                    }
+                    if = {
+                        limit = {
+                            has_dlc = "Together for Victory"
+                            not = { has_dlc = "Waking the Tiger" }
+                        }
+                        set_autonomy = {
+                            target = MEN
+                            autonomous_state = autonomy_integrated_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            not = {
+                                has_dlc = "Waking the Tiger"
+                                has_dlc = "Together for Victory"
+                            }
+                        }
+                        set_autonomy = {
+                            target = MEN
+                            autonomous_state = autonomy_puppet
+                        }
+                    }
+                    if = {
+                        limit = { 
+                            has_dlc = "Waking the Tiger"
+                        }
+                        set_autonomy = {
+                            target = MEN
+                            autonomous_state = autonomy_wtt_imperial_protectorate
+                        }
+                    }
+                    set_province_name = { id = 7125 name = "한성" }
+                    set_province_name = { id = 7175 name = "부여" }
+                    set_province_name = { id = 1054 name = "하동" }
+                    set_province_name = { id = 4126 name = "군산" }
+                    set_province_name = { id = 13264 name = "전주" }
+                    set_province_name = { id = 12089 name = "안동" }
+                    926 = {
+                        add_victory_points = {
+                            province = 1054 
+                            value = 1
+                        }
+                    }
+                    927 = {
+                        add_victory_points = {
+                            province = 7125 
+                            value = 1
+                        }
+                    }
+                    910 = {
+                        add_victory_points = {
+                            province = 4126
+                            value = 1
+                        }
+                        add_victory_points = {
+                            province = 13264
+                            value = 1
+                        }
+                    }
+                    911 = {
+                        set_victory_points = {
+                            province = 4126
+                            value = 1
+                        }
+                        add_victory_points = {
+                            province = 12089
+                            value = 1
+                        }
+                    }
+                }
+                MAN = {
+                    set_cosmetic_tag = MAN_KOR
+                    transfer_state = 610
+                    transfer_state = 715
+                    transfer_state = 714
+                    transfer_state = 761
+                }
+                FER = {
+                    set_cosmetic_tag = FER_KOR
+                    transfer_state = 408
+                    transfer_state = 409
+                    transfer_state = 657
+                    transfer_state = 560
+                    transfer_state = 561
+                }
+			}
+		}
+	}
+}
