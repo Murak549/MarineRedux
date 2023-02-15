@@ -79,48 +79,48 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = CHI
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = PRC
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = SIC
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = SND
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = XSM
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = SIC
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = SIK
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = GXC
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 			targeted_modifier = {
 				tag = YUN
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.45
+				defense_bonus_against = 0.45
 			}
 		}
         SAC_ANTI_COMMUNISM = {
@@ -142,8 +142,8 @@ ideas = {
 					}
 				}
 				tag = PRC
-				attack_bonus_against = 0.7
-				defense_bonus_against = 0.7
+				attack_bonus_against = 12.7
+				defense_bonus_against = 12.7
 			}
 		}
     }

@@ -90,6 +90,27 @@ country_event = {
 	}
 	option = {
 		name = ROKMC.5.b #개씹기열 황룡
+		remove_ideas = {
+			HMC_people_dont_agree_us
+		}
+		remove_ideas = {
+			HMC_airforce_1
+		}
+		remove_ideas = {
+			HMC_giyeol
+		}
+		remove_ideas = {
+			HMC_torture
+		}
+		remove_ideas = {
+			HMC_conscripting_assembly
+		}
+		remove_ideas = {
+			HMC_no_rule
+		}
+		525 = {
+			set_demilitarized_zone = no
+		}
 		set_global_flag = HWANG_ROAD_TO_CIVILWAR
 	}
 }
@@ -101,6 +122,15 @@ country_event = {
 	desc = ROKMC.6.d
 	option = {
 		name = ROKMC.6.a
+		925 = {
+			set_demilitarized_zone = yes
+		}
+		909 = {
+			set_demilitarized_zone = yes
+		}
+		926 = {
+			set_demilitarized_zone = yes
+		}
 	}
 }
 country_event = {
@@ -110,34 +140,27 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.7.d
 	option = {
-	name = lar_spain.49.a
-		random_country = {
-				limit = {
-						original_tag = JAP
-						has_government = neutrality
-						NOT = {
-								tag = FROM
-							}
-					}
-				HMC = {
-						add_to_war = {
-								targeted_alliance = PREV
-								enemy = JAP
-								hostility_reason = asked_to_join
-							}
-						puppet = PREV
-					}
-				set_political_party = {
-						ideology = neutrality
-						popularity = 100
-					}
-			}
-		JAP = {
-				set_rule = {
-						can_join_factions = no
-					}
-			}
-
+		925 = {
+			set_demilitarized_zone = yes
+		}
+		909 = {
+			set_demilitarized_zone = yes
+		}
+		926 = {
+			set_demilitarized_zone = yes
+		}
+		914 = {
+			set_demilitarized_zone = yes
+		}
+		527 = {
+			set_demilitarized_zone = yes
+		}
+		912 = {
+			set_demilitarized_zone = yes
+		}
+		name = lar_spain.49.a
+		country_event = { id = ROKMC.10 days = 170 }
+		country_event = { id = ROKMC.12 days = 100 }
 	}
 
 	}
@@ -148,46 +171,7 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.8.d
 	option = {
-	name = lar_spain.48.a
-		hidden_effect = {
-				start_civil_war = {
-						ideology = communism
-						size = 0.1
-						keep_unit_leaders_trigger = {
-								always = yes
-							}
-					}
-				random_country = {
-						limit = {
-								original_tag = JAP
-								has_government = communism
-								NOT = {
-										tag = ROOT
-									}
-							}
-						set_politics = {
-								ruling_party = neutrality
-							}
-						set_political_party = {
-								ideology = neutrality
-								popularity = 100
-							}
-						set_party_name = {
-								ideology = neutrality
-								long_name = SPR_neutrality_anarchism_party_long
-								name = SPR_neutrality_anarchism_party
-							}
-						set_cosmetic_tag = JAP_MARINE
-						set_country_flag = SPR_portuguese_anarchism_flag
-						retire_country_leader = yes
-					}
-				FROM = {
-						country_event = {
-								id = ROKMC.7
-							}
-					}
-			}
-
+		#내전 작게난다 익이
 	}
 
 	}
@@ -245,8 +229,7 @@ country_event = {
 			}
 
 	}
-
-	}
+}
 country_event = {
 	id = ROKMC.10
 	title = ROKMC.10.t
@@ -254,37 +237,9 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.10.d
 	option = {
-	name = lar_spain.49.a
-		random_country = {
-				limit = {
-						original_tag = CHI
-						has_government = neutrality
-						NOT = {
-								tag = FROM
-							}
-					}
-				HMC = {
-						add_to_war = {
-								targeted_alliance = PREV
-								enemy = CHI
-								hostility_reason = asked_to_join
-							}
-						puppet = PREV
-					}
-				set_political_party = {
-						ideology = neutrality
-						popularity = 100
-					}
-			}
-		CHI = {
-				set_rule = {
-						can_join_factions = no
-					}
-			}
-
+		#내전난다 이기
 	}
-
-	}
+}
 country_event = {
 	id = ROKMC.11
 	title = ROKMC.11.t
@@ -292,51 +247,9 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.11.d
 	option = {
-	name = lar_spain.48.a
-		hidden_effect = {
-				start_civil_war = {
-						ideology = communism
-						size = 0.5
-						capital = 743
-						keep_unit_leaders_trigger = {
-								always = yes
-							}
-						states = { 608  614  597  743  598  596  595  600  607 }
-					}
-				random_country = {
-						limit = {
-								original_tag = CHI
-								has_government = communism
-								NOT = {
-										tag = ROOT
-									}
-							}
-						set_politics = {
-								ruling_party = neutrality
-							}
-						set_political_party = {
-								ideology = fascism
-								popularity = 100
-							}
-						set_party_name = {
-								ideology = neutrality
-								long_name = SPR_neutrality_anarchism_party_long
-								name = SPR_neutrality_anarchism_party
-							}
-						set_cosmetic_tag = CHI_MARINE
-						set_country_flag = SPR_portuguese_anarchism_flag
-						retire_country_leader = yes
-					}
-				FROM = {
-						country_event = {
-								id = ROKMC.10
-							}
-					}
-			}
-
+		#내전난다 이기
 	}
-
-	}
+}
 country_event = {
 	id = ROKMC.12
 	title = ROKMC.12.t
@@ -344,90 +257,9 @@ country_event = {
 	is_triggered_only = yes
 	desc = ROKMC.12.d
 	option = {
-	name = "중화민국이 더 오도짜세스럽다."
-		CHI = {
-				country_event = {
-						id = ROKMC.11
-						hours = 6
-						random_hours = 18
-					}
-			}
-
-	}
-	option = {
-	name = "아니. 우리는 못된똥 해병을 버리지 않는다."
-		PRC = {
-				country_event = {
-						id = ROKMC.13
-						hours = 6
-						random_hours = 18
-					}
-			}
-
-	}
-
-	}
-country_event = {
-	id = ROKMC.15
-	title = ROKMC.15.t
-	picture = GFX_report_event_generic_battle
-	is_triggered_only = yes
-	desc = ROKMC.15.d
-	option = {
-	name = "드디어 좆같은 새끼들을 끌어내릴 날이 왔군"
-		set_capital = {
-				state = 835
-				remember_old_capital = no
-			}
-		set_cosmetic_tag = HMC_KOREA
-		set_politics = {
-				ruling_party = democratic
-			}
-		set_popularities = {
-				democratic = 65
-				neutrality = 15
-				fascism = 0
-				communism = 20
-			}
-		hidden_effect = {
-				start_civil_war = {
-						ideology = fascism
-						size = 0.5
-						keep_unit_leaders_trigger = {
-								always = yes
-							}
-						states = { 837  836  525  838  840  841  527  839 }
-					}
-				random_country = {
-						limit = {
-								original_tag = HMC
-								has_government = fascism
-								NOT = {
-										tag = ROOT
-									}
-							}
-					}
-			}
-
+		#내전의 징조
 	}
 }
-country_event = {
-	id = ROKMC.16
-	title = ROKMC.16.t
-	picture = GFX_report_event_generic_battle
-	is_triggered_only = yes
-	desc = ROKMC.16.d
-	option = {
-	name = "그 점을 생각하지 못했군."
-
-	}
-	option = {
-	name = "그의 명복을 빌어라"
-
-	}
-
-}
-
 country_event = {
 	id = ROKMC.17
 	title = ROKMC.17.t

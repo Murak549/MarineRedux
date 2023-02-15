@@ -171,5 +171,125 @@ characters={
                 large=GFX_gwak_mal_pung_large
             }
         }
+        corps_commander={
+            traits={ naval_invader logistics_wizard }
+            skill=2
+            attack_skill=2
+            defense_skill=4
+            planning_skill=1
+            logistics_skill=5
+        }
     }
+    HMC_mu_mo_chil = {
+		name=HMC_mu_mo_chil
+        portraits={
+            civilian={
+                large=GFX_portrait_hmc_syngman_large
+            }
+        }
+        corps_commander={
+			traits={ career_officer substance_abuser }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+    }
+    HMC_tonjung={
+		name=HMC_tonjung
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+    HMC_suck_dick_jo={
+		name=HMC_suck_dick_jo
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+    HMC_jegal_chamsu={
+		name=HMC_jegal_chamsu
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+    HMC_ma_galgon={
+		name=HMC_ma_galgon
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+    HMC_hwang_ryong={
+		name=HMC_hwang_ryong
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+    HMC_por_pip={
+		name=HMC_por_pip
+		portraits={
+			army={
+				
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
 }

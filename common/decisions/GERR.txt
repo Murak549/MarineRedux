@@ -1,0 +1,69 @@
+GER_surrend = {
+	GER_sue_for_peace_nuke = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+ 			OR = {
+				AND = {
+					OR = {
+						has_army_size = { size < 20 }
+						has_navy_size = { size < 20 }
+					}	
+					NOT = {
+						controls_state = 64
+					}
+					NOT = {
+						has_global_flag = HOI4_WW2
+					}
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		days_remove = -1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				NOT = {
+					controls_state = 5
+					controls_state = 763
+					controls_state = 63
+					controls_state = 68
+					controls_state = 66
+					controls_state = 67
+					controls_state = 50
+					controls_state = 42
+				}
+				factor = 10
+			}
+		}
+
+		modifier = {
+			# forced_surrender_limit = -1.0
+		}
+
+		remove_effect = {
+
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			hidden_effect = {
+				clr_global_flag = JAP_nuke_1
+				clr_global_flag = JAP_nuke_2
+				GER_die = yes
+				set_global_flag = HOI4_WW2
+			}
+		}
+	}
+}

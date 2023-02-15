@@ -1,0 +1,51 @@
+KOR_fucking_red = {
+
+	allowed = {
+	}
+
+	visible = {
+		original_tag = KOR
+		has_government = communism
+		NOT = {
+			has_cosmetic_tag = KOR_communism
+		}
+	}
+}
+
+KOR_fucking_syngman = {
+
+	allowed = {
+	}
+
+	visible = {
+		original_tag = KOR
+		has_government = democratic
+		NOT = {
+			has_cosmetic_tag = KOR_democratic
+		}
+	}
+}
+
+KOR_einigkeit_und_recht_und_freiheit = {
+
+	allowed = {
+	}
+
+	visible = {
+		original_tag = KOR
+	}
+}
+
+KOR_freedom_but_not_freedom = {
+
+	allowed = {
+
+	}
+	visible = {
+		AND = {
+			has_global_flag = KOR_PRK
+			original_tag = KOR
+			has_government = neutrality
+		}
+	}
+}

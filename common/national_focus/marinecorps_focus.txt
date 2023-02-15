@@ -210,6 +210,7 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		x = 10
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 		relative_position_id = HMC_night_of_marine
 		mutually_exclusive = { focus = HMC_rule_geunchul }
 		prerequisite = { focus = HMC_resume_conscripting focus = HMC_break_over_shock }
@@ -234,6 +235,15 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 			}
 			hidden_effect = {
 				dismantle_faction = yes
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.4
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = HMC_democrat_pokdo
+					name = HMC_democrat_pokdo
+				}
 			}
 		}
 	}
@@ -277,22 +287,35 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 			custom_effect_tooltip = HMC_notadmit_him_TT
 			if = {
 				limit = { has_global_flag = HWANG_NO_CIVILWAR }
-				country_event = { id = ROKMC.6 days = 240 }
+				country_event = { id = ROKMC.6 }#days = 240 }
 			}
 			if = {
 				limit = { has_global_flag = HWANG_ROAD_TO_CIVILWAR }
-				country_event = { id = ROKMC.7 days = 240 }
+				country_event = { id = ROKMC.7 }#days = 240 }
 			}
 		}
 	}
 	focus = {
-		id = HMC_sex_with_stalin
+		id = HMC_disperse_commander
 		x = 0
 		y = 4
 		prerequisite = { focus = HMC_talks_for_the_future }
 		relative_position_id = HMC_coup_detat
 		cost = 5
 		completion_reward = {
+			retire_character = HMC_Hwang_geun_chul
+			retire_character = HMC_Hwang_geun_chul_c
+			retire_character = HMC_Hwang_geun_chul_f
+			retire_character = HMC_Hwang_geun_chul_n
+			add_country_leader_role = {
+				character = HMC_hwang_ryong
+				promote_leader = yes
+				country_leader = {
+					ideology = nazism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
 			custom_effect_tooltip = HMC_notadmit_him_TT
 			if = {
 				limit = { has_global_flag = HWANG_NO_CIVILWAR }
@@ -302,60 +325,11 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 				limit = { has_global_flag = HWANG_ROAD_TO_CIVILWAR }
 				country_event = { id = ROKMC.7 days = 240 }
 			}
-			else = {
-				HMC = {
-					set_cosmetic_tag = EUR_UNIFIED
-				}
-				annex_country = {
-					target = USA
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = FRA
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = ENG
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = SPR
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = LUX
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = BEL
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = HOL
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = POR
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = ITA
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = GER
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = SOV
-					transfer_troops = yes
-				}
-			}
 		}
 	}
 	focus = {
 		id = HMC_conversation_with_gwak_mal_pung
-		x = 4
+		x = -4
 		y = 2
 		prerequisite = { focus = HMC_depose_Hwang_Geun_Chul }
 		relative_position_id = HMC_coup_detat
@@ -363,10 +337,61 @@ focus_tree = { #시즌 21398741092834호 중점 리워크~~~
 		mutually_exclusive = { focus = HMC_meet_hwangryong }
 		mutually_exclusive = { focus = HMC_look_to_the_west }
 	}
-
+	focus = {
+		id = HMC_annex_all_marine
+		x = -2
+		y = 1
+		relative_position_id = HMC_conversation_with_gwak_mal_pung
+		cost = 10
+		prerequisite = { focus = HMC_conversation_with_gwak_mal_pung }
+	}
+	focus = {
+		id = HMC_end_of_korean_marine_war
+		x = 0
+		y = 1
+		relative_position_id = HMC_conversation_with_gwak_mal_pung
+		prerequisite = { focus = HMC_conversation_with_gwak_mal_pung }
+		cost = 10
+		bypass = {
+			AND = {
+				NOT = {
+					has_war_with = KOR
+				}
+				NOT = {
+					KOR = {
+						exists = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_country_leader_role = {
+					character = HMC_syngman
+					country_leader = {
+						expire = "1989.1.1"
+						ideology = liberalism
+						traits = {
+							
+						}
+						id = 700 #Hirohito
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HMC_ban_akgibari
+		x = -2
+		y =  3
+		cost = 10
+		relative_position_id = HMC_coup_detat
+		prerequisite = { focus = HMC_conversation_with_gwak_mal_pung focus = HMC_meet_hwangryong }
+	}
 	focus = {
 		id = HMC_look_to_the_west
-		x = -4
+		x = 4
 		y = 2
 		prerequisite = { focus = HMC_depose_Hwang_Geun_Chul }
 		relative_position_id = HMC_coup_detat

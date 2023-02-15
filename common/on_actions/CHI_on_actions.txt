@@ -8,42 +8,168 @@ on_actions = {
 				}
 				white_peace = SND
 				news_event = { id = mwar.1001 }
-				CMC = {
-					start_civil_war = {
-						ideology = neutrality
-						size = 0.1
-						army_ratio = 0.5
-						navy_ratio = 0
-						air_ratio = 1
-						keep_all_characters = yes
-						set_country_leader_name = {
-							ideology = neutrality
-							name = "우페이푸"
+				if = {
+					limit = {
+						CMC = {
+							is_ai = no
 						}
-						set_politics = {
-							ruling_party = neutrality
-							long_name = "국민당"
-							name = "국민당"
-						}
-						set_popularities = {
-							democratic = 20
-							neutrality = 45
-							fascism = 0
-							communism = 35
-						}
-						set_country_leader_portrait = {
-							ideology = neutrality
-							portrait = gfx\leaders\ZLC\Portrait_ZLC_Chao_kun.png
-						}
-						set_cosmetic_tag = CMC_JIG
-						# PREV = {  # Original country
-						# 	TAG_airforce_leader = { # Character
-						# 		set_nationality = PREV.PREV
-						# 		# Transfers to breakaway
-						# 	}
-						# }
+					}
+					CMC = {
+						country_event = {
+							id = mwar.101
+						}	
 					}
 				}
+			}
+			CMC = {
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.1
+					army_ratio = 0.5
+					navy_ratio = 0
+					air_ratio = 1
+					keep_all_characters = yes
+					set_country_leader_name = {
+						ideology = neutrality
+						name = "우페이푸"
+					}
+					set_politics = {
+						ruling_party = neutrality
+						long_name = "국민당"
+						name = "국민당"
+					}
+					set_politics = {
+						ruling_party = democratic
+						long_name = "국민당"
+						name = "국민당"
+					}
+					set_politics = {
+						ruling_party = communism
+						long_name = "중국 공산당"
+						name = "중국 공산당"
+					}
+					set_politics = {
+						ruling_party = fascism
+						long_name = "남의사"
+						name = "남의사"
+					}
+					set_popularities = {
+						democratic = 20
+						neutrality = 45
+						fascism = 0
+						communism = 35
+					}
+					set_country_leader_portrait = {
+						ideology = neutrality
+						portrait = gfx\leaders\ZLC\Portrait_ZLC_Chao_kun.png
+					}
+					delete_unit_template_and_units = { division_template = "Suyuk Sadan" }
+					delete_unit_template_and_units = { division_template = "Malttalphil Sadan" }
+					delete_unit_template_and_units = { division_template = "Auto-Malttalphil Sadan" }
+					delete_unit_template_and_units = { division_template = "Odojjase-Haebyeong Sadan" }
+					division_template = {
+						name = "Juntuan"
+						is_locked = no
+						division_names_group = CHI_INF_01
+						priority = 0
+						template_counter = 0
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+						}
+					}
+					division_template = {
+						name = "Sanjiao Jun"
+						is_locked = no
+						division_names_group = CHI_INF_01
+						priority = 0
+						template_counter = 0
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+						}
+					}
+				}
+			every_country = {
+				limit = {
+					AND = {
+						original_tag = CMC
+						# has_cosmetic_tag = CMC_JIG
+					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "국민당"
+					name = "국민당"
+				}
+				614 = {
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+				}
+			} # 나중에 scripted_effect로 개편해야함
 			}
 			if = { #버그 수정해야함
 				limit = {
@@ -105,6 +231,16 @@ on_actions = {
 				JAP = {
 					country_event = { id = mwar.12 hours = 6 }
 				}
+			}
+			if = {
+				limit = {
+					AND = {
+						original_tag =  GER
+						has_war_with = SOV
+						has_war_with = ENG
+					}
+				}
+				GER_die = yes
 			}
         }
     }

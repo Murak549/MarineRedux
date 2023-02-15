@@ -1,0 +1,651 @@
+GER_die = {
+	add_named_threat = { threat = -50 name = "독일의 항복" }
+	every_other_country = {
+		limit = {
+			has_war_with = GER
+		}	
+		white_peace = GER
+	}
+	###########################################
+	################# 영토 반환 ################ 
+	###########################################
+	LUX = {
+		transfer_state = 8
+	}
+	815 = {
+		owner = {
+			transfer_state = 188
+		}
+	}
+		FRA = {
+		transfer_state = 28
+		transfer_state = 25
+		transfer_state = 33
+		transfer_state = 26
+		transfer_state = 22
+		transfer_state = 20
+		transfer_state = 32
+		transfer_state = 21
+		transfer_state = 851
+		transfer_state = 735
+	}
+	SOV = {
+		transfer_state = 763
+		transfer_state = 73
+		transfer_state = 4
+		transfer_state = 89
+		transfer_state = 91
+		transfer_state = 93
+		transfer_state = 94
+		transfer_state = 784
+		transfer_state = 95
+		transfer_state = 96
+	}
+	POL = {
+		transfer_state = 5
+		transfer_state = 97
+		transfer_state = 92
+		transfer_state = 88
+		transfer_state = 90
+		transfer_state = 10
+		transfer_state = 85
+		transfer_state = 807
+		transfer_state = 87
+		transfer_state = 762
+		transfer_state = 67
+		transfer_state = 86
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 98
+	}
+	CZE = {
+		transfer_state = 69
+		transfer_state = 9
+		transfer_state = 74
+		transfer_state = 72
+		transfer_state = 75
+		transfer_state = 70
+		transfer_state = 664
+		transfer_state = 71
+	}
+	ENG = {
+		transfer_state = 848
+		transfer_state = 153	
+	}
+	FRA = {
+		transfer_state = 152
+	}
+	YUG = {
+		transfer_state = 736
+		transfer_state = 852
+		transfer_state = 163
+	}
+	ALB = {
+		transfer_state = 44
+		transfer_state = 805
+	}
+
+	###############
+	#### 냉전 ####
+	##############
+	POL = {
+		every_owned_state = {
+			add_core_of = POL
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+	ROM = {
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+	YUG = {
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+	HUN = {
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+	BUL = {
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+	ITA = {
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+	create_dynamic_country = { #French Germany
+		original_tag = GER
+		copy_tag = GER
+		add_political_power = 100
+		transfer_state = 50
+		transfer_state = 42
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1934.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		FRA = {			
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_supervised_state
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}	
+	create_dynamic_country = { #French Germany
+		original_tag = GER
+		copy_tag = GER
+		add_political_power = 100
+		transfer_state = 50
+		transfer_state = 42
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1934.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		FRA = {			
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_supervised_state
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}	
+	create_dynamic_country = { #American Germany
+		original_tag = GER
+		copy_tag = GER
+		add_political_power = 100
+		transfer_state = 55
+		transfer_state = 54
+		transfer_state = 53
+		transfer_state = 52
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1934.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		USA = {			
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_supervised_state
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}	
+	ENG = {
+		set_autonomy = {
+			target = GER
+			autonomy_state = autonomy_supervised_state
+			end_wars = yes
+			end_civil_wars = yes
+		}
+	}
+	create_dynamic_country = { #Fuckin' Red Germany
+		original_tag = GER
+		copy_tag = GER
+		add_political_power = 100
+		transfer_state = 60
+		transfer_state = 65 
+		transfer_state = 64
+		transfer_state = 62
+		transfer_state = 61
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1934.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		SOV = {			
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_supervised_state
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}	
+	set_global_flag = yalta_agreed_flag
+}
+JAP_hangbok_event_2 = {
+	add_named_threat = { threat = -50 name = JAP_hangbok_event_2 }
+	KOR = {
+		set_popularities = {
+			democratic = 33 #liberalism
+			fascism = 1 #nazism
+			communism = 33 #marxism
+			neutrality = 33 #despotism
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1925.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+		}
+	}
+	CHI = {
+		transfer_state = 524
+	}
+	PRC = {
+		annex_country = {
+			target = MAN
+		}
+		annex_country = {
+			target = MEN
+		}
+		annex_country = {
+			target = SHX
+		}
+		transfer_state = 745
+		transfer_state = 609
+	}
+	every_country = {
+		limit = {
+			NOT = {
+				is_chinese_civil = yes
+			}
+		}
+		add_ideas = HOI_afterwar_idea
+	}
+	SOV = {
+		transfer_state = 537
+		537 = {
+			add_core_of = SOV
+		}
+		transfer_state = 555
+		555 = {
+			add_core_of = SOV
+		}
+	}
+	JAP = {
+		release = KOR
+		set_cosmetic_tag = JAP_GHQ
+		remove_ideas = JAP_duplicate_research_efforts
+		remove_ideas = JAP_militarism 
+		remove_ideas = JAP_interservice_rivalry_balanced
+		add_ideas = JAP_hirohito
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1925.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+		every_other_country = {
+			limit = {
+				has_war_with = JAP
+			}	
+			white_peace = JAP
+		}
+		delete_unit_template_and_units = {
+			division_template = "보병사단"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Hohei Shidan"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Dokuritsu Konsei Ryodan"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Kihei Shidan"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Jidousha Shidan"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Rikusentai"
+			disband = yes #will refund equipment and manpower
+		}
+		delete_unit_template_and_units = {
+			division_template = "Chuton-chi Shidan"
+			disband = yes #will refund equipment and manpower
+		}
+	}
+}
+JAP_set_puppet = {
+	USA = {
+		set_autonomy = {
+			target = JAP
+			autonomy_state = autonomy_supervised_state
+			end_wars = no
+			end_civil_wars = no
+		}		
+	}
+}
+KOR_end_of_military = {
+	every_country = {
+		limit = {
+			AND = {
+				original_tag = KOR
+				has_government = democratic
+			}
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "자유당"
+			name = "자유당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "국방정책위원회"
+			name = "국방정책위원회"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "남조선 로동당"
+			name = "남조선 로동당"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "조선왕조"
+			name = "조선왕조"
+		}
+	}
+	create_country_leader = {
+		name = "이승만"
+		desc = ""
+		picture = "gfx/leaders/KOR/Lee_Syng.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+	create_country_leader = {
+		name = "여운형"
+		desc = ""
+		picture = "gfx/leaders/KOR/Portrait_leader_yeo_woonhyung.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			#
+		}
+	}
+	create_country_leader = {
+		name = "이범석"
+		desc = ""
+		picture = "gfx/leaders/KOR/z_Lee_Beom_seok.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	create_country_leader = {
+		name = "이재명"
+		desc = ""
+		picture = "gfx/leaders/KOR/Portrait_KOR_jjit_chila.png"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
+	}
+}
+JAP_build_north_korea_committee = {
+	every_country = {
+		limit = {
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+		create_country_leader = {
+			name = "김일성"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_Kim_Ilsung.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "이재명"
+			desc = ""
+			picture = "gfx/leaders/KOR/Portrait_KOR_jjit_chila.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+	}
+}
+KOR_end_of_people_republic_of_korea = {
+	USA = {
+		set_autonomy = {
+			target = KOR
+			autonomy_state = autonomy_supervised_state
+			end_wars = no
+			end_civil_wars = no
+		}
+		transfer_state = 924 
+	}
+	KOR = {
+		set_cosmetic_tag = KOR_GHQ
+		transfer_state = 915 
+		transfer_state = 925 
+		transfer_state = 926 
+		transfer_state = 910 
+		transfer_state = 911 
+		transfer_state = 909 
+		transfer_state = 927
+		transfer_state = 525
+		transfer_state = 913
+		set_popularities = {
+			democratic = 64 #liberalism
+			fascism = 0 #nazism
+			communism = 36 #marxism
+			neutrality = 0 #despotism
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "연합군최고사령부"
+			name = "연합군최고사령부"
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+		create_country_leader = {
+			name = "더글라스 맥아더"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_KOR_douglas_mcauther.png"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+	}
+	create_dynamic_country = { #Create North Korea
+		original_tag = KOR
+		copy_tag = KOR
+		add_political_power = 100
+		set_capital = {
+			state = 928
+			remember_old_capital = no
+		}
+		transfer_state = 914
+		transfer_state = 928
+		transfer_state = 527
+		transfer_state = 912
+		transfer_state = 929
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+	every_country = {
+		limit = {
+			original_tag = KOR
+			has_government = communism
+		}
+		SOV = { puppet = PREV }
+		set_party_name = {
+			ideology = democratic
+			long_name = "조선민주당"
+			name = "조선민주당"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "천도교청우당"
+			name = "천도교청우당"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "Soviet Civil Administration (SCA)"
+			name = "소비에트 민청정 (SCA)"
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "재일본조선인총련합회"
+			name = "재일본조선인총련합회"
+		}
+		create_country_leader = {
+			name = "Ivan Mikhailovich Chistyakov"
+			desc = "군정장관"
+			picture = "gfx/leaders/KOR/Portrait_KOR_ivan.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+	}
+	every_country = {
+		limit = {
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+		set_cosmetic_tag = KOR_RED_SOV
+		set_popularities = {
+			democratic = 15 #liberalism
+			fascism = 5 #nazism
+			communism = 55 #marxism
+			neutrality = 25 #despotism
+		}
+	}
+}

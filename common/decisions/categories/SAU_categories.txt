@@ -1,0 +1,8 @@
+SAU_decision_CNDP_category = {
+	allowed = {
+	}
+
+	visible = {
+		original_tag = SAU
+	}
+}

@@ -2,6 +2,34 @@ HMC_military_republic ={
 	color = rgb { 242 160 61 }
 	color_ui = rgb { 242 160 61 }
 }
+JAP_GHQ = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+KOR_GHQ = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+
+KOR_RED_SOV = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+
+KOR_democratic = {
+	color = rgb { 1 46 102 }
+    color_ui = rgb { 255 248 229 }
+}
+
+KOR_people_committee = {
+	color = rgb { 189 28 28 }
+    color_ui = rgb { 255 248 229 }
+}
+
+KOR_communism = {
+	color = rgb { 189 28 28 }
+    color_ui = rgb { 255 248 229 }
+}
 KOR_STATE = { #한국
     color = rgb { 36  7  126 }
     color_ui = rgb { 36  7  126 }

@@ -20,12 +20,16 @@
  CMC_democratic:0 "국민당 해병위원회"
 
  SIC:0 "사천군벌"
+ SIC_communism:0 "사천소비에트공화국"
  SIC_neutrality:0 "사천군벌"
- SIC_DEF:0  "사천군벌"
+ SIC_ADF:0  "사천"
+ SIC_DEF:0  "사천"
 
  SND:0 "산동군벌"
- SND_ADJ:0 "산동군벌"
- SND_DEF:0  "산동군벌"
+ SND_neutrality:0 "산동군벌"
+ SND_communism:0 "산동인민공화국"
+ SND_ADJ:0 "산동"
+ SND_DEF:0  "산동"
 
  SAC:0 "상해방공자치정부"
  SAC_ADJ:0 "상해방공자치정부"
@@ -33,8 +37,10 @@
 
  MEN:0 "몽골해병대전우회"
  MEN_fascism:0 "몽골해병대전우회"
+ MEN_communism:0 "몽골해병천국"
 
  BCQ_neutrality:0 "봉천군벌"
+ BCQ_communism:0 "봉천 사회주의 공화국"
  BCQ:0 "봉천군벌"
- BCQ_ADJ:0 "봉천군벌"
- BCQ_DEF:0 "봉천군벌"
+ BCQ_ADJ:0 "봉천"
+ BCQ_DEF:0 "봉천"

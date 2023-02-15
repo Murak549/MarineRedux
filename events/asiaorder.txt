@@ -76,6 +76,12 @@ country_event = { #해병대가 거부함
             type = annex_everything #게이 특) 명분 가지고 선전포고 안함
             target = CMC
         }
+		SND = {
+			declare_war_on =  {
+				target = CMC
+            	type = annex_everything
+			}
+		}
 	}
 }
 
@@ -173,6 +179,103 @@ country_event = { #몽강연합자치정부 세울까 말까
 	}
 }
 
+country_event = { #WAR - MARINE SANDONG WAR
+	id = mwar.101
+	title = mwar.101.t
+	desc = mwar.101.d
+    is_triggered_only = yes 
+	# picture = GFX_report_event_ger_civil_war
+	 
+	option = { #Okay
+		name = mwar.101.a
+		every_country = {
+				# limit = {
+				# 	AND = {
+				# 		original_tag = CMC
+				# 		has_cosmetic_tag = CMC_JIG
+				# 	}
+				# }
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "국민당"
+					name = "국민당"
+				}
+				614 = {
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+					create_unit = {
+						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
+						owner = PREV.PREV
+					}
+				}
+			}
+	}
+	option = { #Okay
+		name = mwar.101.b
+		every_country = {
+			limit = {
+					AND = {
+						original_tag = CMC
+						has_government = neutrality
+					}
+				}
+			change_tag_from = PREV
+		}
+	}
+}
 
 news_event = { #WAR - MARINE SANDONG WAR
 	id = mwar.1001

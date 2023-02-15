@@ -7,6 +7,12 @@
  HMC_commander:0 "해병대 작전사령부"
  HMC_kwae_heung_tae:0 "쾌흥태"
  HMC_leader_selection_commander:0 "해병대 임시사령부"
+ HMC_hwang_ryong:0 "황룡"
+ HMC_ton_jung:0 "황룡"
+ HMC_suck_dick_jo:0 "석딕조"
+ HMC_jegal_chamsu:0 "제갈참수"
+ HMC_ma_galgon "마갈곤"
+ HMC_mu_mo_chil:0 "무모칠"
  
  
  #중화해병대
@@ -27,4 +33,4 @@
  HMC_AIRHWANG:0 "공군출"
 
  #한궈
- KOR_lee_gang:0 "이강" #이갱스터맨~
+ KOR_lee_gang:0 "이강"
