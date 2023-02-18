@@ -13,8 +13,10 @@
 				tag = SHX
 				tag = XSM
 				tag = SND
-				tag = SIC
-				TAG = BCQ
+				tag = SZC
+				TAG = FNG
+				TAG = HNC
+				TAG = GDC
 			}
 			has_dlc = "Waking the Tiger"
 		}

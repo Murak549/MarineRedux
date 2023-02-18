@@ -1,9 +1,9 @@
 characters={ 
-    BCQ_zhang_zuo_lin={
-        name=BCQ_zhang_zuo_lin
+    FNG_zhang_zuo_lin={
+        name=FNG_zhang_zuo_lin
         portraits={
             civilian={
-                large=GFX_portrait_bcq_zhang_zuolin
+                large="gfx/leaders/BCQ/portrait_bcq_zhang_zuo_lin.dds"
             }
         }
         country_leader={
@@ -11,13 +11,13 @@ characters={
             expire="1950.8.16"
         }
     }
-    BCQ_guo_song_ling={
-        name = BCQ_guo_song_ling
+    FNG_guo_song_ling={
+        name = FNG_guo_song_ling
         advisor={
 			slot = political_advisor
 			idea_token = kijuro_shidehara
 			allowed = {
-				original_tag = BCQ
+				original_tag = FNG
 			}
 			traits = {
 				democratic_reformer 
@@ -32,26 +32,26 @@ characters={
 			}
 		}
     }
-    BCQ_zhang_xue_liang={
-        name = BCQ_zhang_xue_liang
+    FNG_zhang_xue_liang={
+        name = FNG_zhang_xue_liang
         advisor={
 			slot = political_advisor
 			allowed = {
-				original_tag = BCQ
+				original_tag = FNG
 			}
 			traits = {
 				silent_workhorse 
 			}
 		}
     }
-    BCQ_jiang_dengxuan={
-        name = BCQ_jiang_dengxuan
+    FNG_jiang_dengxuan={
+        name = FNG_jiang_dengxuan
         advisor={
 			slot = high_command
 			idea_token = yasuji_okamura
 			ledger = army
 			allowed = {
-				original_tag = BCQ
+				original_tag = FNG
 			}
 			traits = {
 				army_infantry_2
@@ -62,7 +62,7 @@ characters={
 				modifier = {
 					factor = 1.500
 					not = {
-						BCQ = {
+						FNG = {
 							has_war_with = USA
 						}
 					}
@@ -70,8 +70,8 @@ characters={
 			}
 		}
     }
-    # BCQ_sun_lie_cheon={
-    #     name = BCQ_sun_lie_cheon
+    # FNG_sun_lie_cheon={
+    #     name = FNG_sun_lie_cheon
     #     advisor={
 	# 		slot = high_command
 	# 		ledger = army
@@ -97,31 +97,31 @@ characters={
 	# 		legacy_id=0
 	# 	}
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
-    # BCQ_guo_song_ling={
-    #     name = BCQ_guo_song_ling
+    # FNG_guo_song_ling={
+    #     name = FNG_guo_song_ling
     # }
 }

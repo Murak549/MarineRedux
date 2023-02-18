@@ -5,7 +5,10 @@
 		factor = 0
 		modifier = {
 			add = 10
-			tag = CHI
+			OR = {
+				tag = CHI
+				tag = ZLC
+			}
 			has_dlc = "Waking the Tiger"
 		}
 	}
@@ -907,6 +910,10 @@
 					tag = SHX
 					tag = XSM
 					tag = TIB
+					tag = HNC
+					tag = FNG
+					tag = SZC
+					tag = SND
 					tag = PRC
 				}
 				has_government = communism
@@ -925,6 +932,10 @@
 							tag = SHX
 							tag = XSM
 							tag = TIB
+							tag = HNC
+							tag = FNG
+							tag = SZC
+							tag = SND
 							tag = PRC
 						}
 						has_government = communism
@@ -1036,6 +1047,62 @@
 					}
 				}
 			}
+			if = {
+				limit = {
+					FNG = {
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = FNG
+						expire = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					HNC = {
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = HNC
+						expire = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					SND = {
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = SND
+						expire = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					SZC = {
+						has_government = communism
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = SZC
+						expire = 0
+					}
+				}
+			}
 		}
 	}
 
@@ -1100,14 +1167,14 @@
 					has_war_with = ROOT
 				}
 			}
-			SIC = {
+			SZC = {
 				OR = {
 					exists = no
 					is_subject_of = ROOT
 					has_war_with = ROOT
 				}
 			}
-			BCQ = {
+			FNG = {
 				OR = {
 					exists = no
 					is_subject_of = ROOT
@@ -1135,8 +1202,9 @@
 						tag = XSM
 						tag = SIK
 						tag = SND
-						tag = SIC
-						tag = BCQ
+						tag = SZC
+						tag = HNC
+						tag = FNG
 					}
 				}
 				country_event = { id = wtt_china.1 }

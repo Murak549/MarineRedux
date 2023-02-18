@@ -1,13 +1,60 @@
 ideas = {
     country = {
         JAP_conquer_china = {
-            picture = generic_agrarian_reform
+            picture = imperial_glory_idea
             allowed = {
 				always = no
 			}
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 5.5
+				army_speed_factor = 2
+                army_attack_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = SZC
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = SND
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = FNG
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
 			}
         }
     }

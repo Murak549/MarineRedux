@@ -1,190 +1,20 @@
 on_actions = {
     on_capitulation = {
 		effect = {
-			if = { #북양정부의 부활
-				limit = {
-					original_tag = CMC
-					has_war_with = SND
-				}
-				white_peace = SND
-				news_event = { id = mwar.1001 }
-				if = {
-					limit = {
-						CMC = {
-							is_ai = no
-						}
-					}
-					CMC = {
-						country_event = {
-							id = mwar.101
-						}	
-					}
-				}
-			}
-			CMC = {
-				start_civil_war = {
-					ideology = neutrality
-					size = 0.1
-					army_ratio = 0.5
-					navy_ratio = 0
-					air_ratio = 1
-					keep_all_characters = yes
-					set_country_leader_name = {
-						ideology = neutrality
-						name = "우페이푸"
-					}
-					set_politics = {
-						ruling_party = neutrality
-						long_name = "국민당"
-						name = "국민당"
-					}
-					set_politics = {
-						ruling_party = democratic
-						long_name = "국민당"
-						name = "국민당"
-					}
-					set_politics = {
-						ruling_party = communism
-						long_name = "중국 공산당"
-						name = "중국 공산당"
-					}
-					set_politics = {
-						ruling_party = fascism
-						long_name = "남의사"
-						name = "남의사"
-					}
-					set_popularities = {
-						democratic = 20
-						neutrality = 45
-						fascism = 0
-						communism = 35
-					}
-					set_country_leader_portrait = {
-						ideology = neutrality
-						portrait = gfx\leaders\ZLC\Portrait_ZLC_Chao_kun.png
-					}
-					delete_unit_template_and_units = { division_template = "Suyuk Sadan" }
-					delete_unit_template_and_units = { division_template = "Malttalphil Sadan" }
-					delete_unit_template_and_units = { division_template = "Auto-Malttalphil Sadan" }
-					delete_unit_template_and_units = { division_template = "Odojjase-Haebyeong Sadan" }
-					division_template = {
-						name = "Juntuan"
-						is_locked = no
-						division_names_group = CHI_INF_01
-						priority = 0
-						template_counter = 0
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						}
-					}
-					division_template = {
-						name = "Sanjiao Jun"
-						is_locked = no
-						division_names_group = CHI_INF_01
-						priority = 0
-						template_counter = 0
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-						}
-					}
-				}
-			every_country = {
-				limit = {
-					AND = {
-						original_tag = CMC
-						# has_cosmetic_tag = CMC_JIG
-					}
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-					last_election = "1935.12.17"
-					election_frequency = 48
-					long_name = "국민당"
-					name = "국민당"
-				}
-				614 = {
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-					create_unit = {
-						division = "name = \"Resistance\" division_template = \"Juntuan\" start_experience_factor = 0.5"
-						owner = PREV.PREV
-					}
-				}
-			} # 나중에 scripted_effect로 개편해야함
-			}
 			if = { #버그 수정해야함
 				limit = {
 					original_tag = KOR
 					has_war_with = HMC
 				}
 				white_peace = KOR
-				BCQ = {
+				FNG = {
 					annex_country = KOR
 				}
 			}
 			if = { #만주국 만들기
 				limit = {
 					AND = {
-						original_tag = BCQ
+						original_tag = FNG
 						has_war_with = JAP
 					}
 				}
@@ -193,6 +23,27 @@ on_actions = {
 				}
 				MAN = {
 					load_oob = MAN_1936_nsb
+				}
+			}
+			if = { #북양정부
+				limit = {
+					AND = {
+						original_tag = CMC
+						has_war_with = ZLC
+					}
+				}
+				ZLC = {
+					annex_country = {
+						target = CMC
+					}
+					every_owned_state ={
+						add_core_of = ZLC
+					}
+				}
+				CHI = {
+					every_core_state = {
+						add_core_of = ZLC
+					}
 				}
 			}
 			if = { #조선 총독부 만들기

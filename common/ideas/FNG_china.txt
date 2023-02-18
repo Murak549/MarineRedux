@@ -1,6 +1,6 @@
 ideas = {
     country = {
-        BCQ_border_bank = {
+        FNG_border_bank = {
             picture = generic_agrarian_reform
             allowed = {
 				always = no
@@ -11,7 +11,7 @@ ideas = {
 			}
         }
 
-        BCQ_simyang_arsenal = {
+        FNG_simyang_arsenal = {
             picture = ast_volunteer_defence_corps
             allowed = {
 				always = no

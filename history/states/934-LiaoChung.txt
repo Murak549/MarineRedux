@@ -1,0 +1,30 @@
+state={
+	id=934
+	name="STATE_934"
+	provinces={
+		1084 7160 7189 9987 11933 11962 12093 
+	}
+	history={
+		owner = SND
+		add_core_of = CMC
+		add_core_of = SND
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			air_base = 1
+		}
+		1938.10.25 = {
+			controller = JAP
+
+		}
+
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

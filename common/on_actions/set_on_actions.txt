@@ -1,0 +1,54 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CCP = {
+                set_party_name = {
+                    ideology = democratic
+                    long_name = PRC_democratic_party_long
+                    name = PRC_democratic_party
+                }
+                set_party_name = {
+                    ideology = communism
+                    long_name = PRC_communism_party_long
+                    name = PRC_communism_party
+                }
+            }
+			CCQ = {
+                set_party_name = {
+                    ideology = democratic
+                    long_name = PRC_democratic_party_long
+                    name = PRC_democratic_party
+                }
+                set_party_name = {
+                    ideology = communism
+                    long_name = PRC_communism_party_long
+                    name = PRC_communism_party
+                }
+            }
+			CCR = {
+                set_party_name = {
+                    ideology = democratic
+                    long_name = PRC_democratic_party_long
+                    name = PRC_democratic_party
+                }
+                set_party_name = {
+                    ideology = communism
+                    long_name = PRC_communism_party_long
+                    name = PRC_communism_party
+                }
+            }
+			CCS = {
+                set_party_name = {
+                    ideology = democratic
+                    long_name = PRC_democratic_party_long
+                    name = PRC_democratic_party
+                }
+                set_party_name = {
+                    ideology = communism
+                    long_name = PRC_communism_party_long
+                    name = PRC_communism_party
+                }
+            }
+		}
+	}
+}

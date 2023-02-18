@@ -1,0 +1,34 @@
+characters={
+    CHI_zhao_heng_ti={
+		name="자오헝티"
+		portraits={
+			civilian={
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+			}
+			army = {
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+				small="CHI_zhao_heng_ti"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+}

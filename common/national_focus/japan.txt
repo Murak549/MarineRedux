@@ -1470,7 +1470,7 @@
             }
 			create_wargoal = {
                 type = puppet_wargoal_focus #게이 특) 명분 가지고 선전포고 안함
-                target = CMC
+                target = ZLC
             }
 			create_wargoal = {
                 type = puppet_wargoal_focus #게이 특) 명분 가지고 선전포고 안함
@@ -1478,7 +1478,7 @@
             }
 			create_wargoal = {
                 type = puppet_wargoal_focus #게이 특) 명분 가지고 선전포고 안함
-                target = BCQ
+                target = FNG
             }
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 			hidden_effect = {
@@ -1486,6 +1486,7 @@
 					type = annex_everything #게이 특) 명분 가지고 선전포고 안함
 					target = HMC
 				}
+				add_ideas = JAP_conquer_china
 			}
 		}
 	}

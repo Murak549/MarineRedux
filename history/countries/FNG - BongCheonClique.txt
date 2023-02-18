@@ -2,20 +2,20 @@ capital = 328
 
 oob = "MAN_1936"
 
-recruit_character = BCQ_zhang_zuo_lin
-recruit_character = BCQ_zhang_zuo_lin
-recruit_character = BCQ_guo_song_ling
-recruit_character = BCQ_zhang_xue_liang
-recruit_character = BCQ_jiang_dengxuan 
+recruit_character = FNG_zhang_zuo_lin
+recruit_character = FNG_zhang_zuo_lin
+recruit_character = FNG_guo_song_ling
+recruit_character = FNG_zhang_xue_liang
+recruit_character = FNG_jiang_dengxuan 
 recruit_character = CHI_zhang_xueliang
 
 add_ideas = {
-	BCQ_border_bank
-	BCQ_simyang_arsenal
+	FNG_border_bank
+	FNG_simyang_arsenal
 }
 
 add_country_leader_role = {
-	character = BCQ_zhang_zuo_lin
+	character = FNG_zhang_zuo_lin
 	country_leader = {
 		expire = "1965.1.1"
 		ideology = socialism
@@ -28,7 +28,7 @@ add_country_leader_role = {
 	promote_leader = yes				
 }
 add_country_leader_role = {
-	character = BCQ_zhang_zuo_lin
+	character = FNG_zhang_zuo_lin
 	country_leader = {
 		expire = "1965.1.1"
 		ideology = anti_revisionism
@@ -41,7 +41,7 @@ add_country_leader_role = {
 	promote_leader = yes				
 }
 add_country_leader_role = {
-	character = BCQ_zhang_zuo_lin
+	character = FNG_zhang_zuo_lin
 	country_leader = {
 		expire = "1965.1.1"
 		ideology = despotism
