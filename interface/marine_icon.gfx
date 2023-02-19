@@ -1,4 +1,20 @@
 spriteTypes = { 
+	SpriteType = {       
+		name = "GFX_goal_chinese_instructors"  
+		texturefile = "gfx/interface/goals/chinese_instructors.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_goal_CHI_tigress_battalions"  
+		texturefile = "gfx/interface/goals/CHI_tigress_battalions.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_goal_china_deal"  
+		texturefile = "gfx/interface/goals/china_deal.png"     
+	} 
+	SpriteType = {       
+		name = "GFX_focus_북양정부화해"  
+		texturefile = "gfx/interface/goals/북양정부화해.png"     
+	} 
 	spriteType={
 		name="GFX_focus_jap_brainwash_tenno"
 		texturefile="gfx/interface/goals/focus_jap_brainwash_tenno.dds"

@@ -47,4 +47,8 @@ spriteTypes={
 		name="GFX_portrait_yi_kang"
 		texturefile="gfx/leaders/KOR/portrait_KOR_yi_kang.png"
 	}
+	spriteType={
+		name="GFX_portrait_ccp_zombie_lenin"
+		texturefile="gfx/leaders/CCP/portrait_CCP_zombie_lenin.dds"
+	}
 }

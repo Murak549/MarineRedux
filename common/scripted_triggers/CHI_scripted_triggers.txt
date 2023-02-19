@@ -25,9 +25,12 @@ is_independent_china_or_warlord = { #Does not include sinkiang
 		tag = YUN
 		tag = SHX
 		tag = XSM
-		tag = SIK
 		tag = HNC
 		tag = GDC
+		tag = CCP
+		tag = CCQ
+		tag = CCR
+		tag = CCS
 	}
 	is_puppet = no
 }
@@ -82,6 +85,10 @@ is_literally_china = {
 		original_tag = HNC
 		original_tag = GDC
 		original_tag = ZLC
+		original_tag = CCP
+		original_tag = CCQ
+		original_tag = CCR
+		original_tag = CCS
 	}
 }
 
@@ -97,6 +104,10 @@ is_chinese_warlord = {
 		original_tag = SIK
 		original_tag = HNC
 		original_tag = GDC
+		original_tag = CCP
+		original_tag = CCQ
+		original_tag = CCR
+		original_tag = CCS
 	}
 }
 

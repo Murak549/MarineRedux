@@ -1,0 +1,88 @@
+characters={
+	CCP_Wang_Ming={
+		name=CCP_Wang_Ming
+		portraits={
+			army={
+				large="GFX_portrait_prc_wang_ming"
+				small=GFX_portrait_prc_wang_ming_small
+			}
+			civilian={
+				large="GFX_portrait_prc_wang_ming"
+				small=GFX_portrait_prc_wang_ming_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+		}
+	}
+	CCP_Zhang_Lan={
+		name=CCP_Zhang_Lan
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhang_lan"
+				small=GFX_portrait_prc_zhang_lan_small
+			}
+			civilian={
+				large="GFX_portrait_prc_zhang_lan"
+				small=GFX_portrait_prc_zhang_lan_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+		}
+	}
+	CCP_Zombie_Lenin={
+		name=CCP_Zombie_Lenin
+		portraits={
+			army={
+				large="GFX_portrait_ccp_zombie_lenin"
+				small=GFX_portrait_ccp_zombie_lenin_small
+			}
+			civilian={
+				large="GFX_portrait_ccp_zombie_lenin"
+				small=GFX_portrait_ccp_zombie_lenin_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=8
+			attack_skill=9
+			defense_skill=9
+			planning_skill=9
+			logistics_skill=9
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+		}
+	}
+    CCP_anal = {
+        name=CCP_anal
+        country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+		}
+    }
+}

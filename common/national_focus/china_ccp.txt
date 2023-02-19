@@ -1,0 +1,539 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = china_communist_party_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			AND = {
+				OR = {
+					tag = PRC
+					tag = CCP
+					tag = CCQ
+					tag = CCR
+					tag = CCS
+				}
+				has_dlc = "Waking the Tiger"
+			}
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+
+#	focus = {
+#		id = PRC_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+	# shared_focus = CHI_invite_foreign_investors
+
+    focus = {
+        id = CCP_removing_clique
+        icon = GFX_goal_support_communism
+        cost = 5
+        x = 10
+        y = 0
+
+        ai_will_do = {
+            factor = 4
+        }
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+    }
+    focus = {
+        id = CCP_internal_purging
+        icon = GFX_focus_generic_strike_at_democracy1
+        cost = 5
+        x = 0
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_removing_clique }
+        relative_position_id = CCP_removing_clique
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+    }
+    focus = {
+        id = CCP_land_redistribution
+        icon = GFX_goal_generic_construction
+        cost = 5
+        x = -2
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_internal_purging }
+        relative_position_id = CCP_internal_purging
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = PRC_low_popular_support_3
+                add_idea = PRC_low_popular_support_2
+            }
+		}
+    }
+    focus = {
+        id = CCP_give_me_civil_factory
+        icon = GFX_goal_generic_construct_civ_factory
+        cost = 5
+        x = -1
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_land_redistribution }
+        relative_position_id = CCP_land_redistribution
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_owned_state = {
+                add_building_construction = {
+                    type = industrial_complex 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+    }
+    focus = {
+        id = CCP_infrastructure1
+        icon = GFX_goal_generic_construction
+        cost = 5
+        x = 0
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_give_me_civil_factory }
+        relative_position_id = CCP_give_me_civil_factory
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_owned_state = {
+                add_building_construction = {
+                    type = infrastructure 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+    }
+    focus = {
+        id = CCP_research_sanup
+        icon = GFX_focus_research
+        cost = 5
+        x = 1
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_land_redistribution }
+        relative_position_id = CCP_land_redistribution
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_local_arms_development
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+    }
+    focus = {
+        id = CCP_infrastructure2
+        icon = GFX_goal_generic_construct_infrastructure
+        cost = 5
+        x = 0
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_research_sanup }
+        relative_position_id = CCP_research_sanup
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_owned_state = {
+                add_building_construction = {
+                    type = infrastructure 
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+    }
+    focus = {
+        id = CCP_give_me_research_slot
+        icon = GFX_focus_generic_socialist_science
+        cost = 5
+        x = 0
+        y = 3
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_infrastructure1 }
+        prerequisite = { focus = CCP_infrastructure2 }
+        relative_position_id = CCP_land_redistribution
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+		}
+    }
+    focus = {
+        id = CCP_requisition_weapon
+        icon = GFX_goal_generic_military_sphere
+        cost = 5
+        x = 2
+        y = 1
+        ai_will_do = {
+            factor = 4
+        }
+        prerequisite = { focus = CCP_internal_purging }
+        relative_position_id = CCP_internal_purging
+        available = {
+
+        }
+        bypass = {
+
+        }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 100
+                producer = PRC
+            }
+		}
+    }
+    focus = {
+        id = CCP_local_weapon
+        icon = GFX_goal_generic_air_production
+        cost = 5
+        x = -1
+        y = 1
+        prerequisite = { focus = CCP_requisition_weapon }
+        relative_position_id = CCP_requisition_weapon
+        completion_reward = {
+            add_building_construction = {
+                    type = arms_factory 
+                    level = 1
+                    instant_build = yes
+                }
+        }
+    }
+    focus = {
+        id = CCP_arm_development
+        icon = GFX_goal_generic_small_arms
+        cost = 5
+        x = 0
+        y = 1
+        prerequisite = { focus = CCP_local_weapon }
+        relative_position_id = CCP_local_weapon
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = infantry_weapons
+            }
+        }
+    }
+    focus = {
+        id = CCP_heavy_weapon
+        icon = GFX_goal_generic_army_artillery
+        cost = 5
+        x = 1
+        y = 1
+        prerequisite = { focus = CCP_requisition_weapon }
+        relative_position_id = CCP_requisition_weapon
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = artillery
+            }
+        }
+    }
+    focus = {
+        id = CCP_motorized
+        icon = GFX_goal_generic_army_motorized
+        cost = 5
+        x = 0
+        y = 1
+        prerequisite = { focus = CCP_heavy_weapon }
+        relative_position_id = CCP_heavy_weapon
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = motorized_equipment
+            }
+        }
+    }
+    focus = {
+        id = CCP_give_me_wargoal
+        icon = GFX_goal_generic_major_war
+        cost = 5
+        x = 0
+        y = 3
+        prerequisite = { focus = CCP_motorized }
+        prerequisite = { focus = CCP_arm_development }
+        relative_position_id = CCP_requisition_weapon
+        completion_reward = {
+            if = {
+                limit = {
+                    ROOT = {
+                        original_tag = CCP
+                    }
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCQ
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCR
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCS
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = PRC
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        original_tag = CCQ
+                    }
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCP
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCR
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCS
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = PRC
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        original_tag = CCR
+                    }
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCP
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCQ
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCS
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = PRC
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        original_tag = CCS
+                    }
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCP
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCQ
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCR
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = PRC
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        original_tag = PRC
+                    }
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCP
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCQ
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCR
+                }
+                create_wargoal = {
+                    type = annex_everything
+                    target = CCS
+                }
+            }
+        }
+    }
+    focus = {
+        id = CCP_UNIFIED_CCP
+        icon = GFX_focus_generic_soviet_politics
+        cost = 5
+        x = 0
+        y = 5
+        prerequisite = { focus = CCP_give_me_research_slot }
+        prerequisite = { focus = CCP_give_me_wargoal }
+        relative_position_id = CCP_internal_purging
+        completion_reward = {
+            load_focus_tree = china_communist_focus
+        }
+    }
+}

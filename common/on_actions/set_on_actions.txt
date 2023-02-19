@@ -1,6 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
+            ZLC = {
+                save_global_event_target_as = WTT_current_beiyang_leader
+            }
 			CCP = {
                 set_party_name = {
                     ideology = democratic

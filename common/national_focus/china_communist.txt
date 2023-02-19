@@ -12,9 +12,17 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
-			tag = PRC
-			has_dlc = "Waking the Tiger"
+			# add = 10
+			# AND = {
+			# 	OR = {
+			# 		# tag = PRC
+			# 		# tag = CCP
+			# 		# tag = CCQ
+			# 		# tag = CCR
+			# 		# tag = CCS
+			# 	}
+			# 	has_dlc = "Waking the Tiger"
+			# }
 		}
 	}
 	
