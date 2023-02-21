@@ -17,3 +17,21 @@
  HMC_ban_akgibari:0 "악기바리 금지"
  HMC_annex_all_marine:0 "해외 해병대 통합"
  HMC_end_of_korean_marine_war:0 "한국전쟁의 끝"
+ HMC_Corps_leader:0 "해병대 사령관"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #황근출 중점
+ HMC_adapt_akgibari:0 "악기바리 적응 훈련"
+ HMC_kill_giyeol:0 "해병군사재판"
+ HMC_marine_food:0 "해병푸드 재활용"
+ HMC_dissolute_commander:0 "해병대 사령부 오도화"
+ HMC_build_new_chinese_marine:0 "[CMC.GetName] 재건"
+ HMC_scatting_marines:0 "해병 세계화"
+ HMC_new_absurdity:0 "신규부조리"
