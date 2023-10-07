@@ -68,8 +68,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 45 70 125 }
+	color_ui = rgb { 45 70 125 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -193,8 +193,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 0 76 153 }
+	color_ui = rgb { 0 76 153 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -285,8 +285,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 93  181  225 }
+	color_ui = rgb { 93  181  225 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -309,18 +309,26 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
-	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
+	color = rgb { 171 40 42 }
 	color_ui = rgb { 209 247 133 }
 }
+# MON = {
+# 	#color = HSV { 0.1 0.15 0.4 }
+# 	color = rgb { 108 140 42 }
+# 	color_ui = rgb { 209 247 133 }
+# }
 MEN = {
 	color = rgb { 176 22 9 }
 	color_ui = rgb { 176 22 9 }
 }
 TAN = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 170 23 4 }
+	color_ui = rgb { 163 17 31 }
 }
+# TAN = {
+# 	color = rgb { 152 130 191 }
+# 	color_ui = rgb { 198 169 248 }
+# }
 PAR = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
