@@ -199,6 +199,10 @@ units = {
     }
 }
 
+focus = {
+    current = "HMC_attack_airforce"
+    Progress = 0
+}
 
 #########################
 ## STARTING PRODUCTION ##

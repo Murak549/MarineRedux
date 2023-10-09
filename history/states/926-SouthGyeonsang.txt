@@ -8,7 +8,7 @@ state={
 		1054 4056 10085 12060 
 	}
 	history={
-		owner = HMC
+		owner = AIR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -26,8 +26,8 @@ state={
 		victory_points = {
 			4056 1 
 		}
+		add_core_of = AIR
 		add_core_of = KOR
-		add_core_of = HMC
 	}
 	manpower=3133697
 	buildings_max_level_factor=1.000
