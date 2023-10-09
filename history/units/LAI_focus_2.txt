@@ -1,0 +1,4 @@
+﻿focus = {
+    current = "portugeseses_talks"
+    Progress = 0
+}   

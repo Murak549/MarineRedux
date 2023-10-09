@@ -1,3 +1,4 @@
+AIR = "countries/Korea.txt"
 HMC = "countries/Korea.txt"
 KOR = "countries/Korea.txt"
 CMC = "countries/China.txt"

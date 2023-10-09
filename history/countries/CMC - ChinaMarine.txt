@@ -51,10 +51,6 @@ if = {
 		has_dlc = "Together for Victory"
 		not = { has_dlc = "Waking the Tiger" }
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_integrated_puppet
-	}
 }
 if = {
 	limit = { 
@@ -63,18 +59,10 @@ if = {
 			has_dlc = "Together for Victory"
 		}
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_puppet
-	}
 }
 if = {
 	limit = { 
 		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
 
@@ -84,9 +72,6 @@ add_ideas = {
 	HMC_conscripting_assembly
 	HMC_continuing_airforce
 }
-
-#초반 군벌 정리용
-create_faction = "대아해방연합"
 
 if = {
 	limit = {

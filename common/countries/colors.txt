@@ -1,4 +1,8 @@
 #reload countrycolors
+AIR = {
+	color = rgb { 3 111 252 }
+	color_ui = rgb { 2 84 191 }
+}
 CCP = {
 	color = rgb { 245 12 55 }
 	color_ui = rgb { 178 34 60 }
@@ -318,8 +322,8 @@ MON = {
 # 	color_ui = rgb { 209 247 133 }
 # }
 MEN = {
-	color = rgb { 176 22 9 }
-	color_ui = rgb { 176 22 9 }
+	color = rgb { 185  255  152 }
+	color_ui = rgb { 165  230  132 }
 }
 TAN = {
 	color = rgb { 170 23 4 }

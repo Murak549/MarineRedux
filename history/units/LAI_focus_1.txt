@@ -1,0 +1,4 @@
+﻿focus = {
+    current = "jachijumin_susa"
+    Progress = 0
+}   

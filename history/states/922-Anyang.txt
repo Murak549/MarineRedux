@@ -5,8 +5,8 @@ state={
 		1139 4114 4144 4606 7074
 	}
 	history={
-		owner = CMC
-		add_core_of = CMC
+		owner = ZLC
+		add_core_of = ZLC
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
