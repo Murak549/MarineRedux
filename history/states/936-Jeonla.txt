@@ -1,0 +1,29 @@
+
+state={
+	id=936
+	name="STATE_936"
+
+	history={
+		owner = HMC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4126 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = KOR
+		add_core_of = HMC
+
+	}
+
+	provinces={
+		4126 11977 13279 13280 
+	}
+	manpower=1591433
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
