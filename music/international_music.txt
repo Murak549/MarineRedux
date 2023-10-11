@@ -1,4 +1,4 @@
-music_station = "international_station"
+music_station = "korean_army_music_station"
 music = {
 	song = "nk_international"
 	chance = {

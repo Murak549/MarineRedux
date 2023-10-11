@@ -4,21 +4,6 @@ music = {
 	volume = 1
 }
 music = {
-	name = "nk_international"
-	file = "international/northkorea.ogg"
-	volume = 0.5
-}
-music = {
-	name = "chi_international"
-	file = "international/china.ogg"
-	volume = 0.35
-}
-music = {
-	name = "jap_international"
-	file = "international/japan.ogg"
-	volume = 0.5
-}
-music = {
 	name = "forevermarine"
 	file = "marine/forevermarine.ogg"
 	volume = 1
@@ -47,4 +32,19 @@ music = {
 	name = "bravomarine"
 	file = "marine/bravomarine.ogg"
 	volume = 1
+}
+music = {
+	name = "nk_international"
+	file = "international/northkorea.ogg"
+	volume = 0.5
+}
+music = {
+	name = "chi_international"
+	file = "international/china.ogg"
+	volume = 0.35
+}
+music = {
+	name = "jap_international"
+	file = "international/japan.ogg"
+	volume = 0.5
 }
