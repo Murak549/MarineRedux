@@ -120,7 +120,7 @@ units = {
             name_order = 5
         }
 
-        location = 13262
+        location = 13278
         division_template = "Odojjase-Haebyeong Sadan" 
         start_experience_factor = 0.1
         start_equipment_factor = 1
