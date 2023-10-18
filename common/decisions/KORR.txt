@@ -1,9 +1,6 @@
 KOR_fucking_red = {
 	KOR_ready_to_build_people_republic = {
 		days_remove = 120
-		allowed = {
-			original_tag = KOR
-		}
 		available = {
 			has_government = communism
 			NOT = { has_cosmetic_tag = KOR_people_committee }
@@ -57,9 +54,6 @@ KOR_fucking_red = {
 KOR_fucking_syngman = {
 	KOR_build_democratic_republic = {
 		days_remove = 720
-		allowed = {
-			original_tag = KOR
-		}
 		available = {
 			original_tag = KOR
 			has_government = democratic
@@ -133,14 +127,14 @@ KOR_einigkeit_und_recht_und_freiheit = {
 	}
 }
 
-KOR_freedom_but_not_freedom = {
-	KOR_GG = {
-		days_remove = 23
-		ai_will_do = {
-			factor = 10
-		}
-		remove_effect = {
-			KOR_end_of_people_republic_of_korea = yes
-		}
-	}
-}
+# KOR_freedom_but_not_freedom = {
+# 	KOR_GG = {
+# 		days_remove = 23
+# 		ai_will_do = {
+# 			factor = 10
+# 		}
+# 		remove_effect = {
+# 			KOR_end_of_people_republic_of_korea = yes
+# 		}
+# 	}
+# }

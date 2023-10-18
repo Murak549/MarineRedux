@@ -1,3 +1,4 @@
+
 state={
 	id=937
 	name="STATE_937"
@@ -14,6 +15,7 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 1
+
 		}
 		victory_points = {
 			4086 1 
@@ -27,7 +29,7 @@ state={
 	}
 
 	provinces={
-		1081 4086 4103 7121 10115 12089 13281 
+		1081 4086 4103 7121 10115 12089 
 	}
 	manpower=2506092
 	buildings_max_level_factor=1.000
