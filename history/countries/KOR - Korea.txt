@@ -9,11 +9,6 @@ recruit_character = KOR_lee_beom_seok #이범석
 recruit_character = KOR_provisional_government_of_korea #임시정부
 recruit_character = KOR_lee_gang #이강
 
-add_country_leader_trait = liberator_of_the_korea
-add_country_leader_trait = supreme_leader_of_liberate_front
-add_country_leader_trait = grandson_of_emperor_gojong_of_daehan
-add_country_leader_trait = supreme_commander_of_liberate_front
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

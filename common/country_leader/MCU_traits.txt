@@ -27,17 +27,11 @@ leader_traits = {
 		random = no
 	}
 	########## KOREA ##########
-	grandson_of_emperor_gojong_of_daehan = { #FOR YIKANGGAY
-		custom_modifier_tooltip = "정신나간 왕정복고주의자들이 좋아합니다"
+	grandson_of_emperor_gojong_of_daehan = { #이강쉑
+		custom_modifier_tooltip = "고아같은 왕정복고주의자들이 좋아함."
 		random = no
 	}
 	liberator_of_the_korea = {
-		random = no
-	}
-	supreme_leader_of_liberate_front = {
-		random = no
-	}
-	supreme_commander_of_liberate_front = {
 		random = no
 	}
 	################ POHANG DESIGNER ######################

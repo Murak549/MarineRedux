@@ -39,7 +39,7 @@ characters = {
 
         country_leader={
 			ideology=centrism
-			traits={  }
+			traits={ liberator_of_the_korea supreme_leader_of_liberate_front grandson_of_emperor_gojong_of_daehan supreme_commander_of_liberate_front }
 			expire="1989.1.1.1"
 		}
     }
